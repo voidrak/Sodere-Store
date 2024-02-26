@@ -1,17 +1,24 @@
 import React from "react";
-import ProductData from "./data/ProductData";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SharedLayout from "./Components/SharedLayout";
+import HomePage from "./Pages/HomePage";
+import ContactUsPage from "./Pages/ContactUsPage";
+import ErrorPage from "./Pages/ErrorPage";
+import SearchPage from "./Pages/SearchPage";
+
 const App = () => {
-  console.log(ProductData);
   return (
-    <div className="grid grid-cols-8 gap-y-4 bg-slate-500">
-      {ProductData.map((item) => (
-        <img
-          src={item.imgSrc}
-          alt={item.itemNameEnglish}
-          srcset=""
-          className=" w-[100px] aspect-[233/345]"
-        />
-      ))}
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="contact" element={<ContactUsPage />} />
+            <Route path="search" element={<SearchPage />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
