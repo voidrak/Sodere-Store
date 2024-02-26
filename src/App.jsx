@@ -3,9 +3,15 @@ import ProductData from "./data/ProductData";
 const App = () => {
   console.log(ProductData);
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <img src={ProductData[0].imgSrc} alt="" />
+    <div className="grid grid-cols-8 gap-y-4 bg-slate-500">
+      {ProductData.map((item) => (
+        <img
+          src={item.imgSrc}
+          alt={item.itemNameEnglish}
+          srcset=""
+          className=" w-[100px] aspect-[233/345]"
+        />
+      ))}
     </div>
   );
 };
