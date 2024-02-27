@@ -6,7 +6,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoPersonOutline, IoSearch } from "react-icons/io5";
 import { FaChevronCircleRight } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
-const Header = ({ setIsNavbar, isNavbar }) => {
+const Header = ({ setIsNavbar, setIsSearch }) => {
   return (
     <>
       <div className=" mx-auto flex w-[100%] max-w-[1640px] items-center justify-between px-2  py-3 md:justify-start md:px-4 md:py-4">
@@ -17,7 +17,13 @@ const Header = ({ setIsNavbar, isNavbar }) => {
               setIsNavbar(true);
             }}
           />
-          <IoSearch size={22} />
+          <IoSearch
+            size={22}
+            onClick={() => {
+              setIsSearch(true);
+              console.log("object");
+            }}
+          />
         </div>
 
         <Link
