@@ -5,6 +5,9 @@ import HomePage from "./Pages/HomePage";
 import ContactUsPage from "./Pages/ContactUsPage";
 import ErrorPage from "./Pages/ErrorPage";
 import SearchPage from "./Pages/SearchPage";
+import CategoriesPage from "./Pages/CategoriesPage";
+import WishListPage from "./Pages/WishListPage";
+import "./App.css";
 
 const App = () => {
   return (
@@ -15,6 +18,8 @@ const App = () => {
             <Route index element={<HomePage />} />
             <Route path="contact" element={<ContactUsPage />} />
             <Route path="search" element={<SearchPage />} />
+            <Route path="categories" element={<CategoriesPage />} />
+            <Route path="wishlist" element={<WishListPage />} />
             <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>

@@ -6,24 +6,29 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoPersonOutline } from "react-icons/io5";
 import { FiShoppingBag } from "react-icons/fi";
 import { CiSearch } from "react-icons/ci";
-const Header = () => {
+const Header = ({ setIsNavbar, isNavbar }) => {
   return (
-    <div className="w-[100%] flex px-2 items-center justify-between py-2">
+    <div className="w-[100%] flex px-2 items-center justify-between py-3">
       <div className="flex gap-x-2 items-center">
-        <CgMenuLeft size={25} />
-        <CiSearch size={20} />
+        <CgMenuLeft
+          size={22}
+          onClick={() => {
+            setIsNavbar(true);
+          }}
+        />
+        <CiSearch size={22} />
       </div>
-      <div className=" justify-self-center ">
-        <Link to="/" className="flex">
-          <img src={SodereLogo} alt="Sodere Logo" className="w-[10%]" />
-          <h1 className="text-[#327cad] font-bold">SODERE</h1>
-        </Link>
-      </div>
+      <Link to="/" className="flex justify-center gap-x-1 items-center">
+        <img src={SodereLogo} alt="Sodere Logo" className="w-[28px] " />
+        <h1 className="text-[#327cad]  text-[1.2rem] font-OSWALD font-extrabold">
+          SODERE
+        </h1>
+      </Link>
 
-      <div className="flex items-center">
-        <IoPersonOutline />
-        <FaRegHeart />
-        <FiShoppingBag />
+      <div className="flex items-center gap-x-2">
+        <IoPersonOutline size={20} />
+        <FaRegHeart size={20} />
+        <FiShoppingBag size={20} />
       </div>
     </div>
   );
