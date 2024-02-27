@@ -14,7 +14,7 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
       }`}
     >
       <div className="bg-black w-[100%] flex justify-between py-3 px-4">
-        <h1 className="text-white text-xl">Menu</h1>
+        <h1 className="text-white text-xl ">Menu</h1>
         <IoCloseSharp
           color="white"
           size={30}

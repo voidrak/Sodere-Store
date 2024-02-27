@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SodereLogo from "/logo2.png";
+import SodereLogo from "/sodere-logo.png";
 import { CgMenuLeft } from "react-icons/cg";
 import { FaRegHeart } from "react-icons/fa";
 import { IoPersonOutline } from "react-icons/io5";
@@ -19,10 +19,7 @@ const Header = ({ setIsNavbar, isNavbar }) => {
         <CiSearch size={22} />
       </div>
       <Link to="/" className="flex justify-center gap-x-1 items-center">
-        <img src={SodereLogo} alt="Sodere Logo" className="w-[28px] " />
-        <h1 className="text-[#327cad]  text-[1.2rem] font-OSWALD font-extrabold">
-          SODERE
-        </h1>
+        <img src={SodereLogo} alt="Sodere Logo" className="w-[50%] h-auto " />
       </Link>
 
       <div className="flex items-center gap-x-3">
