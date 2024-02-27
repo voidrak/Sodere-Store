@@ -9,7 +9,7 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
   const [isPages, setIsPages] = useState(false);
   return (
     <div
-      className={`absolute top-0 left-0 bg-white  w-[100%] h-[100vh] transition-all ease-in-out duration-500 ${
+      className={`absolute top-0 left-0 bg-white  w-[320px] min-h-[100vh] transition-all ease-in-out duration-500 ${
         !isNavbar ? "ml-[-100%]" : ""
       }`}
     >
