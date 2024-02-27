@@ -25,7 +25,7 @@ const Header = ({ setIsNavbar, isNavbar }) => {
         </h1>
       </Link>
 
-      <div className="flex items-center gap-x-2">
+      <div className="flex items-center gap-x-3">
         <IoPersonOutline size={20} />
         <FaRegHeart size={20} />
         <FiShoppingBag size={20} />
