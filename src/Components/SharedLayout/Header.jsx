@@ -6,11 +6,11 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoPersonOutline, IoSearch } from "react-icons/io5";
 import { FaChevronCircleRight } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
-const Header = ({ setIsNavbar, setIsSearch }) => {
+const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
   return (
     <>
-      <div className=" mx-auto flex w-[100%] max-w-[1640px] items-center justify-between px-2  py-3 md:justify-start md:px-4 md:py-4">
-        <div className="flex items-center gap-x-2 md:hidden">
+      <div className="mx-auto  flex w-[100%] max-w-[1640px] items-center justify-between  px-2  py-3 md:justify-start md:px-4 md:py-4">
+        <div className="flex  items-center gap-x-2 md:hidden">
           <CgMenuLeft
             size={22}
             onClick={() => {
@@ -21,7 +21,6 @@ const Header = ({ setIsNavbar, setIsSearch }) => {
             size={22}
             onClick={() => {
               setIsSearch(true);
-              console.log("object");
             }}
           />
         </div>
@@ -143,7 +142,13 @@ const Header = ({ setIsNavbar, setIsSearch }) => {
           </li>
         </ul>
         <div className="flex  items-center gap-x-3 md:ml-auto">
-          <IoSearch size={22} className="hidden  md:block" />
+          <IoSearch
+            size={22}
+            className="hidden  md:block"
+            onClick={() => {
+              setIsSearch(true);
+            }}
+          />
           <IoPersonOutline size={20} />
           <FaRegHeart size={20} />
           <FiShoppingBag size={20} />

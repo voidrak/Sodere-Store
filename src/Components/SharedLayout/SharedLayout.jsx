@@ -9,7 +9,11 @@ const SharedLayout = () => {
   const [isSearch, setIsSearch] = useState(false);
   return (
     <div>
-      <Header setIsNavbar={setIsNavbar} setIsSearch={setIsSearch} />
+      <Header
+        setIsNavbar={setIsNavbar}
+        setIsSearch={setIsSearch}
+        isSearch={isSearch}
+      />
       <Navbar isNavbar={isNavbar} setIsNavbar={setIsNavbar} />
       <SearchSection isSearch={isSearch} setIsSearch={setIsSearch} />
       <Outlet />
