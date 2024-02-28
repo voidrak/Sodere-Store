@@ -1,8 +1,11 @@
 import React from "react";
-import LandingImage1 from "/home_page_image_1.png";
-import LandingImage from "/home_page_image_2.png";
+import HomeLanding from "../Components/HomePage/HomeLanding";
 const HomePage = () => {
-  return <div className="relative -z-10  "></div>;
+  return (
+    <div className="">
+      <HomeLanding />
+    </div>
+  );
 };
 
 export default HomePage;
