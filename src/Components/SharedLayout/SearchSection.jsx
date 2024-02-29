@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 const SearchSection = ({ setIsSearch, isSearch }) => {
   return (
     <div
-      className={` left-0 top-0    h-[calc(100vh-56px)] w-[100%] flex-col items-center bg-white py-5 transition-all duration-500 ease-in-out  ${isSearch ? "absolute flex" : "mt-[-90vh] "}`}
+      className={` absolute left-0 top-0  z-[9999] flex h-[calc(100vh-56px)]  w-[100%] flex-col items-center bg-white py-5 transition-all duration-500 ease-in-out  ${isSearch ? " " : "h-0 translate-y-[-110vh] "}`}
     >
       <div className="ml-[calc(100%-50px)]">
         <IoCloseSharp
