@@ -9,7 +9,7 @@ import { FiShoppingBag } from "react-icons/fi";
 const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
   return (
     <>
-      <div className="mx-auto  flex w-[100%] max-w-[1640px] items-center justify-between  px-2  py-3 md:justify-start md:px-4 md:py-4">
+      <div className="mx-auto flex w-[100%] max-w-[1640px] items-center justify-between   px-2  py-3 md:justify-start md:px-4 md:py-4 min-[1440px]:py-6">
         <div className="flex  items-center gap-x-2 md:hidden">
           <CgMenuLeft
             size={22}
@@ -38,14 +38,15 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
 
         <ul className=" ] relative ml-8  hidden   gap-x-4 text-lg  before:absolute before:left-[-20px] before:top-1 before:h-[20px] before:w-[1px] before:bg-gray-500 md:flex">
           <li
-            className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] "
+            className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] "
             to="/"
           >
             <Link>Home</Link>
           </li>
-          <li className="duration-900 group relative  font-bold text-gray-700  after:block after:h-[2px] after:w-[0%] after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] ">
-            <Link to="/">Categories</Link>
-            <ul className=" absolute left-[-200px] top-[-500px] grid w-[700px] grid-cols-3  gap-x-4 gap-y-2 bg-white p-3 font-normal  transition-all duration-200 ease-in-out *:text-[15px] group-hover:top-[50px] lg:*:text-[18px] ">
+          <li className=" group relative  font-bold text-gray-700  after:block after:h-[2px] after:w-[0%] after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] ">
+            <Link to="/"> Categories</Link>
+
+            <div className=" absolute left-[-200px] top-[-500px] z-10 grid w-[700px]  grid-cols-3 gap-x-4 gap-y-2 bg-white p-3  font-normal transition-all duration-500 ease-in-out *:text-[15px] group-hover:top-[50px] lg:*:text-[18px] ">
               <li>
                 <Link
                   to=""
@@ -126,16 +127,16 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
                   Furniture <FaChevronCircleRight />
                 </Link>
               </li>
-            </ul>
+            </div>
           </li>
           <li
-            className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] "
+            className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] "
             to="/"
           >
             <Link>Shop</Link>
           </li>
           <li
-            className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] "
+            className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] "
             to="/"
           >
             <Link>Contact Us</Link>
@@ -144,14 +145,23 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
         <div className="flex  items-center gap-x-3 md:ml-auto">
           <IoSearch
             size={22}
-            className="hidden  md:block"
+            className=" hidden hover:scale-110  md:block lg:size-[25px] min-[1440px]:size-[30px]"
             onClick={() => {
               setIsSearch(true);
             }}
           />
-          <IoPersonOutline size={20} />
-          <FaRegHeart size={20} />
-          <FiShoppingBag size={20} />
+          <IoPersonOutline
+            size={20}
+            className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
+          />
+          <FaRegHeart
+            size={20}
+            className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
+          />
+          <FiShoppingBag
+            size={20}
+            className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
+          />
         </div>
       </div>
     </>
