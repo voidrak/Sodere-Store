@@ -9,12 +9,12 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
   const [isPages, setIsPages] = useState(false);
   return (
     <div
-      className={`absolute top-0 left-0 bg-white  w-[320px] min-h-[100vh] transition-all ease-in-out duration-500 ${
+      className={`absolute left-0 top-0 z-[9999] min-h-[100vh]  w-[320px] bg-white transition-all duration-500 ease-in-out ${
         !isNavbar ? "ml-[-100%]" : ""
       }`}
     >
-      <div className="bg-black w-[100%] flex justify-between py-3 px-4">
-        <h1 className="text-white text-xl ">Menu</h1>
+      <div className="flex w-[100%] justify-between bg-black px-4 py-3">
+        <h1 className="text-xl text-white ">Menu</h1>
         <IoCloseSharp
           color="white"
           size={30}
@@ -24,28 +24,28 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
         />
       </div>
       <ul className="py-3 pb-[60px]">
-        <li className=" py-[20px] border-b-2 border-gray-100 flex items-center px-4">
+        <li className=" flex items-center border-b-2 border-gray-100 px-4 py-[20px]">
           <Link to="/">
             <h1 className="font-semibold">HOME</h1>
           </Link>
         </li>
-        <li className=" py-[20px] border-b-2 border-gray-100 flex items-center px-4">
+        <li className=" flex items-center border-b-2 border-gray-100 px-4 py-[20px]">
           <Link to="/">
             <h1 className="font-semibold">WISHLIST</h1>
           </Link>
         </li>
-        <li className=" py-[20px] border-b-2 border-gray-100 flex items-center px-4">
+        <li className=" flex items-center border-b-2 border-gray-100 px-4 py-[20px]">
           <Link to="/">
             <h1 className="font-semibold">SALE</h1>
           </Link>
         </li>
-        <li className=" py-[20px] border-b-2 border-gray-100 flex items-center px-4">
+        <li className=" flex items-center border-b-2 border-gray-100 px-4 py-[20px]">
           <Link to="/">
             <h1 className="font-semibold">SHOP</h1>
           </Link>
         </li>
 
-        <li className=" py-[20px] border-b-2 border-gray-100  grid px-4 ">
+        <li className=" grid border-b-2 border-gray-100  px-4 py-[20px] ">
           <div className="flex  items-center justify-between">
             <h1 className="font-semibold">CATEGORIES</h1>
             <div
@@ -86,7 +86,7 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
           </ul>
         </li>
 
-        <li className=" py-[20px] border-b-2 border-gray-100  grid px-4 ">
+        <li className=" grid border-b-2 border-gray-100  px-4 py-[20px] ">
           <div className="flex  items-center justify-between">
             <h1 className="font-semibold">PAGES</h1>
             <div
