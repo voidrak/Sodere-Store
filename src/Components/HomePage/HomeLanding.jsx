@@ -1,11 +1,12 @@
 import React from "react";
 import LandingImage1 from "/home_page_image_1.png";
 import LandingImage2 from "/home_page_image_2.png";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 const HomeLanding = () => {
   return (
     <div className="bg-slate-200">
-      <div className=" relative mx-auto flex  h-[90vh]  items-center   px-4 min-[576px]:px-8  sm:w-[85vw] lg:max-w-[945px] xl:max-w-[1150px] min-[1440px]:max-w-[1325px] ">
+      <div className=" bg-fuhsia-200 relative mx-auto flex h-[90vh]  items-center   px-4 min-[576px]:px-8  sm:w-[85vw] lg:max-w-[945px] xl:max-w-[1150px] min-[1440px]:max-w-[1325px] min-[1800px]:max-w-[1440px]">
         <div className="absolute z-[1] max-w-[300px] min-[576px]:max-w-[350px] md:translate-y-[-50px]  min-[930px]:translate-y-[0px] min-[931px]:max-w-[450px] min-[1440px]:max-w-[600px] min-[1440px]:translate-x-[100px]  ">
           <p className="text-nowrap  font-ROBOTO font-semibold min-[481px]:text-[18px] xl:text-[22px]  ">
             Best of Price $128.21
@@ -27,9 +28,37 @@ const HomeLanding = () => {
           <img
             src={LandingImage1}
             alt="Girl with Traditional Ethiopian Cloth"
-            className="ml-auto hidden w-[550px]  translate-x-[50px] md:block lg:w-[600px] min-[1600px]:w-[700px] min-[1700px]:w-[750px]   "
+            className="ml-auto hidden w-[550px]  translate-x-[50px] md:block lg:w-[600px] min-[1600px]:w-[650px] min-[1700px]:w-[680px] min-[1800px]:w-[750px]   "
           />
         </div>
+      </div>
+      <div className="absolute left-0 top-[30%] ml-10  ">
+        <ul className=" flex flex-col gap-y-6">
+          <li className="flex flex-col items-center gap-y-3">
+            <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">
+              Facebook
+            </p>{" "}
+            <FaFacebook />
+          </li>
+          <li className="flex flex-col items-center gap-y-3">
+            <p className=" rotate-180 text-[16px] font-[700] [writing-mode:vertical-lr] ">
+              Linkedin
+            </p>
+            <FaLinkedin />
+          </li>
+          <li className="flex flex-col items-center gap-y-3">
+            <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">
+              Twitter
+            </p>{" "}
+            <FaSquareXTwitter />
+          </li>
+          <li className="flex flex-col items-center gap-y-3">
+            <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">
+              Instagram
+            </p>{" "}
+            <FaInstagramSquare />
+          </li>
+        </ul>
       </div>
     </div>
   );
