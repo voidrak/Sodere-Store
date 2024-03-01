@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 const SearchSection = ({ setIsSearch, isSearch }) => {
   return (
     <div
-      className={` absolute left-0 top-0  z-[9999] flex h-[calc(100vh-56px)]  w-[100%] flex-col items-center bg-white py-5 transition-all duration-500 ease-in-out  ${isSearch ? " " : "h-0 translate-y-[-110vh] "}`}
+      className={` absolute left-0 top-0  z-[9999] flex h-[calc(100vh-56px)]  w-[100%] flex-col items-center bg-white py-5 transition-all duration-500 ease-in-out  ${isSearch ? " " : "h-0 translate-y-[-110vh]  "}`}
     >
       <div className="ml-[calc(100%-50px)]">
         <IoCloseSharp
@@ -15,12 +15,12 @@ const SearchSection = ({ setIsSearch, isSearch }) => {
           }}
         />
       </div>
-      <h1 className="mt-4 w-[85%] text-center text-[29px] font-semibold">
+      <h1 className="mt-4 w-[85%] text-center text-[29px] font-semibold md:text-[31px] lg:text-[34px] xl:text-[38px]">
         What are you looking for ?
       </h1>
-      <div className="relative">
+      <div className="relative lg:mt-[15px]">
         <input
-          className="mt-4 block w-[90vw] rounded-full border border-black px-[38px]  py-[10px] shadow-sm placeholder:text-lg placeholder:italic placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
+          className="text-x mt-4 block w-[90vw] rounded-full border border-black px-[38px]  py-[10px] shadow-sm placeholder:text-lg placeholder:italic placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:py-[15px] sm:text-sm md:w-[60vw] min-[1200px]:w-[45vw] "
           placeholder="Search for anything..."
           type="text"
           name="search"

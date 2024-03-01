@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ProductContextProvider } from "./contexts/ProductContext";
 import SharedLayout from "./Components/SharedLayout/SharedLayout";
 import HomePage from "./Pages/HomePage";
 import ContactUsPage from "./Pages/ContactUsPage";
@@ -11,7 +12,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div>
+    <ProductContextProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
@@ -24,7 +25,7 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
+    </ProductContextProvider>
   );
 };
 

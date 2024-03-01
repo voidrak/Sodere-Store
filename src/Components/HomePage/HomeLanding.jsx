@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import LandingImage1 from "/home_page_image_1.png";
 import LandingImage2 from "/home_page_image_2.png";
 import { FaArrowRight, FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
+import { ProductContext } from "../../contexts/ProductContext";
 const HomeLanding = () => {
+  const { ProductData } = useContext(ProductContext);
+
   return (
     <div className="bg-slate-200">
       <div className=" bg-fuhsia-200 relative mx-auto flex h-[90vh]  items-center   px-4 min-[576px]:px-8  sm:w-[85vw] lg:max-w-[945px] xl:max-w-[1150px] min-[1440px]:max-w-[1325px] min-[1800px]:max-w-[1440px]">
@@ -14,7 +17,12 @@ const HomeLanding = () => {
           <h1 className=" mt-5 font-ROBOTO text-[2rem] font-bold leading-9 min-[576px]:text-[2.2rem] min-[930px]:text-[2.7rem] min-[930px]:font-extrabold min-[930px]:leading-10 xl:text-[3rem] xl:leading-[2.9rem] min-[1440px]:text-[4rem] min-[1440px]:leading-[3.5rem] ">
             Ethiopian Traditional Long Dress
           </h1>
-          <button className="mt-8 flex items-center justify-center gap-x-4 border-none bg-black p-4 py-[20px] text-[15px] text-white outline-none hover:scale-105 min-[425px]:w-[206px] min-[930px]:text-[18px]">
+          <button
+            className="mt-8 flex items-center justify-center gap-x-4 border-none bg-black p-4 py-[20px] text-[15px] text-white outline-none transition-all duration-300 ease-in-out hover:scale-105 min-[425px]:w-[206px] min-[930px]:text-[18px]"
+            onClick={() => {
+              console.log(ProductData[0]);
+            }}
+          >
             EXPLORE MORE <FaArrowRight />
           </button>
         </div>
@@ -32,7 +40,7 @@ const HomeLanding = () => {
           />
         </div>
       </div>
-      <div className="absolute left-0 top-[30%] ml-10  ">
+      <div className="absolute left-0 top-[30%] ml-10 hidden min-[1440px]:block ">
         <ul className=" flex flex-col gap-y-6">
           <li className="flex flex-col items-center gap-y-3">
             <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">

@@ -37,19 +37,15 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
         </Link>
 
         <ul className=" ] relative ml-8  hidden   gap-x-4 text-lg  before:absolute before:left-[-20px] before:top-1 before:h-[20px] before:w-[1px] before:bg-gray-500 md:flex">
-          <li
-            className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] "
-            to="/"
-          >
-            <Link>Home</Link>
+          <li className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] ">
+            <Link to="/">Home</Link>
           </li>
-          <li className=" group relative  font-bold text-gray-700  after:block after:h-[2px] after:w-[0%] after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] ">
-            <Link to="/"> Categories</Link>
-
+          <div className=" group relative  font-bold text-gray-700  after:block after:h-[2px] after:w-[0%] after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] ">
+            Categories
             <div className=" absolute left-[-200px] top-[-500px] z-10 grid w-[700px]  grid-cols-3 gap-x-4 gap-y-2 bg-white p-3  font-normal transition-all duration-500 ease-in-out *:text-[15px] group-hover:top-[50px] lg:*:text-[18px] ">
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Holiday and Seasonal <FaChevronCircleRight />
@@ -57,7 +53,7 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Books <FaChevronCircleRight />
@@ -65,7 +61,7 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Clothing and Shoes <FaChevronCircleRight />
@@ -73,7 +69,7 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Grocery <FaChevronCircleRight />
@@ -81,7 +77,7 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Food <FaChevronCircleRight />
@@ -89,7 +85,7 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Jewelry and Watches <FaChevronCircleRight />
@@ -97,7 +93,7 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Home and Kitchen <FaChevronCircleRight />
@@ -105,7 +101,7 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Electronics <FaChevronCircleRight />
@@ -113,7 +109,7 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Toys and Kids <FaChevronCircleRight />
@@ -121,14 +117,14 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/categories"
                   className="flex items-center justify-between hover:font-semibold "
                 >
                   Furniture <FaChevronCircleRight />
                 </Link>
               </li>
             </div>
-          </li>
+          </div>
           <li
             className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] "
             to="/"
