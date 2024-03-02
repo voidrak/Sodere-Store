@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ProductContext } from "../contexts/ProductContext";
-import CategoriesSection from "../Components/HomePage/CategoriesSection";
+import CategoriesSection from "../Components/CategoryPage/CategoriesSection";
 
 const CategoriesPage = () => {
   return (

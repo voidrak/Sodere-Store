@@ -13,7 +13,7 @@ import {
 } from "./command";
 import { Popover, PopoverContent, PopoverTrigger } from "./popover";
 import { ProductContext } from "@/contexts/ProductContext";
-import { CiFilter } from "react-icons/ci";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 export function ComboboxDemo() {
   const [open, setOpen] = React.useState(false);
@@ -38,7 +38,7 @@ export function ComboboxDemo() {
             ? categoriesOption.find((category) => category.value === value)
                 ?.label
             : "Filter by category"}
-          <CiFilter className="" size={20} color="white" />
+          <MdOutlineKeyboardArrowDown className="" size={20} color="white" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">

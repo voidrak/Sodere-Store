@@ -4,8 +4,9 @@ import LandingImage2 from "/home_page_image_2.png";
 import { FaArrowRight, FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { ProductContext } from "../../contexts/ProductContext";
+import { Link } from "react-router-dom";
 const HomeLanding = () => {
-  const { ProductData } = useContext(ProductContext);
+  const { ProductData, setCurrentCategory } = useContext(ProductContext);
 
   return (
     <div className="bg-slate-200">
@@ -17,14 +18,16 @@ const HomeLanding = () => {
           <h1 className=" mt-5 font-ROBOTO text-[2rem] font-bold leading-9 min-[576px]:text-[2.2rem] min-[930px]:text-[2.7rem] min-[930px]:font-extrabold min-[930px]:leading-10 xl:text-[3rem] xl:leading-[2.9rem] min-[1440px]:text-[4rem] min-[1440px]:leading-[3.5rem] ">
             Ethiopian Traditional Long Dress
           </h1>
-          <button
-            className="mt-8 flex items-center justify-center gap-x-4 border-none bg-black p-4 py-[20px] text-[15px] text-white outline-none transition-all duration-300 ease-in-out hover:scale-105 min-[425px]:w-[206px] min-[930px]:text-[18px]"
-            onClick={() => {
-              console.log(ProductData[0]);
-            }}
-          >
-            EXPLORE MORE <FaArrowRight />
-          </button>
+          <Link to="categories">
+            <button
+              className="mt-8 flex items-center justify-center gap-x-4 border-none bg-black p-4 py-[20px] text-[15px] text-white outline-none transition-all duration-300 ease-in-out hover:scale-105 min-[425px]:w-[206px] min-[930px]:text-[18px]"
+              onClick={() => {
+                setCurrentCategory("Clothing");
+              }}
+            >
+              EXPLORE MORE <FaArrowRight />
+            </button>
+          </Link>
         </div>
 
         <div className="relative  -z-[0] ml-auto flex  justify-start ">
