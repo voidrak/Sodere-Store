@@ -12,11 +12,13 @@ const CategoriesSection = () => {
   const [categoryList, setCategoryList] = useState(productData);
 
   useEffect(() => {
-    if (currentCategory != "all") {
+    if (currentCategory != "All") {
       const filteredCategoryList = productData.filter((val) => {
         return val.category[0] === currentCategory;
       });
       setCategoryList(filteredCategoryList);
+    } else {
+      setCategoryList(productData);
     }
   }, [currentCategory]);
 

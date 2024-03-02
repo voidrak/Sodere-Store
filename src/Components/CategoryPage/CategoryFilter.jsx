@@ -12,11 +12,12 @@ import {
 } from "../ui/select";
 const CategoryFilter = () => {
   const { currentCategory } = useContext(ProductContext);
+  //   const {optionValue,s}
 
   return (
     <div className="mt-4 flex flex-col  items-center gap-y-4">
       <ComboboxDemo />
-      <Select onValueChange={() => console.log("object")}>
+      <Select onValueChange={() => console.log("value")}>
         <SelectTrigger className="w-[180px]">
           <SelectValue placeholder="Sort By" />
         </SelectTrigger>
