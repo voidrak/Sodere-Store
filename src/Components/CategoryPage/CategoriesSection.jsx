@@ -2,7 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ProductContext } from "../../contexts/ProductContext";
 import { TbMathGreater } from "react-icons/tb";
-import { ComboboxDemo } from "../ui/combobox";
+
+import CategoryFilter from "./CategoryFilter";
+import CategoryProductList from "./CategoryProductList";
 
 const CategoriesSection = () => {
   const { productData, categories, setCurrentCategory, currentCategory } =
@@ -38,7 +40,8 @@ const CategoriesSection = () => {
             <p className="font-bold">{currentCategory}</p>
           </div>
         </div>
-        <ComboboxDemo />
+        <CategoryFilter />
+        <CategoryProductList />
       </div>
     </div>
   );

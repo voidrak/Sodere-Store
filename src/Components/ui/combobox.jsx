@@ -18,7 +18,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 export function ComboboxDemo() {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
-  const { categories } = React.useContext(ProductContext);
+  const { categories, setCurrentCategory } = React.useContext(ProductContext);
   const allCategories = ["ALL", ...categories];
   const categoriesOption = allCategories.map((item) => ({
     label: item,
@@ -55,6 +55,7 @@ export function ComboboxDemo() {
                   setValue(currentValue === value ? "" : currentValue);
                   setOpen(false);
                   console.log(category.label);
+                  setCurrentCategory(category.label);
                 }}
               >
                 {category.label}
