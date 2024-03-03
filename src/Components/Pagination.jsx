@@ -1,73 +1,70 @@
 import React from "react";
 
-const Pagination = ({postPerPage,}) => {
+const Pagination = ({
+  postPerPage,
+  totalPost,
+  currentPage,
+  setCurrentPage,
+}) => {
   const pages = [];
 
-   for( let i=0;i<Math.ceil(totalPost / postPerPage))
+  const handlePrev = () => {
+    if (currentPage === 1) {
+      setCurrentPage(1);
+    } else {
+      setCurrentPage((prev) => prev - 1);
+    }
+  };
+  const handleNext = () => {
+    if (currentPage === Math.ceil(totalPost / postPerPage)) {
+      setCurrentPage(Math.ceil(totalPost / postPerPage));
+    } else {
+      setCurrentPage((prev) => prev + 1);
+    }
+  };
+
+  for (let i = 1; i <= Math.ceil(totalPost / postPerPage); i++) {
+    pages.push(i);
+  }
+
+  const mappedPages = pages.map((page) => (
+    <li key={page}>
+      <button
+        onClick={() => {
+          setCurrentPage(page);
+        }}
+        className={`flex h-10 items-center justify-center border border-gray-300 bg-white px-4 leading-tight text-gray-500 hover:bg-black hover:text-white  
+         ${page === currentPage ? "bg-[#5394b9] text-white" : ""} ${(page > 3 && page > currentPage + 2) || page < currentPage ? "hidden" : ""} `}
+      >
+        {page}
+      </button>
+    </li>
+  ));
   return (
-    <div>
-      <nav aria-label="Page navigation example">
-        <ul className="inline-flex h-10 -space-x-px text-base">
-          <li>
-            <a
-              href="#"
-              className="ms-0 flex h-10 items-center justify-center rounded-s-lg border border-e-0 border-gray-300 bg-white px-4 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-            >
-              Previous
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="flex h-10 items-center justify-center border border-gray-300 bg-white px-4 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-            >
-              1
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="flex h-10 items-center justify-center border border-gray-300 bg-white px-4 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-            >
-              2
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              aria-current="page"
-              className="flex h-10 items-center justify-center border border-gray-300 bg-blue-50 px-4 text-blue-600 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
-            >
-              3
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="flex h-10 items-center justify-center border border-gray-300 bg-white px-4 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-            >
-              4
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="flex h-10 items-center justify-center border border-gray-300 bg-white px-4 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-            >
-              5
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="flex h-10 items-center justify-center rounded-e-lg border border-gray-300 bg-white px-4 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-            >
-              Next
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav
+      aria-label="Page navigation example"
+      className="my-8 flex justify-center"
+    >
+      <ul className="flex h-10 justify-center  text-base">
+        <li>
+          <button
+            onClick={handlePrev}
+            className="  flex h-10 items-center justify-center rounded-s-lg border border-e-0 border-gray-300 bg-white px-4 text-[12px] leading-tight text-gray-500 hover:bg-black hover:text-white  md:text-base  "
+          >
+            Previous
+          </button>
+        </li>
+        {mappedPages}
+        <li>
+          <button
+            onClick={handleNext}
+            className=" flex h-10 items-center justify-center rounded-e-lg border border-gray-300 bg-white px-4 text-[12px] leading-tight text-gray-500 hover:bg-black  hover:text-white md:text-base "
+          >
+            Next
+          </button>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

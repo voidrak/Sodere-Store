@@ -5,9 +5,13 @@ import { IoEyeOutline } from "react-icons/io5";
 import { FiShoppingBag } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 import { IoMdAdd } from "react-icons/io";
-const CategoryProductList = ({ postPerPage, currentPage }) => {
+const CategoryProductList = ({
+  postPerPage,
+  currentPage,
+  categoryMainList,
+  setCategoryMainList,
+}) => {
   const { productData, currentCategory } = useContext(ProductContext);
-  const [categoryMainList, setCategoryMainList] = useState(productData);
 
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
@@ -50,7 +54,7 @@ const CategoryProductList = ({ postPerPage, currentPage }) => {
         <h1 className="mt-2 text-center font-semibold">
           {product.itemNameEnglish}
         </h1>
-        <p className="mb-2">${product.price}</p>
+        <p className="mb-2">${product.id}</p>
       </div>
       {/* <div className=" hidden translate-y-[80px]  bg-white pt-2 transition-all duration-500 ease-in-out group-hover:translate-y-[-50px] ">
         <div className="flex w-[100%] justify-evenly ">

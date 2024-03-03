@@ -1597,7 +1597,7 @@ const ProductData = [
     category: ["Toys, Kids, Baby"],
     popular: false,
     review: 4.8,
-    imgSrc: "Product_Image/3iM2Sx.jpg",
+    imgSrc: "Product_Image/3iM2Sx.jpeg",
     id: "3iM2Sx",
   },
   {
@@ -1607,7 +1607,7 @@ const ProductData = [
     category: ["Toys, Kids, Baby"],
     popular: false,
     review: 4.8,
-    imgSrc: "Product_Image/DAsZzi.jpg",
+    imgSrc: "Product_Image/DAsZzi.jpeg",
     id: "DAsZzi",
   },
   {

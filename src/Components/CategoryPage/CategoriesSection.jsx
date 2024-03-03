@@ -9,24 +9,13 @@ import CategoryProductList from "./CategoryProductList";
 const CategoriesSection = () => {
   const { productData, categories, setCurrentCategory, currentCategory } =
     useContext(ProductContext);
-  const [categoryList, setCategoryList] = useState(productData);
+  const [categoryMainList, setCategoryMainList] = useState(productData);
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(10);
 
   useEffect(() => {
-    if (currentCategory != "All") {
-      const filteredCategoryList = productData.filter((val) => {
-        return val.category[0] === currentCategory;
-      });
-      setCategoryList(filteredCategoryList);
-    } else {
-      setCategoryList(productData);
-    }
-  }, [currentCategory]);
-
-  const mappedCategory = categoryList.map((item) => (
-    <h1 key={item.id}>{item.itemNameEnglish}</h1>
-  ));
+    setCurrentPage(1);
+  }, [categoryMainList]);
 
   return (
     <div className="">
@@ -48,13 +37,15 @@ const CategoriesSection = () => {
         <CategoryProductList
           postPerPage={postPerPage}
           currentPage={currentPage}
+          categoryMainList={categoryMainList}
+          setCategoryMainList={setCategoryMainList}
         />
         <Pagination
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
           postPerPage={postPerPage}
           setPostPerPage={setPostPerPage}
-          totalPost={}
+          totalPost={categoryMainList.length}
         />
       </div>
     </div>
