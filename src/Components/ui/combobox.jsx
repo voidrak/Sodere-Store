@@ -43,9 +43,6 @@ export function ComboboxDemo() {
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <Command>
-          <CommandInput placeholder="Search category..." />
-          <CommandEmpty>No Category Found</CommandEmpty>
-
           <CommandGroup>
             {categoriesOption.map((category) => (
               <CommandItem

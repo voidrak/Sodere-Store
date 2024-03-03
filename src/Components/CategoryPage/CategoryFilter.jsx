@@ -15,9 +15,13 @@ const CategoryFilter = () => {
   //   const {optionValue,s}
 
   return (
-    <div className="mt-4 flex flex-col  items-center gap-y-4">
+    <div className="mt-4 flex flex-col items-center gap-y-4 md:flex-row md:justify-around">
       <ComboboxDemo />
-      <Select onValueChange={() => console.log("value")}>
+      <Select
+        onValueChange={() => {
+          console.log("object");
+        }}
+      >
         <SelectTrigger className="w-[180px]">
           <SelectValue placeholder="Sort By" />
         </SelectTrigger>

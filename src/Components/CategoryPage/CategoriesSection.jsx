@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ProductContext } from "../../contexts/ProductContext";
 import { TbMathGreater } from "react-icons/tb";
-
+import Pagination from "../Pagination";
 import CategoryFilter from "./CategoryFilter";
 import CategoryProductList from "./CategoryProductList";
 
@@ -10,6 +10,8 @@ const CategoriesSection = () => {
   const { productData, categories, setCurrentCategory, currentCategory } =
     useContext(ProductContext);
   const [categoryList, setCategoryList] = useState(productData);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPostPerPage] = useState(10);
 
   useEffect(() => {
     if (currentCategory != "All") {
@@ -43,7 +45,17 @@ const CategoriesSection = () => {
           </div>
         </div>
         <CategoryFilter />
-        <CategoryProductList />
+        <CategoryProductList
+          postPerPage={postPerPage}
+          currentPage={currentPage}
+        />
+        <Pagination
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+          postPerPage={postPerPage}
+          setPostPerPage={setPostPerPage}
+          totalPost={}
+        />
       </div>
     </div>
   );
