@@ -13,6 +13,29 @@ const CategoriesSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(10);
 
+  //
+  //
+  //  take the below function to categoryProductList
+  //
+  //
+  const handleCategorySort = (value) => {
+    switch (value) {
+      case "default":
+        {
+          setCategoryMainList(productData);
+          console.log("default");
+        }
+        break;
+      case "toHigh": {
+        const sortedCategory = categoryMainList.sort(
+          (a, b) => a.price - b.price,
+        );
+        setCategoryMainList(sortedCategory);
+        console.log("toHigh");
+      }
+    }
+  };
+
   useEffect(() => {
     setCurrentPage(1);
   }, [categoryMainList]);
@@ -26,19 +49,19 @@ const CategoriesSection = () => {
           </h1>
           <div className="flex items-center justify-center gap-x-2 ">
             <p className="">
-              {" "}
               <Link to="/">Home</Link>
             </p>
             <TbMathGreater size={13} />
             <p className="font-bold">{currentCategory}</p>
           </div>
         </div>
-        <CategoryFilter />
+        <CategoryFilter handleCategorySort={handleCategorySort} />
         <CategoryProductList
           postPerPage={postPerPage}
           currentPage={currentPage}
           categoryMainList={categoryMainList}
           setCategoryMainList={setCategoryMainList}
+          handleCategorySort={handleCategorySort}
         />
         <Pagination
           setCurrentPage={setCurrentPage}

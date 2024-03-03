@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ProductContext } from "../../contexts/ProductContext";
 import { ComboboxDemo } from "../ui/combobox";
 import {
@@ -10,16 +10,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
-const CategoryFilter = () => {
-  const { currentCategory } = useContext(ProductContext);
-  //   const {optionValue,s}
 
+const CategoryFilter = ({ handleCategorySort }) => {
   return (
     <div className="mt-4 flex flex-col items-center gap-y-4 md:flex-row md:justify-around">
       <ComboboxDemo />
       <Select
-        onValueChange={() => {
-          console.log("object");
+        onValueChange={(e) => {
+          handleCategorySort(e);
         }}
       >
         <SelectTrigger className="w-[180px]">
@@ -28,11 +26,11 @@ const CategoryFilter = () => {
         <SelectContent>
           <SelectGroup>
             <SelectLabel>Sort BY</SelectLabel>
-            <SelectItem value="Popular">Popular</SelectItem>
-            <SelectItem value="alphabetToLow">A-Z</SelectItem>
-            <SelectItem value="alphabetToHigh">Z-A</SelectItem>
-            <SelectItem value="priceToHigh">Price, low to high</SelectItem>
-            <SelectItem value="priceToLow">Price, high to low</SelectItem>
+            <SelectItem value="default">Default</SelectItem>
+            <SelectItem value="AZ">A-Z</SelectItem>
+            <SelectItem value="ZA">Z-A</SelectItem>
+            <SelectItem value="toHigh">Price, low to high</SelectItem>
+            <SelectItem value="toLow">Price, high to low</SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>
