@@ -11,14 +11,15 @@ import {
   SelectValue,
 } from "../ui/select";
 
-const CategoryFilter = ({ handleCategorySort }) => {
+const CategoryFilter = ({ SetSortOptionValue, sortOptionValue }) => {
   return (
     <div className="mt-4 flex flex-col items-center gap-y-4 md:flex-row md:justify-around">
       <ComboboxDemo />
       <Select
         onValueChange={(e) => {
-          handleCategorySort(e);
+          SetSortOptionValue(e);
         }}
+        value={sortOptionValue}
       >
         <SelectTrigger className="w-[180px]">
           <SelectValue placeholder="Sort By" />

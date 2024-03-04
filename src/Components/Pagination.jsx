@@ -9,16 +9,13 @@ const Pagination = ({
   const pages = [];
 
   const handlePrev = () => {
-    if (currentPage === 1) {
-      setCurrentPage(1);
-    } else {
+    if (currentPage > 1) {
+      // setCurrentPage(1);
       setCurrentPage((prev) => prev - 1);
     }
   };
   const handleNext = () => {
-    if (currentPage === Math.ceil(totalPost / postPerPage)) {
-      setCurrentPage(Math.ceil(totalPost / postPerPage));
-    } else {
+    if (currentPage < Math.ceil(totalPost / postPerPage)) {
       setCurrentPage((prev) => prev + 1);
     }
   };
@@ -34,7 +31,7 @@ const Pagination = ({
           setCurrentPage(page);
         }}
         className={`flex h-10 items-center justify-center border border-gray-300 bg-white px-4 leading-tight text-gray-500 hover:bg-black hover:text-white  
-         ${page === currentPage ? "bg-[#5394b9] text-white" : ""} ${(page > 3 && page > currentPage + 2) || page < currentPage ? "hidden" : ""} `}
+         ${page === currentPage ? "bg-[#518eb2] text-white" : ""} ${page > currentPage + 2 || page < currentPage - 1 ? "hidden" : ""} `}
       >
         {page}
       </button>

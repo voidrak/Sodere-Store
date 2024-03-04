@@ -12,29 +12,7 @@ const CategoriesSection = () => {
   const [categoryMainList, setCategoryMainList] = useState(productData);
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(10);
-
-  //
-  //
-  //  take the below function to categoryProductList
-  //
-  //
-  const handleCategorySort = (value) => {
-    switch (value) {
-      case "default":
-        {
-          setCategoryMainList(productData);
-          console.log("default");
-        }
-        break;
-      case "toHigh": {
-        const sortedCategory = categoryMainList.sort(
-          (a, b) => a.price - b.price,
-        );
-        setCategoryMainList(sortedCategory);
-        console.log("toHigh");
-      }
-    }
-  };
+  const [sortOptionValue, SetSortOptionValue] = useState("");
 
   useEffect(() => {
     setCurrentPage(1);
@@ -55,13 +33,16 @@ const CategoriesSection = () => {
             <p className="font-bold">{currentCategory}</p>
           </div>
         </div>
-        <CategoryFilter handleCategorySort={handleCategorySort} />
+        <CategoryFilter
+          SetSortOptionValue={SetSortOptionValue}
+          sortOptionValue={sortOptionValue}
+        />
         <CategoryProductList
           postPerPage={postPerPage}
           currentPage={currentPage}
           categoryMainList={categoryMainList}
           setCategoryMainList={setCategoryMainList}
-          handleCategorySort={handleCategorySort}
+          sortOptionValue={sortOptionValue}
         />
         <Pagination
           setCurrentPage={setCurrentPage}
