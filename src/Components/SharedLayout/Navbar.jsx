@@ -1,12 +1,30 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { IoMdAdd } from "react-icons/io";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { ProductContext } from "@/contexts/ProductContext";
 const Navbar = ({ setIsNavbar, isNavbar }) => {
   const [isCatagories, setIsCatagories] = useState(false);
   const [isPages, setIsPages] = useState(false);
+  const { setCurrentCategory, categories } = useContext(ProductContext);
+
+  const mappedSidebar = categories.map((category, index) => (
+    <li
+      className="py-2"
+      key={index}
+      onClick={() => {
+        setIsNavbar(false);
+        setCurrentCategory(category);
+      }}
+    >
+      <Link to="/categories">
+        <p className="">{category}</p>
+      </Link>
+    </li>
+  ));
+
   return (
     <div
       className={`absolute left-0 top-0 z-[9999] min-h-[100vh]  w-[320px] bg-white transition-all duration-500 ease-in-out ${
@@ -58,31 +76,7 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
             </div>
           </div>
           <ul className={`mt-2 pl-2 ${!isCatagories ? "hidden" : ""} `}>
-            <li className="py-2">
-              <Link to="/">
-                <p className="">Beauty and Cosmetics</p>
-              </Link>
-            </li>
-            <li className="py-2">
-              <Link to="/">
-                <p className="">Clothing</p>
-              </Link>
-            </li>
-            <li className="py-2">
-              <Link to="/">
-                <p className="">Grocery</p>
-              </Link>
-            </li>
-            <li className="py-2">
-              <Link to="/">
-                <p className="">Electronics</p>
-              </Link>
-            </li>
-            <li className="py-2">
-              <Link to="/">
-                <p className=""> Watches and Jewelry</p>
-              </Link>
-            </li>
+            {mappedSidebar}
           </ul>
         </li>
 

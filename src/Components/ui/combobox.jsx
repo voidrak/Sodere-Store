@@ -51,7 +51,7 @@ export function ComboboxDemo() {
                 onSelect={(currentValue) => {
                   setValue(currentValue === value ? "" : currentValue);
                   setOpen(false);
-                  console.log(category.label);
+
                   setCurrentCategory(category.label);
                 }}
               >

@@ -31,7 +31,7 @@ const Pagination = ({
           setCurrentPage(page);
         }}
         className={`flex h-10 items-center justify-center border border-gray-300 bg-white px-4 leading-tight text-gray-500 hover:bg-black hover:text-white  
-         ${page === currentPage ? "bg-[#518eb2] text-white" : ""} ${page > currentPage + 2 || page < currentPage - 1 ? "hidden" : ""} `}
+         ${page === currentPage ? "bg-[#4b84a5] text-white" : ""} ${page > currentPage + 2 || page < currentPage - 1 ? "hidden" : ""} `}
       >
         {page}
       </button>

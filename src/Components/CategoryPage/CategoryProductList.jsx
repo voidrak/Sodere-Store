@@ -65,12 +65,14 @@ const CategoryProductList = ({
           setSortedList(sortedCategory);
         }
         break;
-      case "toLow": {
-        const sortedCategory = [...categoryMainList].sort(
-          (a, b) => b.price - a.price,
-        );
-        setSortedList(sortedCategory);
-      }
+      case "toLow":
+        {
+          const sortedCategory = [...categoryMainList].sort(
+            (a, b) => b.price - a.price,
+          );
+          setSortedList(sortedCategory);
+        }
+        break;
       default:
         setSortedList(categoryMainList);
     }
