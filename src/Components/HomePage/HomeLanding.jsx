@@ -9,7 +9,7 @@ const HomeLanding = () => {
   const { ProductData, setCurrentCategory } = useContext(ProductContext);
 
   return (
-    <div className="bg-slate-200">
+    <div className="overflow-y-hidden bg-slate-200">
       <div className=" bg-fuhsia-200 relative mx-auto flex h-[90vh]  items-center   px-4 min-[576px]:px-8  sm:w-[85vw] lg:max-w-[945px] xl:max-w-[1150px] min-[1440px]:max-w-[1325px] min-[1800px]:max-w-[1440px]">
         <div className="absolute z-[1] max-w-[300px] min-[576px]:max-w-[350px] md:translate-y-[-50px]  min-[930px]:translate-y-[0px] min-[931px]:max-w-[450px] min-[1440px]:max-w-[600px] min-[1440px]:translate-x-[100px]  ">
           <p className="font-ROBOTO  text-nowrap font-semibold min-[481px]:text-[18px] xl:text-[22px]  ">
@@ -39,7 +39,7 @@ const HomeLanding = () => {
           <img
             src={LandingImage1}
             alt="Girl with Traditional Ethiopian Cloth"
-            className="ml-auto hidden w-[550px]  translate-x-[50px] md:block lg:w-[600px] min-[1600px]:w-[650px] min-[1700px]:w-[680px] min-[1800px]:w-[750px]   "
+            className="ml-auto hidden w-[550px]  translate-x-[50px] md:block lg:w-[550px] min-[1600px]:w-[620px] min-[1700px]:w-[640px] min-[1800px]:w-[700px]   "
           />
         </div>
       </div>

@@ -103,9 +103,15 @@ const CategoryProductList = ({
           </div>
         </div>
         <div className="flex flex-col items-center transition-all duration-300 ease-in-out  ">
-          <h1 className="mt-2 text-center font-semibold">
-            {product.itemNameEnglish}
-          </h1>
+          <div className="">
+            {" "}
+            <h1 className="mt-2 text-center font-semibold">
+              {product.itemNameEnglish}
+            </h1>
+            <h1 className="mt-2 text-center font-semibold">
+              {product.itemNameAmharic}
+            </h1>
+          </div>
           <p className="mb-2">${product.price}</p>
         </div>
         {/* <div className=" hidden translate-y-[80px]  bg-white pt-2 transition-all duration-500 ease-in-out group-hover:translate-y-[-50px] ">

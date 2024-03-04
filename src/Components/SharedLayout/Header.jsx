@@ -31,13 +31,13 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
       <div className="mx-auto flex w-[100%] max-w-[1640px] items-center justify-between   px-2  py-3 md:justify-start md:px-4 md:py-4 min-[1440px]:py-6">
         <div className="flex  items-center gap-x-2 md:hidden">
           <CgMenuLeft
-            size={22}
+            size={30}
             onClick={() => {
               setIsNavbar(true);
             }}
           />
           <IoSearch
-            size={22}
+            size={25}
             onClick={() => {
               setIsSearch(true);
             }}
@@ -89,15 +89,15 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
             }}
           />
           <IoPersonOutline
-            size={20}
+            size={22}
             className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
           />
           <FaRegHeart
-            size={20}
+            size={22}
             className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
           />
           <FiShoppingBag
-            size={20}
+            size={22}
             className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
           />
         </div>

@@ -74,8 +74,8 @@ const ProductData = [
     id: "faVzxD",
   },
   {
-    itemNameEnglish: "የገና ዛፍ",
-    itemNameAmharic: "Christmas Tree",
+    itemNameAmharic: "የገና ዛፍ",
+    itemNameEnglish: "Christmas Tree",
     price: 62.09,
     category: ["Holiday & Seasonal"],
     popular: false,
@@ -1629,6 +1629,16 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/chhaxW.jpg",
     id: "chhaxW",
+  },
+  {
+    itemNameEnglish: " Japanese Chef Knife ",
+    itemNameAmharic: "የጃፓን ሼፍ ቢላዋ",
+    price: 184.95,
+    category: ["Home & Kitchen"],
+    popular: false,
+    review: 4.7,
+    imgSrc: "Product_Image/QBLPbo.jpg",
+    id: "QBLPbo",
   },
 ];
 
