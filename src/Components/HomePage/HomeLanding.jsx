@@ -12,10 +12,10 @@ const HomeLanding = () => {
     <div className="bg-slate-200">
       <div className=" bg-fuhsia-200 relative mx-auto flex h-[90vh]  items-center   px-4 min-[576px]:px-8  sm:w-[85vw] lg:max-w-[945px] xl:max-w-[1150px] min-[1440px]:max-w-[1325px] min-[1800px]:max-w-[1440px]">
         <div className="absolute z-[1] max-w-[300px] min-[576px]:max-w-[350px] md:translate-y-[-50px]  min-[930px]:translate-y-[0px] min-[931px]:max-w-[450px] min-[1440px]:max-w-[600px] min-[1440px]:translate-x-[100px]  ">
-          <p className="text-nowrap  font-ROBOTO font-semibold min-[481px]:text-[18px] xl:text-[22px]  ">
+          <p className="font-ROBOTO  text-nowrap font-semibold min-[481px]:text-[18px] xl:text-[22px]  ">
             Best of Price $128.21
           </p>
-          <h1 className=" mt-5 font-ROBOTO text-[2rem] font-bold leading-9 min-[576px]:text-[2.2rem] min-[930px]:text-[2.7rem] min-[930px]:font-extrabold min-[930px]:leading-10 xl:text-[3rem] xl:leading-[2.9rem] min-[1440px]:text-[4rem] min-[1440px]:leading-[3.5rem] ">
+          <h1 className=" font-ROBOTO mt-5 text-[2rem] font-bold leading-9 min-[576px]:text-[2.2rem] min-[930px]:text-[2.7rem] min-[930px]:font-extrabold min-[930px]:leading-10 xl:text-[3rem] xl:leading-[2.9rem] min-[1440px]:text-[4rem] min-[1440px]:leading-[3.5rem] ">
             Ethiopian Traditional Long Dress
           </h1>
           <Link to="categories">
