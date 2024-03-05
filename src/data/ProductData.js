@@ -7,6 +7,7 @@ const ProductData = [
     popular: false,
     review: 3.9,
     imgSrc: "Product_Image/Sodere_Mothers_Day_Gift.jpeg",
+    newArrival: false,
     id: "X3YaWn",
   },
 
@@ -18,6 +19,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Blue_label_whisky.jpeg",
+    newArrival: false,
     id: "PHBbO1",
   },
   {
@@ -28,6 +30,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/eR7mbN.jpg",
+    newArrival: false,
     id: "eR7mbN",
   },
 
@@ -39,6 +42,7 @@ const ProductData = [
     popular: false,
     review: 4.0,
     imgSrc: "Product_Image/Whole_Habesha_chicken.jpg",
+    newArrival: false,
     id: "XDzRie",
   },
   {
@@ -50,6 +54,7 @@ const ProductData = [
     review: 4.1,
     imgSrc:
       "https://d2j6dbq0eux0bg.cloudfront.net/images/16648100/3517691820.jpg",
+    newArrival: false,
     id: "3TUmoc",
   },
 
@@ -61,6 +66,7 @@ const ProductData = [
     popular: false,
     review: 4.0,
     imgSrc: "Product_Image/Valentine_Day_Gift_Package_2.jpg",
+    newArrival: false,
     id: "thSK7S",
   },
   {
@@ -71,6 +77,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/christmas_package.jpg",
+    newArrival: false,
     id: "faVzxD",
   },
   {
@@ -81,6 +88,7 @@ const ProductData = [
     popular: false,
     review: 3.5,
     imgSrc: "Product_Image/Christmas_Tree.jpg",
+    newArrival: false,
     id: "HE7JG6",
   },
   {
@@ -91,6 +99,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Christmas_Cookies.jpeg",
+    newArrival: false,
     id: "GdJHaB",
   },
   {
@@ -101,6 +110,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Meskel_Package.jpg",
+    newArrival: false,
     id: "dZ2YID",
   },
   {
@@ -111,6 +121,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Sheep_Beg_Lamb.png",
+    newArrival: false,
     id: "uskIp1c",
   },
   {
@@ -121,6 +132,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Chibo.jpg",
+    newArrival: false,
     id: "5JXApmM",
   },
   {
@@ -131,6 +143,7 @@ const ProductData = [
     popular: false,
     review: 4.4,
     imgSrc: "Product_Image/Ramadan_Fasting_Package.jpg",
+    newArrival: false,
     id: "7d1gh63",
   },
   {
@@ -141,6 +154,7 @@ const ProductData = [
     popular: false,
     review: 4.4,
     imgSrc: "Product_Image/Dates.jpg",
+    newArrival: false,
     id: "1JWVYea",
   },
   {
@@ -151,6 +165,7 @@ const ProductData = [
     popular: false,
     review: 4.4,
     imgSrc: "Product_Image/Special_New_Year.jpg",
+    newArrival: false,
     id: "jt7Tbw",
   },
   {
@@ -161,6 +176,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Fathers_Day_Gift.jpg",
+    newArrival: false,
     id: "pKA7KK",
   },
 
@@ -172,6 +188,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/Whole_chicken.jpg",
+    newArrival: false,
     id: "dmVogd",
   },
   {
@@ -182,6 +199,7 @@ const ProductData = [
     popular: false,
     review: 3.9,
     imgSrc: "Product_Image/Ethiopian_Cheese.jpg",
+    newArrival: false,
     id: "3aNNen",
   },
   {
@@ -192,6 +210,7 @@ const ProductData = [
     popular: false,
     review: 3.9,
     imgSrc: "Product_Image/Cheese.jpg",
+    newArrival: false,
     id: "kL9qmq",
   },
   {
@@ -202,6 +221,7 @@ const ProductData = [
     popular: false,
     review: 3.2,
     imgSrc: "Product_Image/Shepherd_doctor.jpg",
+    newArrival: false,
     id: "1RHmUU",
   },
   {
@@ -212,6 +232,7 @@ const ProductData = [
     popular: false,
     review: 4.0,
     imgSrc: "Product_Image/The_Author.jpg",
+    newArrival: false,
     id: "MVqNqD",
   },
   {
@@ -222,6 +243,7 @@ const ProductData = [
     popular: false,
     review: 4.0,
     imgSrc: "Product_Image/Yetut_Abat.jpg",
+    newArrival: false,
     id: "bOuaqg",
   },
   {
@@ -232,6 +254,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Evil_Souls.jpg",
+    newArrival: false,
     id: "N9lcYs",
   },
   {
@@ -242,6 +265,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Papiyo.jpg",
+    newArrival: false,
     id: "g380g8",
   },
   {
@@ -252,6 +276,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/Cairo_horses.jpg",
+    newArrival: false,
     id: "BAXu7d",
   },
   {
@@ -262,6 +287,7 @@ const ProductData = [
     popular: false,
     review: 4.4,
     imgSrc: "Product_Image/Caesar's_tears.jpg",
+    newArrival: false,
     id: "L65Js0",
   },
   {
@@ -272,6 +298,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/Alferam.jpg",
+    newArrival: false,
     id: "nvna6H",
   },
 
@@ -283,6 +310,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Rahemato.jpg",
+    newArrival: false,
     id: "LNG40n",
   },
   {
@@ -293,6 +321,7 @@ const ProductData = [
     popular: false,
     review: 4.4,
     imgSrc: "Product_Image/Ye_Manenet_Tirgum_Felega.jpg",
+    newArrival: false,
     id: "Xf2fIb",
   },
   {
@@ -303,6 +332,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Yeguzo_Adewa_Mastaweshaye.jpg",
+    newArrival: false,
     id: "x3cJDa",
   },
   {
@@ -313,6 +343,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Aleweledem.jpg",
+    newArrival: false,
     id: "Mig2wQ",
   },
 
@@ -324,6 +355,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/Tobiya.jpg",
+    newArrival: false,
     id: "jffZgD",
   },
   {
@@ -334,6 +366,7 @@ const ProductData = [
     popular: false,
     review: 4.0,
     imgSrc: "Product_Image/Yegazetegnaw_Weg.jpg",
+    newArrival: false,
     id: "jfedgD",
   },
   {
@@ -344,6 +377,7 @@ const ProductData = [
     popular: false,
     review: 4.0,
     imgSrc: "Product_Image/Ethiopian_Women_Dress.jpg",
+    newArrival: false,
     id: "x7qMA1",
   },
   {
@@ -354,6 +388,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/Ethiopian_Traditional_Long_Dress_1.jpg",
+    newArrival: false,
     id: "9EltLr",
   },
   {
@@ -364,6 +399,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Ethiopian_Traditional_Long_Dress_2.jpg",
+    newArrival: false,
     id: "SJr7T8",
   },
   {
@@ -374,6 +410,7 @@ const ProductData = [
     popular: false,
     review: 4.0,
     imgSrc: "Product_Image/Ethiopian_Traditional_Long_Dress_3.jpg",
+    newArrival: false,
     id: "lm9bMT",
   },
   {
@@ -384,6 +421,7 @@ const ProductData = [
     popular: false,
     review: 3.8,
     imgSrc: "Product_Image/Ethiopian_Traditional_Long_Dress_4.jpg",
+    newArrival: false,
     id: "yibmoR",
   },
   {
@@ -394,6 +432,7 @@ const ProductData = [
     popular: false,
     review: 3.9,
     imgSrc: "Product_Image/T-shirt_for_Men.jpg",
+    newArrival: false,
     id: "HvZ3SS",
   },
   {
@@ -404,6 +443,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/T-shirt_for_Women.jpg",
+    newArrival: false,
     id: "L94bZp",
   },
   {
@@ -414,6 +454,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/Leather_Shoes_For_Kids.jpeg",
+    newArrival: false,
     id: "MW69rG",
   },
   {
@@ -424,6 +465,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Hand_Bag.jpeg",
+    newArrival: false,
     id: "py8zYH",
   },
   {
@@ -434,6 +476,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Leather_Shoes_For_Men.jpeg",
+    newArrival: false,
     id: "q8ShEo",
   },
   {
@@ -444,6 +487,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Leather_Shoes_For_Men_2.jpeg",
+    newArrival: false,
     id: "U9fh5n",
   },
   {
@@ -454,6 +498,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/Women_Leather_Side_Bag.jpeg",
+    newArrival: false,
     id: "5IBImK",
   },
   {
@@ -464,6 +509,7 @@ const ProductData = [
     popular: false,
     review: 4.4,
     imgSrc: "Product_Image/Women_Leather_Side_Bag_2.jpeg",
+    newArrival: false,
     id: "reAHBU",
   },
   {
@@ -474,6 +520,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Women_Leather_Side_Bag_3.jpeg",
+    newArrival: true,
     id: "h1lyHR",
   },
   {
@@ -484,6 +531,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/Women_Leather_Side_Bag_4.jpeg",
+    newArrival: false,
     id: "XpNCm7",
   },
   {
@@ -494,6 +542,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Leather_Shoes_For_Men_3.jpeg",
+    newArrival: false,
     id: "9h0bHN",
   },
   {
@@ -504,6 +553,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Leather_Shoes_For_Men_4.jpeg",
+    newArrival: false,
     id: "LoQudf",
   },
   {
@@ -514,6 +564,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Moh_Anbessa_Line_Of_Judah_Hoddie.jpeg",
+    newArrival: true,
     id: "vriS49",
   },
   {
@@ -524,6 +575,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Ethiopian_National_Team_T-shirt.webp",
+    newArrival: false,
     id: "veogH9",
   },
   {
@@ -534,6 +586,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Ethiopian_National_Team_T-shirt_2.webp",
+    newArrival: false,
     id: "R816Vc",
   },
   {
@@ -544,18 +597,10 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Ethiopia _half_Hat.webp",
+    newArrival: true,
     id: "XFtnOh",
   },
-  {
-    itemNameAmharic: "የሴቶች ቡትስ ጫማ",
-    itemNameEnglish: "Women's boots",
-    price: 71.38,
-    category: ["Shoes"],
-    popular: false,
-    review: 4.5,
-    imgSrc: "Product_Image/Women's_boots.jpeg",
-    id: "7Q7qdi",
-  },
+
   {
     itemNameAmharic: "የሴቶች ቡትስ ጫማ",
     itemNameEnglish: "Women's boots",
@@ -564,6 +609,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Women's_boots_3.jpeg",
+    newArrival: false,
     id: "SAopGb",
   },
   {
@@ -574,6 +620,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Women's_boots_2.jpeg",
+    newArrival: false,
     id: "oX1eJV",
   },
   {
@@ -584,6 +631,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Women's_boots_4.jpeg",
+    newArrival: false,
     id: "jYAPgW",
   },
   {
@@ -594,6 +642,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Women's_boots_5.jpeg",
+    newArrival: false,
     id: "ir8aqf",
   },
   {
@@ -604,6 +653,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_1.jpeg",
+    newArrival: false,
     id: "urBFg5",
   },
   {
@@ -614,6 +664,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_2.jpeg",
+    newArrival: false,
     id: "awWcPG",
   },
   {
@@ -624,6 +675,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_3.jpeg",
+    newArrival: false,
     id: "4mgNl3",
   },
   {
@@ -634,6 +686,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_4.jpeg",
+    newArrival: false,
     id: "2URpYC",
   },
   {
@@ -644,6 +697,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_5.jpeg",
+    newArrival: false,
     id: "5zi3t7",
   },
   {
@@ -654,6 +708,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_6.jpeg",
+    newArrival: false,
     id: "JRcPzE",
   },
   {
@@ -664,6 +719,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_7.jpeg",
+    newArrival: false,
     id: "JRaszE",
   },
   {
@@ -674,6 +730,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes.jpeg",
+    newArrival: false,
     id: "f03yUI",
   },
   {
@@ -684,6 +741,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_2.jpeg",
+    newArrival: true,
     id: "f0asdI",
   },
   {
@@ -694,6 +752,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_3.jpeg",
+    newArrival: false,
     id: "asdasd",
   },
   {
@@ -704,6 +763,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_4.jpeg",
+    newArrival: false,
     id: "asdasw",
   },
   {
@@ -714,6 +774,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_5.jpeg",
+    newArrival: false,
     id: "xccxsd",
   },
   {
@@ -724,6 +785,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_6.jpeg",
+    newArrival: false,
     id: "qwtsdf",
   },
   {
@@ -734,6 +796,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Yes_Water.jpg",
+    newArrival: false,
     id: "dPY2FJ",
   },
   {
@@ -744,6 +807,7 @@ const ProductData = [
     popular: false,
     review: 3.6,
     imgSrc: "Product_Image/Rye.jpg",
+    newArrival: false,
     id: "66S7jr",
   },
   {
@@ -754,6 +818,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Eggs.jpg",
+    newArrival: false,
     id: "bZxyDX",
   },
   {
@@ -764,6 +829,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Black_Shinbira.jpg",
+    newArrival: false,
     id: "Jgkuth",
   },
   {
@@ -774,6 +840,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Minis_Choco.jpg",
+    newArrival: false,
     id: "V65HY2",
   },
   {
@@ -784,6 +851,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/Mars_Chocolate.jpg",
+    newArrival: false,
     id: "FAXz18",
   },
   {
@@ -794,6 +862,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/Apple.jpeg",
+    newArrival: false,
     id: "cvQXBr",
   },
   {
@@ -804,6 +873,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/IL_BOERO_Chocolate.jpg",
+    newArrival: false,
     id: "ufc7Bf",
   },
   {
@@ -814,6 +884,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Ground_Beef_Meat.jpg",
+    newArrival: false,
     id: "edwVaQ",
   },
   {
@@ -824,6 +895,7 @@ const ProductData = [
     popular: false,
     review: 3.5,
     imgSrc: "Product_Image/Beef_Tongue.jpg",
+    newArrival: false,
     id: "9Z14f3",
   },
   {
@@ -834,6 +906,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/SEMOLINA.jpg",
+    newArrival: false,
     id: "BWqQ5U",
   },
   {
@@ -844,6 +917,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Green_Pepper.jpg",
+    newArrival: false,
     id: "StWDDs",
   },
   {
@@ -854,6 +928,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/Beans.jpg",
+    newArrival: false,
     id: "3nk7YH",
   },
   {
@@ -864,6 +939,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Red_turnip.jpg",
+    newArrival: false,
     id: "IhYtcy",
   },
 
@@ -875,6 +951,7 @@ const ProductData = [
     popular: false,
     review: 4.1,
     imgSrc: "Product_Image/King_Robert.jpeg",
+    newArrival: false,
     id: "fQtWxv",
   },
   {
@@ -885,6 +962,7 @@ const ProductData = [
     popular: false,
     review: 3.8,
     imgSrc: "Product_Image/Amarula.jpeg",
+    newArrival: false,
     id: "aUZlDV",
   },
   {
@@ -895,6 +973,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Gold_label_whisky.jpg",
+    newArrival: false,
     id: "aovQ8g",
   },
   {
@@ -905,6 +984,7 @@ const ProductData = [
     popular: false,
     review: 3.9,
     imgSrc: "Product_Image/LA_ESPARDENY_CHAMPAIGN.jpeg",
+    newArrival: false,
     id: "fO5c5B",
   },
   {
@@ -915,6 +995,7 @@ const ProductData = [
     popular: false,
     review: 3.6,
     imgSrc: "Product_Image/BOMBAY_SAPPHIRE.jpg",
+    newArrival: false,
     id: "F5Cf1W",
   },
   {
@@ -925,6 +1006,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/NAMAQUA_WINE.jpeg",
+    newArrival: false,
     id: "2SjK4R",
   },
   {
@@ -935,6 +1017,7 @@ const ProductData = [
     popular: false,
     review: 4.0,
     imgSrc: "Product_Image/EARL_BROWN_DRY_GIN.jpg",
+    newArrival: false,
     id: "4AADYk",
   },
   {
@@ -945,6 +1028,7 @@ const ProductData = [
     popular: false,
     review: 4.0,
     imgSrc: "Product_Image/ACACIA_DRY_RED_WINE.jpg",
+    newArrival: false,
     id: "8aBnD8",
   },
   {
@@ -955,6 +1039,7 @@ const ProductData = [
     popular: false,
     review: 3.2,
     imgSrc: "Product_Image/Fried_crumbs_eggs.jpg",
+    newArrival: false,
     id: "rJ5rod",
   },
   {
@@ -965,6 +1050,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Kikel_Fitfit.jpg",
+    newArrival: false,
     id: "8MJeSl",
   },
   {
@@ -975,6 +1061,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Quanta_Firfir.jpg",
+    newArrival: false,
     id: "JYlznd",
   },
   {
@@ -985,6 +1072,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Lamb_Stew.jpg",
+    newArrival: false,
     id: "vAVYyS",
   },
   {
@@ -995,6 +1083,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Gored_Gored.jpg",
+    newArrival: false,
     id: "kO8pBw",
   },
   {
@@ -1005,6 +1094,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Gomen_Kitfo.jpg",
+    newArrival: false,
     id: "XL9kuN",
   },
   {
@@ -1015,6 +1105,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Doro_Firfir.jpg",
+    newArrival: false,
     id: "FdYIIT",
   },
   {
@@ -1025,6 +1116,7 @@ const ProductData = [
     popular: false,
     review: 4.2,
     imgSrc: "Product_Image/Special_Kitfo.jpg",
+    newArrival: false,
     id: "j6Gf4l",
   },
   {
@@ -1035,6 +1127,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Dubai_Bridal_24k.jpg",
+    newArrival: false,
     id: "ENRwUG",
   },
   {
@@ -1045,6 +1138,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/I2qrkR.jpg",
+    newArrival: false,
     id: "I2qrkR",
   },
   {
@@ -1055,6 +1149,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/ouiTWX.jpg",
+    newArrival: false,
     id: "ouiTWX",
   },
   {
@@ -1065,6 +1160,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/Zv34Ub.jpg",
+    newArrival: false,
     id: "Zv34Ub",
   },
   {
@@ -1075,6 +1171,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/lJpnjk.jpg",
+    newArrival: false,
     id: "lJpnjk",
   },
   {
@@ -1085,6 +1182,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/a5QZTJ.jpg",
+    newArrival: false,
     id: "a5QZTJ",
   },
   {
@@ -1095,6 +1193,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/uz6dYC.jpg",
+    newArrival: false,
     id: "uz6dYC",
   },
   {
@@ -1105,6 +1204,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/fbFpiJ.jpg",
+    newArrival: false,
     id: "fbFpiJ",
   },
   {
@@ -1115,6 +1215,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/4FZekN.jpg",
+    newArrival: false,
     id: "4FZekN",
   },
   {
@@ -1125,6 +1226,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/ZOMEUN.webp",
+    newArrival: false,
     id: "ZOMEUN",
   },
   {
@@ -1135,6 +1237,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/bToA3h.webp",
+    newArrival: false,
     id: "bToA3h",
   },
   {
@@ -1145,6 +1248,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/CX4Dtc.webp",
+    newArrival: false,
     id: "CX4Dtc",
   },
   {
@@ -1155,6 +1259,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/swxLM1.webp",
+    newArrival: false,
     id: "swxLM1",
   },
   {
@@ -1165,6 +1270,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/hS0GeF.webp",
+    newArrival: false,
     id: "hS0GeF",
   },
   {
@@ -1175,6 +1281,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/AtV64l.webp",
+    newArrival: false,
     id: "AtV64l",
   },
   {
@@ -1185,6 +1292,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/9dHMc4.webp",
+    newArrival: false,
     id: "9dHMc4",
   },
   {
@@ -1195,6 +1303,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/4c7MmJ.webp",
+    newArrival: false,
     id: "4c7MmJ",
   },
   {
@@ -1205,6 +1314,7 @@ const ProductData = [
     popular: false,
     review: 3.8,
     imgSrc: "Product_Image/sebYfP.webp",
+    newArrival: false,
     id: "sebYfP",
   },
   {
@@ -1215,6 +1325,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/AK8vjc.webp",
+    newArrival: false,
     id: "AK8vjc",
   },
   {
@@ -1225,6 +1336,7 @@ const ProductData = [
     popular: false,
     review: 4.3,
     imgSrc: "Product_Image/PKlKza.webp",
+    newArrival: false,
     id: "PKlKza",
   },
   {
@@ -1235,6 +1347,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/gyNOIu.webp",
+    newArrival: false,
     id: "gyNOIu",
   },
   {
@@ -1245,6 +1358,7 @@ const ProductData = [
     popular: false,
     review: 3.6,
     imgSrc: "Product_Image/JtMnG0.webp",
+    newArrival: false,
     id: "JtMnG0",
   },
   {
@@ -1255,6 +1369,7 @@ const ProductData = [
     popular: false,
     review: 4.6,
     imgSrc: "Product_Image/I8u2Zl.webp",
+    newArrival: false,
     id: "I8u2Zl",
   },
   {
@@ -1265,6 +1380,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/Jd88SD.webp",
+    newArrival: true,
     id: "Jd88SD",
   },
   {
@@ -1275,6 +1391,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/gCeynp.webp",
+    newArrival: false,
     id: "gCeynp",
   },
   {
@@ -1285,6 +1402,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/QUfJ5R.webp",
+    newArrival: false,
     id: "QUfJ5R",
   },
   {
@@ -1295,6 +1413,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/S0GVdq.webp",
+    newArrival: true,
     id: "S0GVdq",
   },
   {
@@ -1305,6 +1424,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/RPCo2S.webp",
+    newArrival: false,
     id: "RPCo2S",
   },
 
@@ -1316,6 +1436,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/9TJWYd.webp",
+    newArrival: false,
     id: "9TJWYd",
   },
 
@@ -1327,6 +1448,7 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/pNJj2B.webp",
+    newArrival: false,
     id: "pNJj2B",
   },
   {
@@ -1337,6 +1459,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/zpYylw.webp",
+    newArrival: false,
     id: "zpYylw",
   },
   {
@@ -1347,6 +1470,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/pNJj2B.webp",
+    newArrival: false,
     id: "i06My1",
   },
   {
@@ -1357,6 +1481,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/gr9po8.webp",
+    newArrival: false,
     id: "gr9po8",
   },
   {
@@ -1367,6 +1492,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/itI2MM.jpeg",
+    newArrival: false,
     id: "itI2MM",
   },
   {
@@ -1377,6 +1503,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/ZC0yf0.jpeg",
+    newArrival: false,
     id: "ZC0yf0",
   },
   {
@@ -1387,6 +1514,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/SXrYkz.jpeg",
+    newArrival: false,
     id: "SXrYkz",
   },
   {
@@ -1397,6 +1525,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/laDLDC.jpeg",
+    newArrival: false,
     id: "laDLDC",
   },
   {
@@ -1407,6 +1536,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/z9NbJt.jpeg",
+    newArrival: false,
     id: "z9NbJt",
   },
   {
@@ -1417,6 +1547,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/HVUARy.jpeg",
+    newArrival: false,
     id: "HVUARy",
   },
   {
@@ -1427,6 +1558,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/36Sr6C.jpeg",
+    newArrival: false,
     id: "36Sr6C",
   },
   {
@@ -1437,6 +1569,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/R6Hqd4.jpg",
+    newArrival: false,
     id: "R6Hqd4",
   },
   {
@@ -1447,6 +1580,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/HgTMYt.jpg",
+    newArrival: false,
     id: "HgTMYt",
   },
   {
@@ -1457,6 +1591,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/8tsr9b.jpg",
+    newArrival: false,
     id: "8tsr9b",
   },
   {
@@ -1467,6 +1602,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/cP1uVf.jpeg",
+    newArrival: false,
     id: "cP1uVf",
   },
   {
@@ -1477,6 +1613,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/7dY6mf.jpeg",
+    newArrival: false,
     id: "7dY6mf",
   },
   {
@@ -1487,6 +1624,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/jInnA5.jpeg",
+    newArrival: false,
     id: "jInnA5",
   },
   {
@@ -1497,6 +1635,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/qbaYzF.jpeg",
+    newArrival: false,
     id: "qbaYzF",
   },
   {
@@ -1507,6 +1646,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/fjUKqZ.jpeg",
+    newArrival: false,
     id: "fjUKqZ",
   },
   {
@@ -1517,6 +1657,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/rn8d6W.jpeg",
+    newArrival: false,
     id: "rn8d6W",
   },
   {
@@ -1527,6 +1668,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/ihMqiG.jpeg",
+    newArrival: false,
     id: "ihMqiG",
   },
   {
@@ -1537,6 +1679,7 @@ const ProductData = [
     popular: false,
     review: 4.5,
     imgSrc: "Product_Image/0KFkDv.jpeg",
+    newArrival: false,
     id: "0KFkDv",
   },
 
@@ -1548,6 +1691,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/T9AUKk.jpg",
+    newArrival: false,
     id: "T9AUKk",
   },
   {
@@ -1558,6 +1702,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/WAFZSM.jpg",
+    newArrival: false,
     id: "WAFZSM",
   },
   {
@@ -1568,6 +1713,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/hrGLDJ.jpg",
+    newArrival: false,
     id: "hrGLDJ",
   },
   {
@@ -1578,6 +1724,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/RFBUtq.jpg",
+    newArrival: false,
     id: "RFBUtq",
   },
   {
@@ -1588,6 +1735,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/pdHmfQ.jpg",
+    newArrival: false,
     id: "pdHmfQ",
   },
   {
@@ -1598,6 +1746,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/3iM2Sx.jpeg",
+    newArrival: false,
     id: "3iM2Sx",
   },
   {
@@ -1608,6 +1757,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/DAsZzi.jpeg",
+    newArrival: false,
     id: "DAsZzi",
   },
   {
@@ -1618,6 +1768,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/6iVytL.jpg",
+    newArrival: false,
     id: "6iVytL",
   },
   {
@@ -1628,6 +1779,7 @@ const ProductData = [
     popular: false,
     review: 4.8,
     imgSrc: "Product_Image/chhaxW.jpg",
+    newArrival: false,
     id: "chhaxW",
   },
   {
@@ -1638,7 +1790,52 @@ const ProductData = [
     popular: false,
     review: 4.7,
     imgSrc: "Product_Image/QBLPbo.jpg",
+    newArrival: false,
     id: "QBLPbo",
+  },
+  {
+    itemNameAmharic: "የሴቶች ቡትስ ጫማ",
+    itemNameEnglish: "Women's boots",
+    price: 71.38,
+    category: ["Shoes"],
+    popular: false,
+    review: 4.5,
+    imgSrc: "Product_Image/Women's_boots.jpeg",
+    newArrival: true,
+    id: "7Q7qdi",
+  },
+  {
+    itemNameEnglish: "Men`s Hoddie ",
+    itemNameAmharic: "የወንዶች ሹራብ ",
+    price: 94.18,
+    category: ["Clothing"],
+    popular: false,
+    review: 4.7,
+    imgSrc: "Product_Image/Eg6lOo.jpeg",
+    newArrival: true,
+    id: "Eg6lOo",
+  },
+  {
+    itemNameEnglish: "Ethiopian Music Hoodie",
+    itemNameAmharic: "የኢትዮጵያ ሙዚቃ ሹራብ ",
+    price: 80.79,
+    category: ["Clothing"],
+    popular: false,
+    review: 4.9,
+    imgSrc: "Product_Image/1uf85F.jpeg",
+    newArrival: true,
+    id: "1uf85F",
+  },
+  {
+    itemNameEnglish: "Air Jordan 4 Retro ",
+    itemNameAmharic: "Air Jordan ጫማ",
+    price: 217.08,
+    category: ["Shoes"],
+    popular: false,
+    review: 4.8,
+    imgSrc: "Product_Image/2PSiRI.webp",
+    newArrival: true,
+    id: "2PSiRI",
   },
 ];
 

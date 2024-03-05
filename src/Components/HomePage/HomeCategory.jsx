@@ -60,7 +60,7 @@ const HomeCategory = () => {
     </li>
   ));
   return (
-    <div className="my-[5rem]">
+    <div className="mb-16 mt-[5rem]">
       <div className="mx-auto w-[90%] md:w-[720px] min-[992px]:w-[960px] min-[1200px]:w-[1170px] ">
         <h1 className="  text-center text-[25px] font-bold  min-[450px]:text-[28px] sm:text-[30px] lg:text-[34px] ">
           Shop By Category
