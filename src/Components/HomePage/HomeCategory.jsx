@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { ProductContext } from "@/contexts/ProductContext";
 import { Link } from "react-router-dom";
 import Beauty from "/beauty.svg";
 import Kitchen from "/kitchen.svg";
@@ -6,9 +7,7 @@ import Shoes from "/shoes.svg";
 import Electronics from "/electronics.svg";
 import Clothing from "/clothing.svg";
 import Jewelry from "/jewelry.svg";
-import FoodAndDrink from "/foodanddrinks.svg";
-import Books from "/books.svg";
-import { ProductContext } from "@/contexts/ProductContext";
+import { Skeleton } from "../ui/skeleton";
 
 const HomeCategory = () => {
   const { setCurrentCategory } = useContext(ProductContext);
