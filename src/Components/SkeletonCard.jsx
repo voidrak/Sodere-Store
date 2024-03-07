@@ -3,12 +3,12 @@ import { Skeleton } from "./ui/skeleton";
 
 const SkeletonCard = () => {
   return (
-    <div className=" my-[5rem]">
-      <div className="flex flex-col space-y-3">
-        <Skeleton className="h-[125px] w-[250px] rounded-xl" />
-        <div className="space-y-2">
-          <Skeleton className="h-4 w-[250px]" />
-          <Skeleton className="h-4 w-[200px]" />
+    <div className=" mx-auto my-[5rem]   w-[90%] ">
+      <div className="flex w-[100%] flex-col  items-center space-y-3">
+        <Skeleton className="h-[315px] w-[100%] rounded-xl" />
+        <div className="  space-y-2">
+          <Skeleton className=" h-4 w-[150px] sm:w-[200px]" />
+          <Skeleton className=" mx-auto  h-4 w-[100px]" />
         </div>
       </div>
     </div>

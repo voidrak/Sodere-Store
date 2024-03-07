@@ -26,7 +26,7 @@ const ProductCard = ({ product }) => {
                 console.log("object");
               }}
               alt=""
-              className=" w-[100%]"
+              className=" [w-100%]"
             />
             <div className="absolute top-1 z-10 ml-[-100px] flex w-[0%] flex-col  gap-y-2 transition-all duration-500 ease-in-out group-hover:ml-[0px] group-hover:w-[70%] ">
               <button className="text  md:text-[10px flex items-center gap-x-1 rounded-e-sm  border border-none bg-[#5a9bc1]  p-2 text-[12px] text-white outline-none lg:p-3">

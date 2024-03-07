@@ -20,7 +20,7 @@ const HomeLanding = () => {
           </h1>
           <Link to="categories">
             <button
-              className="mt-8 flex items-center justify-center gap-x-4 border-none bg-black p-4 py-[20px] text-[15px] text-white outline-none transition-all duration-300 ease-in-out hover:scale-105 min-[425px]:w-[206px] min-[930px]:text-[18px]"
+              className="mt-8 flex items-center justify-center gap-x-4 border-none bg-black p-4 py-[20px] text-[15px] text-white outline-none transition-all duration-300 ease-in-out hover:scale-105  min-[930px]:text-[18px]"
               onClick={() => {
                 setCurrentCategory("Clothing");
               }}
