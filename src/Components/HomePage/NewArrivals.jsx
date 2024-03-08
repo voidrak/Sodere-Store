@@ -5,25 +5,18 @@ import SkeletonCard from "../SkeletonCard";
 
 const NewArrivals = () => {
   const { productData } = useContext(ProductContext);
-  // const [isLoad, setIsLoad] = useState(true);
+  const [loadedProducts, setLoadedProducts] = useState(0);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsLoad(true);
-  //   }, 2000);
-  // });
+  const handleProductLoad = () => {
+    setLoadedProducts((prevCount) => prevCount + 1);
+  };
 
   const mappedCategoryList = productData
     .filter((item) => {
       return item.newArrival === true;
     })
     .map((product, index) => (
-      <ProductCard
-        {...(product = { product })}
-        // setIsLoad={setIsLoad}
-        // isLoad={isLoad}
-        key={index}
-      />
+      <ProductCard product={product} key={index} onLoad={handleProductLoad} />
     ));
 
   return (

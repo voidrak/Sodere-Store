@@ -11,6 +11,11 @@ const CategoryProductList = ({
 }) => {
   const { productData, currentCategory } = useContext(ProductContext);
   const [sortedList, setSortedList] = useState(categoryMainList);
+  const [loadedProducts, setLoadedProducts] = useState(0);
+
+  const handleProductLoad = () => {
+    setLoadedProducts((prevCount) => prevCount + 1);
+  };
 
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
@@ -78,7 +83,7 @@ const CategoryProductList = ({
   const mappedCategoryList = sortedList
     .slice(firstPostIndex, lastPostIndex)
     .map((product, index) => (
-      <ProductCard {...(product = { product })} key={index} />
+      <ProductCard product={product} key={index} onLoad={handleProductLoad} />
     ));
 
   return (
