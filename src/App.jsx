@@ -9,22 +9,25 @@ import SearchPage from "./Pages/SearchPage";
 import CategoriesPage from "./Pages/CategoriesPage";
 import WishListPage from "./Pages/WishListPage";
 import "./App.css";
+import { CartContextProvider } from "./contexts/CartContext";
 
 const App = () => {
   return (
     <ProductContextProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<SharedLayout />}>
-            <Route index element={<HomePage />} />
-            <Route path="contact" element={<ContactUsPage />} />
-            <Route path="search" element={<SearchPage />} />
-            <Route path="categories" element={<CategoriesPage />} />
-            <Route path="wishlist" element={<WishListPage />} />
-            <Route path="*" element={<ErrorPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <CartContextProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<SharedLayout />}>
+              <Route index element={<HomePage />} />
+              <Route path="contact" element={<ContactUsPage />} />
+              <Route path="search" element={<SearchPage />} />
+              <Route path="categories" element={<CategoriesPage />} />
+              <Route path="wishlist" element={<WishListPage />} />
+              <Route path="*" element={<ErrorPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </CartContextProvider>
     </ProductContextProvider>
   );
 };

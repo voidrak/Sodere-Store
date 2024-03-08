@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { IoEyeOutline } from "react-icons/io5";
 import { FiShoppingBag } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 
 import SkeletonCard from "./SkeletonCard";
+import { CartContext } from "@/contexts/CartContext";
 
 const ProductCard = ({ product, onLoad }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const { addToCart } = useContext(CartContext);
 
   const handleOnLoad = () => {
     setIsLoad((prev) => prev + 1);
@@ -42,7 +44,7 @@ const ProductCard = ({ product, onLoad }) => {
               <button
                 className="text  md:text-[10px flex items-center gap-x-1 rounded-e-sm  border border-none bg-[#5a9bc1]  p-2 text-[12px] text-white outline-none lg:p-3"
                 onClick={() => {
-                  console.log(product);
+                  addToCart(product);
                 }}
               >
                 <FiShoppingBag color="white" size={15} className="" />

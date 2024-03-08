@@ -7,9 +7,11 @@ import { IoPersonOutline, IoSearch } from "react-icons/io5";
 import { FaChevronCircleRight } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
 import { ProductContext } from "../../contexts/ProductContext";
-const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
+import { CartContext } from "@/contexts/CartContext";
+const Header = ({ setIsNavbar, setIsSearch, setIsCart }) => {
   const { productData, categories, setCurrentCategory } =
     useContext(ProductContext);
+  const { cartItemsList } = useContext(CartContext);
 
   const headerCatagories = categories.map((category, index) => (
     <li key={index}>
@@ -101,12 +103,22 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
               size={22}
               className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
             />
+            <div className="absolute bottom-3 left-2 flex h-[25px]  w-[25px] items-center justify-center rounded-full bg-black font-semibold text-white ">
+              5
+            </div>
           </div>
           <div className=" relative  after:absolute after:bottom-[-18px] after:left-[1px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['cart'] hover:after:lg:block ">
             <FiShoppingBag
               size={22}
               className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
+              onClick={() => {
+                setIsCart(true);
+                console.log("object");
+              }}
             />
+            <div className="absolute bottom-3 left-2 flex  h-[25px] w-[25px] items-center justify-center rounded-full bg-black font-semibold text-white ">
+              {/* {cartItemsList.length} */}
+            </div>
           </div>
         </div>
       </div>
