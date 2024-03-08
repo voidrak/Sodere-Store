@@ -31,7 +31,9 @@ const NewArrivals = () => {
   //   };
   // }, [mappedCategoryList]);
 
-  useEffect(() => {}, [mappedCategoryList]);
+  useEffect(() => {
+    mappedCategoryList.forEach((product) => {});
+  }, [mappedCategoryList]);
 
   return (
     <div className=" ">
