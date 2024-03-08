@@ -81,25 +81,33 @@ const Header = ({ setIsNavbar, setIsSearch, isSearch }) => {
           </li>
         </ul>
         <div className="flex  items-center gap-x-3 md:ml-auto">
-          <IoSearch
-            size={22}
-            className=" hidden hover:scale-110  md:block lg:size-[25px] min-[1440px]:size-[30px]"
-            onClick={() => {
-              setIsSearch(true);
-            }}
-          />
-          <IoPersonOutline
-            size={22}
-            className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
-          />
-          <FaRegHeart
-            size={22}
-            className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
-          />
-          <FiShoppingBag
-            size={22}
-            className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
-          />
+          <div className="">
+            <IoSearch
+              size={22}
+              className=" hidden hover:scale-110  md:block lg:size-[25px] min-[1440px]:size-[30px]"
+              onClick={() => {
+                setIsSearch(true);
+              }}
+            />
+          </div>
+          <div className="    relative after:absolute after:bottom-[-18px]  after:left-[-15px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['account'] hover:after:lg:block">
+            <IoPersonOutline
+              size={22}
+              className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
+            />
+          </div>
+          <div className="  relative after:absolute after:bottom-[-18px] after:left-[-10px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['wishlist'] hover:after:lg:block ">
+            <FaRegHeart
+              size={22}
+              className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
+            />
+          </div>
+          <div className=" relative  after:absolute after:bottom-[-18px] after:left-[1px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['cart'] hover:after:lg:block ">
+            <FiShoppingBag
+              size={22}
+              className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
+            />
+          </div>
         </div>
       </div>
     </>

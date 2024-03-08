@@ -5,18 +5,17 @@ import { FaRegHeart } from "react-icons/fa";
 
 import SkeletonCard from "./SkeletonCard";
 
-const ProductCard = ({ product }) => {
-  const [isLoad, setIsLoad] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoad(true);
-    }, 3000);
-  }, []);
+const ProductCard = ({ product, isLoad }) => {
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoad(true);
+  //   }, 3000);
+  // }, []);
 
   // const handleOnLoad = () => {};
   return (
     <>
-      {isLoad ? (
+      {!isLoad ? (
         <div className="  group mx-auto grid w-[90%] cursor-pointer overflow-hidden border border-slate-200">
           <div className=" bg-re-300  relative  flex h-[60vw] max-h-[400px] items-center    shadow-sm after:absolute after:top-0 after:h-[0%]  after:w-[100%] after:bg-gray-950 after:opacity-75  after:transition-all after:duration-500 after:ease-in-out group-hover:after:h-[100%] md:h-[40vw]  ">
             <img
