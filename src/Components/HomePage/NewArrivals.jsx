@@ -5,8 +5,13 @@ import SkeletonCard from "../SkeletonCard";
 
 const NewArrivals = () => {
   const { productData } = useContext(ProductContext);
-  const [loadCount, setLoadCount] = useState(0);
-  const [isLoad, setIsLoad] = useState(true);
+  // const [isLoad, setIsLoad] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoad(true);
+  //   }, 2000);
+  // });
 
   const mappedCategoryList = productData
     .filter((item) => {
@@ -15,25 +20,11 @@ const NewArrivals = () => {
     .map((product, index) => (
       <ProductCard
         {...(product = { product })}
-        setIsLoad={setIsLoad}
-        isLoad={isLoad}
+        // setIsLoad={setIsLoad}
+        // isLoad={isLoad}
         key={index}
       />
     ));
-
-  // useEffect(() => {
-  //   const imageSrc = product.imgSrc;
-  //   const loadImage = new Image();
-  //   loadImage.src = { imageSrc };
-  //   loadImage.onload = () => {
-  //     setLoadCount((prev) => prev + 1);
-  //     console.log("loadCount");
-  //   };
-  // }, [mappedCategoryList]);
-
-  useEffect(() => {
-    mappedCategoryList.forEach((product) => {});
-  }, [mappedCategoryList]);
 
   return (
     <div className=" ">
