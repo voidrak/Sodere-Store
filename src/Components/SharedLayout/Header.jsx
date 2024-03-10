@@ -107,17 +107,18 @@ const Header = ({ setIsNavbar, setIsSearch, setIsCart }) => {
               5
             </div>
           </div>
-          <div className=" relative  after:absolute after:bottom-[-18px] after:left-[1px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['cart'] hover:after:lg:block ">
+          <div
+            onClick={() => {
+              setIsCart(true);
+            }}
+            className={` relative cursor-pointer  after:absolute after:bottom-[-18px] after:left-[1px] after:hidden after:h-4 after:w-4 after:cursor-pointer after:font-semibold  after:content-['cart'] hover:after:lg:block ${cartItemsList && cartItemsList.length === 0 ? "after:hidden" : ""} `}
+          >
             <FiShoppingBag
               size={22}
-              className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
-              onClick={() => {
-                setIsCart(true);
-                console.log("object");
-              }}
+              className="  hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
             />
             <div className="absolute bottom-3 left-2 flex  h-[25px] w-[25px] items-center justify-center rounded-full bg-black font-semibold text-white ">
-              {/* {cartItemsList.length} */}
+              {cartItemsList && cartItemsList.length}
             </div>
           </div>
         </div>

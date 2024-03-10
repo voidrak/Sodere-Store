@@ -8,6 +8,7 @@ const ProductData = [
     review: 3.9,
     imgSrc: "Product_Image/Sodere_Mothers_Day_Gift.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "X3YaWn",
   },
 
@@ -20,6 +21,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Blue_label_whisky.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "PHBbO1",
   },
   {
@@ -31,6 +33,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/eR7mbN.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "eR7mbN",
   },
 
@@ -43,6 +46,7 @@ const ProductData = [
     review: 4.0,
     imgSrc: "Product_Image/Whole_Habesha_chicken.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "XDzRie",
   },
   {
@@ -55,6 +59,7 @@ const ProductData = [
     imgSrc:
       "https://d2j6dbq0eux0bg.cloudfront.net/images/16648100/3517691820.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "3TUmoc",
   },
 
@@ -67,6 +72,7 @@ const ProductData = [
     review: 4.0,
     imgSrc: "Product_Image/Valentine_Day_Gift_Package_2.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "thSK7S",
   },
   {
@@ -78,6 +84,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/christmas_package.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "faVzxD",
   },
   {
@@ -89,6 +96,7 @@ const ProductData = [
     review: 3.5,
     imgSrc: "Product_Image/Christmas_Tree.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "HE7JG6",
   },
   {
@@ -100,6 +108,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Christmas_Cookies.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "GdJHaB",
   },
   {
@@ -111,6 +120,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Meskel_Package.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "dZ2YID",
   },
   {
@@ -122,6 +132,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Sheep_Beg_Lamb.png",
     newArrival: false,
+    cartAmount: 0,
     id: "uskIp1c",
   },
   {
@@ -133,6 +144,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Chibo.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "5JXApmM",
   },
   {
@@ -144,6 +156,7 @@ const ProductData = [
     review: 4.4,
     imgSrc: "Product_Image/Ramadan_Fasting_Package.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "7d1gh63",
   },
   {
@@ -155,6 +168,7 @@ const ProductData = [
     review: 4.4,
     imgSrc: "Product_Image/Dates.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "1JWVYea",
   },
   {
@@ -166,6 +180,7 @@ const ProductData = [
     review: 4.4,
     imgSrc: "Product_Image/Special_New_Year.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "jt7Tbw",
   },
   {
@@ -177,6 +192,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Fathers_Day_Gift.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "pKA7KK",
   },
 
@@ -189,6 +205,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/Whole_chicken.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "dmVogd",
   },
   {
@@ -200,6 +217,7 @@ const ProductData = [
     review: 3.9,
     imgSrc: "Product_Image/Ethiopian_Cheese.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "3aNNen",
   },
   {
@@ -211,6 +229,7 @@ const ProductData = [
     review: 3.9,
     imgSrc: "Product_Image/Cheese.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "kL9qmq",
   },
   {
@@ -222,6 +241,7 @@ const ProductData = [
     review: 3.2,
     imgSrc: "Product_Image/Shepherd_doctor.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "1RHmUU",
   },
   {
@@ -233,6 +253,7 @@ const ProductData = [
     review: 4.0,
     imgSrc: "Product_Image/The_Author.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "MVqNqD",
   },
   {
@@ -244,6 +265,7 @@ const ProductData = [
     review: 4.0,
     imgSrc: "Product_Image/Yetut_Abat.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "bOuaqg",
   },
   {
@@ -255,6 +277,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Evil_Souls.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "N9lcYs",
   },
   {
@@ -266,6 +289,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Papiyo.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "g380g8",
   },
   {
@@ -277,6 +301,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/Cairo_horses.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "BAXu7d",
   },
   {
@@ -288,6 +313,7 @@ const ProductData = [
     review: 4.4,
     imgSrc: "Product_Image/Caesar's_tears.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "L65Js0",
   },
   {
@@ -299,6 +325,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/Alferam.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "nvna6H",
   },
 
@@ -311,6 +338,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Rahemato.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "LNG40n",
   },
   {
@@ -322,6 +350,7 @@ const ProductData = [
     review: 4.4,
     imgSrc: "Product_Image/Ye_Manenet_Tirgum_Felega.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "Xf2fIb",
   },
   {
@@ -333,6 +362,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Yeguzo_Adewa_Mastaweshaye.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "x3cJDa",
   },
   {
@@ -344,6 +374,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Aleweledem.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "Mig2wQ",
   },
 
@@ -356,6 +387,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/Tobiya.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "jffZgD",
   },
   {
@@ -367,6 +399,7 @@ const ProductData = [
     review: 4.0,
     imgSrc: "Product_Image/Yegazetegnaw_Weg.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "jfedgD",
   },
   {
@@ -378,6 +411,7 @@ const ProductData = [
     review: 4.0,
     imgSrc: "Product_Image/Ethiopian_Women_Dress.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "x7qMA1",
   },
   {
@@ -389,6 +423,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/Ethiopian_Traditional_Long_Dress_1.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "9EltLr",
   },
   {
@@ -400,6 +435,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Ethiopian_Traditional_Long_Dress_2.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "SJr7T8",
   },
   {
@@ -411,6 +447,7 @@ const ProductData = [
     review: 4.0,
     imgSrc: "Product_Image/Ethiopian_Traditional_Long_Dress_3.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "lm9bMT",
   },
   {
@@ -422,6 +459,7 @@ const ProductData = [
     review: 3.8,
     imgSrc: "Product_Image/Ethiopian_Traditional_Long_Dress_4.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "yibmoR",
   },
   {
@@ -433,6 +471,7 @@ const ProductData = [
     review: 3.9,
     imgSrc: "Product_Image/T-shirt_for_Men.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "HvZ3SS",
   },
   {
@@ -444,6 +483,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/T-shirt_for_Women.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "L94bZp",
   },
   {
@@ -455,6 +495,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/Leather_Shoes_For_Kids.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "MW69rG",
   },
   {
@@ -466,6 +507,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Hand_Bag.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "py8zYH",
   },
   {
@@ -477,6 +519,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Leather_Shoes_For_Men.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "q8ShEo",
   },
   {
@@ -488,6 +531,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Leather_Shoes_For_Men_2.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "U9fh5n",
   },
   {
@@ -499,6 +543,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/Women_Leather_Side_Bag.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "5IBImK",
   },
   {
@@ -510,6 +555,7 @@ const ProductData = [
     review: 4.4,
     imgSrc: "Product_Image/Women_Leather_Side_Bag_2.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "reAHBU",
   },
   {
@@ -521,6 +567,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Women_Leather_Side_Bag_3.jpeg",
     newArrival: true,
+    cartAmount: 0,
     id: "h1lyHR",
   },
   {
@@ -532,6 +579,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/Women_Leather_Side_Bag_4.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "XpNCm7",
   },
   {
@@ -543,6 +591,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Leather_Shoes_For_Men_3.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "9h0bHN",
   },
   {
@@ -554,6 +603,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Leather_Shoes_For_Men_4.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "LoQudf",
   },
   {
@@ -565,6 +615,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Moh_Anbessa_Line_Of_Judah_Hoddie.jpeg",
     newArrival: true,
+    cartAmount: 0,
     id: "vriS49",
   },
   {
@@ -576,6 +627,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Ethiopian_National_Team_T-shirt.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "veogH9",
   },
   {
@@ -587,6 +639,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Ethiopian_National_Team_T-shirt_2.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "R816Vc",
   },
   {
@@ -598,6 +651,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Ethiopia _half_Hat.webp",
     newArrival: true,
+    cartAmount: 0,
     id: "XFtnOh",
   },
 
@@ -610,6 +664,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Women's_boots_3.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "SAopGb",
   },
   {
@@ -621,6 +676,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Women's_boots_2.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "oX1eJV",
   },
   {
@@ -632,6 +688,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Women's_boots_4.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "jYAPgW",
   },
   {
@@ -643,6 +700,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Women's_boots_5.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "ir8aqf",
   },
   {
@@ -654,6 +712,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_1.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "urBFg5",
   },
   {
@@ -665,6 +724,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_2.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "awWcPG",
   },
   {
@@ -676,6 +736,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_3.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "4mgNl3",
   },
   {
@@ -687,6 +748,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_4.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "2URpYC",
   },
   {
@@ -698,6 +760,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_5.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "5zi3t7",
   },
   {
@@ -709,6 +772,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_6.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "JRcPzE",
   },
   {
@@ -720,6 +784,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Women's_Jacket_7.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "JRaszE",
   },
   {
@@ -731,6 +796,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "f03yUI",
   },
   {
@@ -742,6 +808,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_2.jpeg",
     newArrival: true,
+    cartAmount: 0,
     id: "f0asdI",
   },
   {
@@ -753,6 +820,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_3.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "asdasd",
   },
   {
@@ -764,6 +832,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_4.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "asdasw",
   },
   {
@@ -775,6 +844,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_5.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "xccxsd",
   },
   {
@@ -786,6 +856,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Men's_shoes_6.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "qwtsdf",
   },
   {
@@ -797,6 +868,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Yes_Water.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "dPY2FJ",
   },
   {
@@ -808,6 +880,7 @@ const ProductData = [
     review: 3.6,
     imgSrc: "Product_Image/Rye.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "66S7jr",
   },
   {
@@ -819,6 +892,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Eggs.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "bZxyDX",
   },
   {
@@ -830,6 +904,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Black_Shinbira.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "Jgkuth",
   },
   {
@@ -841,6 +916,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Minis_Choco.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "V65HY2",
   },
   {
@@ -852,6 +928,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/Mars_Chocolate.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "FAXz18",
   },
   {
@@ -863,6 +940,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/Apple.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "cvQXBr",
   },
   {
@@ -874,6 +952,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/IL_BOERO_Chocolate.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "ufc7Bf",
   },
   {
@@ -885,6 +964,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Ground_Beef_Meat.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "edwVaQ",
   },
   {
@@ -896,6 +976,7 @@ const ProductData = [
     review: 3.5,
     imgSrc: "Product_Image/Beef_Tongue.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "9Z14f3",
   },
   {
@@ -907,6 +988,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/SEMOLINA.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "BWqQ5U",
   },
   {
@@ -918,6 +1000,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Green_Pepper.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "StWDDs",
   },
   {
@@ -929,6 +1012,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Beans.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "3nk7YH",
   },
   {
@@ -940,6 +1024,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Red_turnip.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "IhYtcy",
   },
 
@@ -952,6 +1037,7 @@ const ProductData = [
     review: 4.1,
     imgSrc: "Product_Image/King_Robert.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "fQtWxv",
   },
   {
@@ -963,6 +1049,7 @@ const ProductData = [
     review: 3.8,
     imgSrc: "Product_Image/Amarula.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "aUZlDV",
   },
   {
@@ -974,6 +1061,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Gold_label_whisky.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "aovQ8g",
   },
   {
@@ -985,6 +1073,7 @@ const ProductData = [
     review: 3.9,
     imgSrc: "Product_Image/LA_ESPARDENY_CHAMPAIGN.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "fO5c5B",
   },
   {
@@ -996,6 +1085,7 @@ const ProductData = [
     review: 3.6,
     imgSrc: "Product_Image/BOMBAY_SAPPHIRE.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "F5Cf1W",
   },
   {
@@ -1007,6 +1097,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/NAMAQUA_WINE.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "2SjK4R",
   },
   {
@@ -1018,6 +1109,7 @@ const ProductData = [
     review: 4.0,
     imgSrc: "Product_Image/EARL_BROWN_DRY_GIN.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "4AADYk",
   },
   {
@@ -1029,6 +1121,7 @@ const ProductData = [
     review: 4.0,
     imgSrc: "Product_Image/ACACIA_DRY_RED_WINE.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "8aBnD8",
   },
   {
@@ -1040,6 +1133,7 @@ const ProductData = [
     review: 3.2,
     imgSrc: "Product_Image/Fried_crumbs_eggs.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "rJ5rod",
   },
   {
@@ -1051,6 +1145,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Kikel_Fitfit.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "8MJeSl",
   },
   {
@@ -1062,6 +1157,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Quanta_Firfir.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "JYlznd",
   },
   {
@@ -1073,6 +1169,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Lamb_Stew.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "vAVYyS",
   },
   {
@@ -1084,6 +1181,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Gored_Gored.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "kO8pBw",
   },
   {
@@ -1095,6 +1193,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Gomen_Kitfo.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "XL9kuN",
   },
   {
@@ -1106,6 +1205,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Doro_Firfir.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "FdYIIT",
   },
   {
@@ -1117,6 +1217,7 @@ const ProductData = [
     review: 4.2,
     imgSrc: "Product_Image/Special_Kitfo.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "j6Gf4l",
   },
   {
@@ -1128,6 +1229,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Dubai_Bridal_24k.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "ENRwUG",
   },
   {
@@ -1139,6 +1241,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/I2qrkR.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "I2qrkR",
   },
   {
@@ -1150,6 +1253,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/ouiTWX.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "ouiTWX",
   },
   {
@@ -1161,6 +1265,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/Zv34Ub.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "Zv34Ub",
   },
   {
@@ -1172,6 +1277,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/lJpnjk.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "lJpnjk",
   },
   {
@@ -1183,6 +1289,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/a5QZTJ.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "a5QZTJ",
   },
   {
@@ -1194,6 +1301,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/uz6dYC.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "uz6dYC",
   },
   {
@@ -1205,6 +1313,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/fbFpiJ.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "fbFpiJ",
   },
   {
@@ -1216,6 +1325,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/4FZekN.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "4FZekN",
   },
   {
@@ -1227,6 +1337,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/ZOMEUN.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "ZOMEUN",
   },
   {
@@ -1238,6 +1349,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/bToA3h.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "bToA3h",
   },
   {
@@ -1249,6 +1361,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/CX4Dtc.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "CX4Dtc",
   },
   {
@@ -1260,6 +1373,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/swxLM1.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "swxLM1",
   },
   {
@@ -1271,6 +1385,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/hS0GeF.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "hS0GeF",
   },
   {
@@ -1282,6 +1397,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/AtV64l.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "AtV64l",
   },
   {
@@ -1293,6 +1409,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/9dHMc4.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "9dHMc4",
   },
   {
@@ -1304,6 +1421,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/4c7MmJ.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "4c7MmJ",
   },
   {
@@ -1315,6 +1433,7 @@ const ProductData = [
     review: 3.8,
     imgSrc: "Product_Image/sebYfP.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "sebYfP",
   },
   {
@@ -1326,6 +1445,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/AK8vjc.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "AK8vjc",
   },
   {
@@ -1337,6 +1457,7 @@ const ProductData = [
     review: 4.3,
     imgSrc: "Product_Image/PKlKza.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "PKlKza",
   },
   {
@@ -1348,6 +1469,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/gyNOIu.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "gyNOIu",
   },
   {
@@ -1359,6 +1481,7 @@ const ProductData = [
     review: 3.6,
     imgSrc: "Product_Image/JtMnG0.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "JtMnG0",
   },
   {
@@ -1370,6 +1493,7 @@ const ProductData = [
     review: 4.6,
     imgSrc: "Product_Image/I8u2Zl.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "I8u2Zl",
   },
   {
@@ -1381,6 +1505,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/Jd88SD.webp",
     newArrival: true,
+    cartAmount: 0,
     id: "Jd88SD",
   },
   {
@@ -1392,6 +1517,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/gCeynp.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "gCeynp",
   },
   {
@@ -1403,6 +1529,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/QUfJ5R.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "QUfJ5R",
   },
   {
@@ -1414,6 +1541,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/S0GVdq.webp",
     newArrival: true,
+    cartAmount: 0,
     id: "S0GVdq",
   },
   {
@@ -1425,6 +1553,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/RPCo2S.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "RPCo2S",
   },
 
@@ -1437,6 +1566,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/9TJWYd.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "9TJWYd",
   },
 
@@ -1449,6 +1579,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/pNJj2B.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "pNJj2B",
   },
   {
@@ -1460,6 +1591,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/zpYylw.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "zpYylw",
   },
   {
@@ -1471,6 +1603,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/pNJj2B.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "i06My1",
   },
   {
@@ -1482,6 +1615,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/gr9po8.webp",
     newArrival: false,
+    cartAmount: 0,
     id: "gr9po8",
   },
   {
@@ -1493,6 +1627,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/itI2MM.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "itI2MM",
   },
   {
@@ -1504,6 +1639,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/ZC0yf0.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "ZC0yf0",
   },
   {
@@ -1515,6 +1651,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/SXrYkz.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "SXrYkz",
   },
   {
@@ -1526,6 +1663,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/laDLDC.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "laDLDC",
   },
   {
@@ -1537,6 +1675,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/z9NbJt.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "z9NbJt",
   },
   {
@@ -1548,6 +1687,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/HVUARy.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "HVUARy",
   },
   {
@@ -1559,6 +1699,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/36Sr6C.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "36Sr6C",
   },
   {
@@ -1570,6 +1711,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/R6Hqd4.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "R6Hqd4",
   },
   {
@@ -1581,6 +1723,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/HgTMYt.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "HgTMYt",
   },
   {
@@ -1592,6 +1735,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/8tsr9b.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "8tsr9b",
   },
   {
@@ -1603,6 +1747,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/cP1uVf.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "cP1uVf",
   },
   {
@@ -1614,6 +1759,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/7dY6mf.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "7dY6mf",
   },
   {
@@ -1625,6 +1771,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/jInnA5.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "jInnA5",
   },
   {
@@ -1636,6 +1783,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/qbaYzF.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "qbaYzF",
   },
   {
@@ -1647,6 +1795,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/fjUKqZ.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "fjUKqZ",
   },
   {
@@ -1658,6 +1807,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/rn8d6W.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "rn8d6W",
   },
   {
@@ -1669,6 +1819,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/ihMqiG.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "ihMqiG",
   },
   {
@@ -1680,6 +1831,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/0KFkDv.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "0KFkDv",
   },
 
@@ -1692,6 +1844,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/T9AUKk.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "T9AUKk",
   },
   {
@@ -1703,6 +1856,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/WAFZSM.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "WAFZSM",
   },
   {
@@ -1714,6 +1868,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/hrGLDJ.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "hrGLDJ",
   },
   {
@@ -1725,6 +1880,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/RFBUtq.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "RFBUtq",
   },
   {
@@ -1736,6 +1892,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/pdHmfQ.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "pdHmfQ",
   },
   {
@@ -1747,6 +1904,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/3iM2Sx.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "3iM2Sx",
   },
   {
@@ -1758,6 +1916,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/DAsZzi.jpeg",
     newArrival: false,
+    cartAmount: 0,
     id: "DAsZzi",
   },
   {
@@ -1769,6 +1928,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/6iVytL.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "6iVytL",
   },
   {
@@ -1780,6 +1940,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/chhaxW.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "chhaxW",
   },
   {
@@ -1791,6 +1952,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/QBLPbo.jpg",
     newArrival: false,
+    cartAmount: 0,
     id: "QBLPbo",
   },
   {
@@ -1802,6 +1964,7 @@ const ProductData = [
     review: 4.5,
     imgSrc: "Product_Image/Women's_boots.jpeg",
     newArrival: true,
+    cartAmount: 0,
     id: "7Q7qdi",
   },
   {
@@ -1813,6 +1976,7 @@ const ProductData = [
     review: 4.7,
     imgSrc: "Product_Image/Eg6lOo.jpeg",
     newArrival: true,
+    cartAmount: 0,
     id: "Eg6lOo",
   },
   {
@@ -1824,6 +1988,7 @@ const ProductData = [
     review: 4.9,
     imgSrc: "Product_Image/1uf85F.jpeg",
     newArrival: true,
+    cartAmount: 0,
     id: "1uf85F",
   },
   {
@@ -1835,6 +2000,7 @@ const ProductData = [
     review: 4.8,
     imgSrc: "Product_Image/2PSiRI.webp",
     newArrival: true,
+    cartAmount: 0,
     id: "2PSiRI",
   },
 ];

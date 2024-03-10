@@ -8,7 +8,7 @@ import CartSection from "./CartSection";
 const SharedLayout = () => {
   const [isNavbar, setIsNavbar] = useState(false);
   const [isSearch, setIsSearch] = useState(false);
-  const [isCart, setIsCart] = useState(false);
+  const [isCart, setIsCart] = useState(true);
   return (
     <div className="">
       <Header
