@@ -5,7 +5,7 @@ import NewArrivals from "@/Components/HomePage/NewArrivals";
 
 const HomePage = () => {
   return (
-    <div className="">
+    <div className="overflow-y-hidden ">
       <HomeLanding />
       <HomeCategory />
       <NewArrivals />

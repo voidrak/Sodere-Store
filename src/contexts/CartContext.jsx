@@ -3,6 +3,7 @@ export const CartContext = createContext();
 
 export const CartContextProvider = ({ children }) => {
   const [cartItemsList, setCartItemsList] = useState([]);
+  const [subtotal, setSubtotal] = useState(0);
 
   const addToCart = (product) => {
     const ExistingItemIndex = cartItemsList.findIndex(
@@ -56,7 +57,15 @@ export const CartContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    console.log(cartItemsList);
+    let totalBalance = 0;
+    cartItemsList.forEach((item) => {
+      totalBalance += item.price;
+    });
+    setSubtotal(totalBalance);
+  }, [cartItemsList, subtotal]);
+
+  useEffect(() => {
+    console.log("subtotal");
   }, [cartItemsList]);
 
   return (
@@ -68,6 +77,7 @@ export const CartContextProvider = ({ children }) => {
         removeCartItem,
         increaseItemAmount,
         decreaseItemAmount,
+        subtotal,
       }}
     >
       {children}
