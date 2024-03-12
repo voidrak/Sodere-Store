@@ -1,5 +1,5 @@
 import { CartContext } from "@/contexts/CartContext";
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { IoCloseSharp, IoCartOutline } from "react-icons/io5";
 import { IoIosCloseCircleOutline, IoMdAdd, IoMdRemove } from "react-icons/io";
 import OutsideClick from "@/hooks/outSideClick";
@@ -13,6 +13,13 @@ const CartSection = ({ isCart, setIsCart }) => {
     subtotal,
   } = useContext(CartContext);
 
+  const [shippingCost, setShippingCost] = useState(0);
+
+  useEffect(() => {
+    const shipping = (subtotal * 8) / 100;
+    setShippingCost(shipping);
+  }, [subtotal]);
+
   const cartRef = useRef(null);
   const cartOutsideClicked = OutsideClick(cartRef);
   // useEffect(() => {
@@ -23,6 +30,8 @@ const CartSection = ({ isCart, setIsCart }) => {
   //   console.log(cartOutsideClicked);
   //   console.log(isCart);
   // }, [cartOutsideClicked]);
+
+  useEffect(() => {});
 
   const mappedCartList =
     cartItemsList &&
@@ -71,9 +80,9 @@ const CartSection = ({ isCart, setIsCart }) => {
   return (
     <div
       ref={cartRef}
-      className={`fixed right-0 top-0 z-[999] min-h-[100vh] w-[101%] max-w-[470px] translate-x-1  rounded-b-sm border-b border-gray-600  bg-white transition-all duration-300 ease-in-out  ${!isCart ? "mr-[-100vw] " : ""}`}
+      className={`fixed right-0 top-0 z-[999]  h-[100vh] max-h-[100vh]  w-[101%] max-w-[470px] translate-x-1   rounded-b-sm border-b border-gray-600  bg-white transition-all duration-300 ease-in-out  ${!isCart ? "mr-[-100vw] " : ""}`}
     >
-      <div className=" fixed overflow-y-scroll ">
+      <div className="max-h-[65vh]   w-[100%] overflow-y-scroll pb-4   ">
         <div
           className=" flex items-center justify-between bg-[#f5f5f5] px-5 "
           onClick={() => {
@@ -84,7 +93,7 @@ const CartSection = ({ isCart, setIsCart }) => {
           <IoCloseSharp size={25} className="cursor-pointer hover:scale-110" />
         </div>
         {mappedCartList && mappedCartList.length < 1 ? (
-          <div className=" mt-auto flex h-[100%] flex-col items-center justify-center">
+          <div className="  mt-48 flex  h-[100%] flex-col items-center justify-center  ">
             <IoCartOutline
               size={50}
               className="cursor-pointer hover:scale-110"
@@ -110,10 +119,22 @@ const CartSection = ({ isCart, setIsCart }) => {
           </div>
         )}
       </div>
-      <div className=" absolute bottom-0 mt-16 h-[300px] w-[100%] border-t border-t-gray-400 bg-fuchsia-400 px-6 py-2">
-        <div className={`  flex justify-between text-[1.5rem] font-semibold `}>
+      <div className=" absolute bottom-0  h-[32vh]  w-[100%] space-y-4 border-t border-t-gray-400 bg-[#f5f5f5] px-6 py-8">
+        <div className={`  flex justify-between text-[1.4rem] font-semibold `}>
+          <h1 className="">Shipping </h1>
+          <h1 className=""> ${shippingCost.toFixed(2)}</h1>
+        </div>
+        <div className={`  flex justify-between text-[1.4rem] font-semibold  `}>
           <h1 className="">Subtotal </h1>
           <h1 className=""> ${subtotal.toFixed(2)}</h1>
+        </div>
+        <div className=" grid space-y-4">
+          <button className="w-[95%] rounded-md bg-[#6e6e6e] py-3 text-[1.2rem] font-semibold text-white ">
+            Checkout
+          </button>
+          <button className="w-[95%] rounded-md  border-2  border-black  bg-white py-3 text-[1.2rem] font-semibold ">
+            View Cart
+          </button>
         </div>
       </div>
     </div>
