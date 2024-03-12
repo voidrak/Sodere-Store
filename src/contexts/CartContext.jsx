@@ -59,14 +59,15 @@ export const CartContextProvider = ({ children }) => {
   useEffect(() => {
     let totalBalance = 0;
     cartItemsList.forEach((item) => {
-      totalBalance += item.price;
+      totalBalance += item.price * item.cartAmount;
     });
     setSubtotal(totalBalance);
   }, [cartItemsList, subtotal]);
 
-  useEffect(() => {
-    console.log("subtotal");
-  }, [cartItemsList]);
+  // useEffect(() => {
+  //   console.log("subtotal");
+  //   console.log(subtotal);
+  // }, [cartItemsList]);
 
   return (
     <CartContext.Provider
