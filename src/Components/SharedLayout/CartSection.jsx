@@ -82,7 +82,7 @@ const CartSection = ({ isCart, setIsCart }) => {
       ref={cartRef}
       className={`fixed right-0 top-0 z-[999]  h-[100vh] max-h-[100vh]  w-[101%] max-w-[470px] translate-x-1   rounded-b-sm border-b border-gray-600  bg-white transition-all duration-300 ease-in-out  ${!isCart ? "mr-[-100vw] " : ""}`}
     >
-      <div className="max-h-[65vh]   w-[100%] overflow-y-scroll pb-4   ">
+      <div className="">
         <div
           className=" flex items-center justify-between bg-[#f5f5f5] px-5 "
           onClick={() => {
@@ -92,6 +92,13 @@ const CartSection = ({ isCart, setIsCart }) => {
           <h1 className="py-6 text-[23px] font-semibold">Shopping Cart</h1>
           <IoCloseSharp size={25} className="cursor-pointer hover:scale-110" />
         </div>
+        <h1 className="mb-8 mt-4 text-center text-[25px]">
+          {cartItemsList && cartItemsList.length} Item
+          {`${cartItemsList && cartItemsList.length > 1 ? "s" : ""}`} in The
+          Cart
+        </h1>
+      </div>
+      <div className="max-h-[65vh]   w-[100%] overflow-y-scroll pb-4   ">
         {mappedCartList && mappedCartList.length < 1 ? (
           <div className="  mt-48 flex  h-[100%] flex-col items-center justify-center  ">
             <IoCartOutline
@@ -110,11 +117,6 @@ const CartSection = ({ isCart, setIsCart }) => {
           </div>
         ) : (
           <div className="space-y-10 pl-2 pr-4 min-[425px]:pl-4 min-[425px]:pr-8 ">
-            <h1 className="mb-8 mt-4 text-center text-[25px]">
-              {cartItemsList && cartItemsList.length} Item
-              {`${cartItemsList && cartItemsList.length > 1 ? "s" : ""}`} in The
-              Cart
-            </h1>
             {mappedCartList}
           </div>
         )}
