@@ -5,7 +5,7 @@ import { FaRegHeart } from "react-icons/fa";
 
 import SkeletonCard from "./SkeletonCard";
 import { CartContext } from "@/contexts/CartContext";
-
+import toast, { Toaster } from "react-hot-toast";
 const ProductCard = ({ product, onLoad }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const { addToCart } = useContext(CartContext);
@@ -45,6 +45,7 @@ const ProductCard = ({ product, onLoad }) => {
                 className="text  md:text-[10px flex items-center gap-x-1 rounded-e-sm  border border-none bg-[#5a9bc1]  p-2 text-[12px] text-white outline-none lg:p-3"
                 onClick={() => {
                   addToCart(product);
+                  toast.success("Item Added to Cart");
                 }}
               >
                 <FiShoppingBag color="white" size={15} className="" />

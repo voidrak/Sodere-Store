@@ -22,14 +22,14 @@ const CartSection = ({ isCart, setIsCart }) => {
 
   const cartRef = useRef(null);
   const cartOutsideClicked = OutsideClick(cartRef);
-  // useEffect(() => {
-  //   if (cartOutsideClicked && isCart) {
-  //     setIsCart(false);
-  //   }
+  useEffect(() => {
+    if (cartOutsideClicked && isCart) {
+      setIsCart(false);
+    }
 
-  //   console.log(cartOutsideClicked);
-  //   console.log(isCart);
-  // }, [cartOutsideClicked]);
+    console.log(cartOutsideClicked);
+    console.log(isCart);
+  }, [cartOutsideClicked]);
 
   useEffect(() => {});
 
@@ -92,7 +92,9 @@ const CartSection = ({ isCart, setIsCart }) => {
           <h1 className="py-6 text-[23px] font-semibold">Shopping Cart</h1>
           <IoCloseSharp size={25} className="cursor-pointer hover:scale-110" />
         </div>
-        <h1 className="mb-8 mt-4 text-center text-[25px]">
+        <h1
+          className={`mb-8 mt-4 text-center text-[25px] ${mappedCartList.length < 1 ? "hidden" : ""}`}
+        >
           {cartItemsList && cartItemsList.length} Item
           {`${cartItemsList && cartItemsList.length > 1 ? "s" : ""}`} in The
           Cart
@@ -121,7 +123,9 @@ const CartSection = ({ isCart, setIsCart }) => {
           </div>
         )}
       </div>
-      <div className=" absolute bottom-0  h-[32vh]  w-[100%] space-y-4 border-t border-t-gray-400 bg-[#f5f5f5] px-6 py-8">
+      <div
+        className={` absolute bottom-0  h-[32vh] w-[100%]  space-y-4 overscroll-contain border-t border-t-gray-400 bg-[#f5f5f5] px-6 py-8 ${mappedCartList.length < 1 ? "hidden" : ""}`}
+      >
         <div className={`  flex justify-between text-[1.4rem] font-semibold `}>
           <h1 className="">Shipping </h1>
           <h1 className=""> ${shippingCost.toFixed(2)}</h1>

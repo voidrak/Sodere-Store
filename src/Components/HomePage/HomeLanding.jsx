@@ -15,7 +15,7 @@ const HomeLanding = () => {
           <p className="font-ROBOTO  text-nowrap font-semibold min-[481px]:text-[18px] xl:text-[22px]  ">
             Best of Price $128.21
           </p>
-          <h1 className=" font-ROBOTO mt-5 text-[2rem] font-bold leading-9 min-[576px]:text-[2.2rem] min-[930px]:text-[2.7rem] min-[930px]:font-extrabold min-[930px]:leading-10 xl:text-[3rem] xl:leading-[2.9rem] min-[1440px]:text-[4rem] min-[1440px]:leading-[3.5rem] ">
+          <h1 className=" font-ROBOTO mt-5 text-[2rem] font-bold leading-9 min-[576px]:text-[2.2rem] min-[930px]:text-[2.7rem] min-[930px]:font-extrabold min-[930px]:leading-[2.6rem] xl:text-[3rem] xl:leading-[2.9rem] min-[1440px]:text-[4rem] min-[1440px]:leading-[3.5rem] ">
             Ethiopian Traditional Long Dress
           </h1>
           <Link to="categories">
