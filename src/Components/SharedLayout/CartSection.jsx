@@ -26,12 +26,7 @@ const CartSection = ({ isCart, setIsCart }) => {
     if (cartOutsideClicked && isCart) {
       setIsCart(false);
     }
-
-    console.log(cartOutsideClicked);
-    console.log(isCart);
   }, [cartOutsideClicked]);
-
-  useEffect(() => {});
 
   const mappedCartList =
     cartItemsList &&

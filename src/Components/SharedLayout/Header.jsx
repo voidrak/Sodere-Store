@@ -8,10 +8,11 @@ import { FaChevronCircleRight } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
 import { ProductContext } from "../../contexts/ProductContext";
 import { CartContext } from "@/contexts/CartContext";
+import { WishListContext } from "@/contexts/WishListContext";
 const Header = ({ setIsNavbar, setIsSearch, setIsCart }) => {
-  const { productData, categories, setCurrentCategory } =
-    useContext(ProductContext);
+  const { categories, setCurrentCategory } = useContext(ProductContext);
   const { cartItemsList } = useContext(CartContext);
+  const { wishlist } = useContext(WishListContext);
 
   const headerCatagories = categories.map((category, index) => (
     <li key={index}>
@@ -98,15 +99,19 @@ const Header = ({ setIsNavbar, setIsSearch, setIsCart }) => {
               className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
             />
           </div>
-          <div className="  relative after:absolute after:bottom-[-18px] after:left-[-10px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['wishlist'] hover:after:lg:block ">
-            <FaRegHeart
-              size={22}
-              className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
-            />
-            <div className="absolute bottom-3 left-2 flex h-[25px]  w-[25px] items-center justify-center rounded-full bg-black font-semibold text-white ">
-              5
+          <Link to="/wishlist">
+            <div className="  relative after:absolute after:bottom-[-18px] after:left-[-10px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['wishlist'] hover:after:lg:block ">
+              <FaRegHeart
+                size={22}
+                className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
+              />
+              <div
+                className={`absolute bottom-3 left-2 flex h-[25px]  w-[25px] items-center justify-center rounded-full bg-black font-semibold text-white ${wishlist.length ? "" : "hidden"} `}
+              >
+                {wishlist && wishlist.length}
+              </div>
             </div>
-          </div>
+          </Link>
           <div
             onClick={() => {
               setIsCart(true);
@@ -117,7 +122,9 @@ const Header = ({ setIsNavbar, setIsSearch, setIsCart }) => {
               size={22}
               className="  hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
             />
-            <div className="absolute bottom-3 left-2 flex  h-[25px] w-[25px] items-center justify-center rounded-full bg-black font-semibold text-white ">
+            <div
+              className={`absolute bottom-3 left-2 flex  h-[25px] w-[25px] items-center justify-center rounded-full bg-black font-semibold text-white ${cartItemsList.length ? "" : "hidden"}`}
+            >
               {cartItemsList && cartItemsList.length}
             </div>
           </div>

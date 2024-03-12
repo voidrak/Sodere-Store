@@ -1,4 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
+
 export const CartContext = createContext();
 
 export const CartContextProvider = ({ children }) => {
@@ -12,12 +14,11 @@ export const CartContextProvider = ({ children }) => {
     setCartItemsList((prev) => {
       if (ExistingItemIndex !== -1) {
         const updatedCartList = [...prev];
-        updatedCartList[ExistingItemIndex] = {
-          ...updatedCartList[ExistingItemIndex],
-          cartAmount: updatedCartList[ExistingItemIndex].cartAmount + 1,
-        };
+        toast.error("Item already in cart!");
+
         return updatedCartList;
       } else {
+        toast.success("Item added to cart");
         return [...prev, { ...product, cartAmount: 1 }];
       }
     });
