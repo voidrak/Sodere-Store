@@ -2003,6 +2003,44 @@ const ProductData = [
     cartAmount: 0,
     id: "2PSiRI",
   },
+
+  {
+    itemNameEnglish: " Swan Nordic Style Kettle ",
+    itemNameAmharic: "ስዋን ኖርዲክ እስታይል ማንቆርቆሪያ",
+    price: 144.95,
+    category: ["Home & Kitchen"],
+    popular: false,
+    review: 4.7,
+    imgSrc: "Product_Image/RfLTmM.jpeg",
+    newArrival: false,
+    cartAmount: 0,
+    id: "RfLTmM",
+  },
+
+  {
+    itemNameEnglish: " Swan Nordic  Micro Wave Oven ",
+    itemNameAmharic: "ስዋን ኖርዲክ ማይክሮዌቭ",
+    price: 182.15,
+    category: ["Home & Kitchen"],
+    popular: false,
+    review: 4.7,
+    imgSrc: "Product_Image/I2BdHG.png",
+    newArrival: false,
+    cartAmount: 0,
+    id: "I2BdHG",
+  },
+  {
+    itemNameEnglish: " Swan Nordic 2 Slice Toaster ",
+    itemNameAmharic: "ስዋን ኖርዲክ ቶስተር",
+    price: 168.65,
+    category: ["Home & Kitchen"],
+    popular: false,
+    review: 4.7,
+    imgSrc: "Product_Image/eR1kGT.jpeg",
+    newArrival: false,
+    cartAmount: 0,
+    id: "eR1kGT",
+  },
 ];
 
 export default ProductData;
