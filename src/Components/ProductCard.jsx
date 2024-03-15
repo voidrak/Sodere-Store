@@ -6,6 +6,7 @@ import { FaRegHeart } from "react-icons/fa";
 import SkeletonCard from "./SkeletonCard";
 import { CartContext } from "@/contexts/CartContext";
 import { WishListContext } from "@/contexts/WishListContext";
+import { NavLink } from "react-router-dom";
 const ProductCard = ({ product, onLoad }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const { addToCart } = useContext(CartContext);
@@ -43,7 +44,7 @@ const ProductCard = ({ product, onLoad }) => {
             />
             <div className="absolute top-1 z-10 ml-[-100px] flex w-[0%] flex-col  gap-y-2 transition-all duration-500 ease-in-out group-hover:ml-[0px] group-hover:w-[70%] ">
               <button
-                className="text  md:text-[10px flex items-center gap-x-1 rounded-e-sm  border border-none bg-[#5a9bc1]  p-2 text-[12px] text-white outline-none lg:p-3"
+                className="text   flex items-center gap-x-1 rounded-e-sm  border border-none bg-[#5a9bc1]  p-2 text-[12px] text-white outline-none lg:p-3"
                 onClick={() => {
                   addToCart(product);
                 }}
@@ -52,7 +53,7 @@ const ProductCard = ({ product, onLoad }) => {
                 <p>Cart</p>
               </button>
               <button
-                className="text  md:text-[10px flex items-center gap-x-1 rounded-e-sm  border border-none bg-[#c15a5a] p-2 text-[12px] text-white outline-none  lg:p-3"
+                className="text   flex items-center gap-x-1 rounded-e-sm  border border-none bg-[#c15a5a] p-2 text-[12px] text-white outline-none  lg:p-3"
                 onClick={() => {
                   handleWishlist(product);
                 }}
@@ -60,16 +61,21 @@ const ProductCard = ({ product, onLoad }) => {
                 <FaRegHeart color="white" size={15} className="" />
                 <p>Wish List</p>
               </button>
-              <button className="text  md:text-[10px flex items-center gap-x-1 rounded-e-sm  border border-none bg-slate-300 p-2 text-[12px] font-bold outline-none lg:p-3">
-                <IoEyeOutline color="black" size={15} className="" />
-                <p>View Item</p>
-              </button>
+              <NavLink to={`/${product.id}`}>
+                <button className="text  flex w-[100%] items-center gap-x-1 rounded-e-sm  border border-none bg-slate-300 p-2 text-[12px] font-bold outline-none lg:p-3">
+                  <IoEyeOutline color="black" size={15} className="" />
+                  <p>View Item</p>
+                </button>
+              </NavLink>
             </div>
           </div>
           <div className="flex flex-col items-center transition-all duration-300 ease-in-out  ">
             <div className="">
               <h1 className="mt-2 text-center font-semibold">
                 {product.itemNameEnglish}
+              </h1>
+              <h1 className="mt-2 text-center font-semibold">
+                {product.itemNameAmharic}
               </h1>
             </div>
             <p className="mb-2">${product.price}</p>

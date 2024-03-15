@@ -5,6 +5,7 @@ import { TbMathGreater } from "react-icons/tb";
 import Pagination from "../Pagination";
 import CategoryFilter from "./CategoryFilter";
 import CategoryProductList from "./CategoryProductList";
+import { FaHome } from "react-icons/fa";
 
 const CategoriesSection = () => {
   const { productData, categories, setCurrentCategory, currentCategory } =
@@ -26,9 +27,10 @@ const CategoriesSection = () => {
             {currentCategory}
           </h1>
           <div className="flex items-center justify-center gap-x-2 ">
-            <p className="">
-              <Link to="/">Home</Link>
-            </p>
+            <Link to="/" className="flex items-center  gap-x-2">
+              <FaHome />
+              <p className="">Home</p>
+            </Link>
             <TbMathGreater size={13} />
             <p className="font-bold">{currentCategory}</p>
           </div>

@@ -185,7 +185,7 @@ const ProductData = [
   },
   {
     itemNameAmharic: "የአባቶች ቀን ጊፍት",
-    itemNameEnglish: "Father`s Day Gift",
+    itemNameEnglish: "Father's Day Gift",
     price: 146.92,
     category: ["Holiday & Seasonal"],
     popular: false,
@@ -1077,7 +1077,7 @@ const ProductData = [
     id: "fO5c5B",
   },
   {
-    itemNameEnglish: "BOMBAY SAPPHIRE` GIN",
+    itemNameEnglish: "BOMBAY SAPPHIRE' GIN",
     itemNameAmharic: " ቦምቤይ ሳፒየር ጂን",
     price: 38.81,
     category: ["Food and Drinks"],
@@ -1968,7 +1968,7 @@ const ProductData = [
     id: "7Q7qdi",
   },
   {
-    itemNameEnglish: "Men`s Hoddie ",
+    itemNameEnglish: "Men's Hoddie ",
     itemNameAmharic: "የወንዶች ሹራብ ",
     price: 94.18,
     category: ["Clothing"],

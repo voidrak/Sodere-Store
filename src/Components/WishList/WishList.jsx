@@ -2,7 +2,7 @@ import React from "react";
 import { TbMathGreater } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import WishlistProducts from "./WishlistProducts";
-
+import { FaHome } from "react-icons/fa";
 const WishList = () => {
   return (
     <div className="">
@@ -11,9 +11,10 @@ const WishList = () => {
           Wishlist
         </h1>
         <div className="flex items-center justify-center gap-x-2 ">
-          <p className="">
-            <Link to="/">Home</Link>
-          </p>
+          <Link to="/" className="flex items-center  gap-x-2">
+            <FaHome />
+            <p className="">Home</p>
+          </Link>
           <TbMathGreater size={13} />
           <p className="">Wishlist</p>
         </div>

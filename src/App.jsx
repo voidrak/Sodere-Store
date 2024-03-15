@@ -8,6 +8,7 @@ import ErrorPage from "./Pages/ErrorPage";
 import SearchPage from "./Pages/SearchPage";
 import CategoriesPage from "./Pages/CategoriesPage";
 import WishListPage from "./Pages/WishListPage";
+import ProductPage from "./Pages/ProductPage";
 import "./App.css";
 import { CartContextProvider } from "./contexts/CartContext";
 import toast, { Toaster } from "react-hot-toast";
@@ -58,6 +59,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<SharedLayout />}>
                 <Route index element={<HomePage />} />
+                <Route path="/:productId" element={<ProductPage />} />
                 <Route path="contact" element={<ContactUsPage />} />
                 <Route path="search" element={<SearchPage />} />
                 <Route path="categories" element={<CategoriesPage />} />
