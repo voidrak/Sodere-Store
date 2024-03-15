@@ -29,15 +29,36 @@ export const CartContextProvider = ({ children }) => {
     setCartItemsList(updatedCartList);
   };
 
-  const increaseItemAmount = (id) => {
+  const increaseItemAmount = (id, amount) => {
     const cartItemIndex = cartItemsList.findIndex((item) => item.id === id);
     setCartItemsList((prev) => {
       const updatedCartList = [...prev];
       updatedCartList[cartItemIndex] = {
         ...updatedCartList[cartItemIndex],
-        cartAmount: updatedCartList[cartItemIndex].cartAmount + 1,
+        cartAmount: updatedCartList[cartItemIndex].cartAmount + amount,
       };
       return updatedCartList;
+    });
+  };
+
+  const addItemWithAmount = (product, amount) => {
+    const ExistingItemIndex = cartItemsList.findIndex(
+      (item) => item.id === product.id,
+    );
+    setCartItemsList((prev) => {
+      if (ExistingItemIndex !== -1) {
+        const updatedCartList = [...prev];
+        updatedCartList[ExistingItemIndex] = {
+          ...updatedCartList[ExistingItemIndex],
+          cartAmount: amount,
+        };
+
+        toast.success("Item added to cart");
+        return updatedCartList;
+      } else {
+        toast.success("Item added to cart");
+        return [...prev, { ...product, cartAmount: amount }];
+      }
     });
   };
 
@@ -80,6 +101,7 @@ export const CartContextProvider = ({ children }) => {
         increaseItemAmount,
         decreaseItemAmount,
         subtotal,
+        addItemWithAmount,
       }}
     >
       {children}

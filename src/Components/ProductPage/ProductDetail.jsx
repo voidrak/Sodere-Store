@@ -1,5 +1,5 @@
 import { ProductContext } from "@/contexts/ProductContext";
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { TbMathGreater } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -11,16 +11,20 @@ import { WishListContext } from "@/contexts/WishListContext";
 
 const ProductDetail = () => {
   const [isWished, setIsWished] = useState(false);
-  const { addToCart } = useContext(CartContext);
+  const { productId } = useParams();
+  const inputElement = useRef(null);
+  const { addToCart, addItemWithAmount } = useContext(CartContext);
   const { handleWishlist } = useContext(WishListContext);
   const { productData } = useContext(ProductContext);
-  const { productId } = useParams();
+  const [cartAmount, setCartAmount] = useState(1);
+  //   //////////////////////////////////////////////////////////////////
+
   const selectedProduct = productData.filter((item) => {
     return item.id === productId;
   });
 
   const mappedSelectedProduct = selectedProduct.map((product) => (
-    <div className="mb-48">
+    <div key={product.id}>
       {/* ///////////////////////// */}
 
       <div className="bg-[url('/category-bg.jpeg')] py-10 text-center">
@@ -69,13 +73,29 @@ const ProductDetail = () => {
             </p>
 
             <div className="mt-16 flex items-center gap-x-4">
-              <input
-                type="number"
-                placeholder="enter quantity"
-                className=" w-[140px] rounded-full border border-gray-400 py-2 text-center font-bold  outline-none"
-              />
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const cartAmount = e.target.elements.cartAmount.value;
+                  addItemWithAmount(product, parseInt(cartAmount));
+                  //   console.log(cartAmount);
+                }}
+              >
+                <input
+                  ref={inputElement}
+                  type="number"
+                  value={cartAmount}
+                  onChange={(e) => {
+                    setCartAmount(e.target.value);
+                  }}
+                  name="cartAmount"
+                  min={1}
+                  placeholder="enter quantity"
+                  className=" w-[140px] rounded-full border border-gray-400 py-2 text-center font-bold  outline-none"
+                />
+              </form>
               <div
-                className="rounded-full border border-gray-400 p-2"
+                className="cursor-pointer rounded-full border border-gray-400 p-2"
                 onClick={() => {
                   addToCart(product);
                 }}
@@ -83,7 +103,7 @@ const ProductDetail = () => {
                 <FiShoppingBag size={25} />
               </div>
               <div
-                className={`rounded-full border border-gray-400  p-2 ${isWished ? "bg-red-600" : ""}`}
+                className={`cursor-pointer rounded-full border border-gray-400  p-2 ${isWished ? "bg-red-600" : ""}`}
                 onClick={() => {
                   handleWishlist(product);
                   setIsWished((prev) => !prev);
@@ -99,7 +119,7 @@ const ProductDetail = () => {
       </div>
     </div>
   ));
-  return <div>{mappedSelectedProduct}</div>;
+  return <div className="mb-48">{mappedSelectedProduct}</div>;
 };
 
 export default ProductDetail;
