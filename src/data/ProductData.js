@@ -2030,7 +2030,7 @@ const ProductData = [
     id: "I2BdHG",
   },
   {
-    itemNameEnglish: " Swan Nordic 2 Slice Toaster ",
+    itemNameEnglish: " Swan Nordic Slice Toaster ",
     itemNameAmharic: "ስዋን ኖርዲክ ቶስተር",
     price: 168.65,
     category: ["Home & Kitchen"],
