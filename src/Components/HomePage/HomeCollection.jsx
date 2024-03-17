@@ -25,9 +25,9 @@ const HomeCollection = () => {
 
         {/* ///////////////////////////////////////////////////////////// */}
         <div className=" group">
-          <span class="absolute left-[20%] top-[35%] flex items-center  justify-center xl:left-[21%]">
-            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"></span>
-            <span class=": relative inline-flex h-[20px]  w-[20px] items-center justify-center rounded-full bg-sky-500 text-white sm:h-[30px] sm:w-[30px] lg:h-[40px] lg:w-[40px]">
+          <span className="absolute left-[20%] top-[35%] flex items-center  justify-center xl:left-[21%]">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"></span>
+            <span className=": relative inline-flex h-[20px]  w-[20px] items-center justify-center rounded-full bg-sky-500 text-white sm:h-[30px] sm:w-[30px] lg:h-[40px] lg:w-[40px]">
               <div className="group-hover:hidden">
                 <IoMdAdd />
               </div>
@@ -72,9 +72,9 @@ const HomeCollection = () => {
         {/* ///////////////////////////////////////////////////////////// */}
         {/* ///////////////////////////////////////////////////////////// */}
         <div className="group">
-          <span class="absolute left-[45%] top-[30%] flex items-center  justify-center ">
-            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"></span>
-            <span class=": relative inline-flex h-[20px]  w-[20px] items-center justify-center rounded-full bg-sky-500 text-white sm:h-[30px] sm:w-[30px] lg:h-[40px] lg:w-[40px]">
+          <span className="absolute left-[45%] top-[30%] flex items-center  justify-center ">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"></span>
+            <span className=": relative inline-flex h-[20px]  w-[20px] items-center justify-center rounded-full bg-sky-500 text-white sm:h-[30px] sm:w-[30px] lg:h-[40px] lg:w-[40px]">
               <div className="group-hover:hidden">
                 <IoMdAdd />
               </div>
@@ -117,9 +117,9 @@ const HomeCollection = () => {
         {/* ///////////////////////////////////////////////////////////// */}
         {/* ///////////////////////////////////////////////////////////// */}
         <div className="group">
-          <span class="absolute left-[75%] top-[50%] flex items-center  justify-center ">
-            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"></span>
-            <span class=": relative inline-flex h-[20px]  w-[20px] items-center justify-center rounded-full bg-sky-500 text-white sm:h-[30px] sm:w-[30px] lg:h-[40px] lg:w-[40px]">
+          <span className="absolute left-[75%] top-[50%] flex items-center  justify-center ">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"></span>
+            <span className=": relative inline-flex h-[20px]  w-[20px] items-center justify-center rounded-full bg-sky-500 text-white sm:h-[30px] sm:w-[30px] lg:h-[40px] lg:w-[40px]">
               <div className="group-hover:hidden">
                 <IoMdAdd />
               </div>

@@ -25,6 +25,8 @@ const ProductDetail = () => {
     return item.id === productId;
   });
 
+  console.log(productId);
+
   const mappedSelectedProduct = selectedProduct.map((product) => (
     <div key={product.id}>
       {/* ///////////////////////// */}
@@ -128,7 +130,7 @@ const ProductDetail = () => {
     </div>
   ));
   return (
-    <div className="mb-48">
+    <div className="mb-16">
       {mappedSelectedProduct};
       <SimilarProduct
         selectedProduct={selectedProduct}

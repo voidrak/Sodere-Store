@@ -29,13 +29,13 @@ export const CartContextProvider = ({ children }) => {
     setCartItemsList(updatedCartList);
   };
 
-  const increaseItemAmount = (id, amount) => {
+  const increaseItemAmount = (id) => {
     const cartItemIndex = cartItemsList.findIndex((item) => item.id === id);
     setCartItemsList((prev) => {
       const updatedCartList = [...prev];
       updatedCartList[cartItemIndex] = {
         ...updatedCartList[cartItemIndex],
-        cartAmount: updatedCartList[cartItemIndex].cartAmount + amount,
+        cartAmount: updatedCartList[cartItemIndex].cartAmount + 1,
       };
       return updatedCartList;
     });
