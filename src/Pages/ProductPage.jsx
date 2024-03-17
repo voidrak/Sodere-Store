@@ -6,7 +6,6 @@ const ProductPage = () => {
   return (
     <div>
       <ProductDetail />
-      <ProductDesc />
     </div>
   );
 };

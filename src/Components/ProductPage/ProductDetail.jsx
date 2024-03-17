@@ -8,6 +8,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { CartContext } from "@/contexts/CartContext";
 import { WishListContext } from "@/contexts/WishListContext";
 import SimilarProduct from "./SimilarProduct";
+import ProductDesc from "./ProductDesc";
 
 const ProductDetail = () => {
   const [isWished, setIsWished] = useState(false);
@@ -136,6 +137,7 @@ const ProductDetail = () => {
         selectedProduct={selectedProduct}
         productData={productData}
       />
+      <ProductDesc selectedProduct={selectedProduct} />
     </div>
   );
 };

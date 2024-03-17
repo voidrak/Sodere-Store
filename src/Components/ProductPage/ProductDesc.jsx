@@ -1,4 +1,5 @@
 import React from "react";
+import toast from "react-hot-toast";
 import {
   Accordion,
   AccordionContent,
@@ -6,33 +7,140 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 
-const ProductDesc = () => {
+const ProductDesc = ({ selectedProduct }) => {
   return (
-    <div className="mx-auto mb-48 max-w-[1280px]  px-6 min-[576px]:w-[80%] min-[931px]:max-w-[837px] min-[1200px]:max-w-[1024px] ">
+    <div className="mx-auto mb-48 mt-16 max-w-[1280px]  px-6 min-[576px]:w-[80%] min-[931px]:max-w-[837px] min-[1200px]:max-w-[1024px] ">
       <Accordion type="single" collapsible className="">
         <AccordionItem value="item-1">
           <AccordionTrigger>Description</AccordionTrigger>
           <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
+            <p className="">
+              Discover our newest product, crafted with precision and designed
+              for your convenience. Elevate your experience with innovation at
+              your fingertips. Experience quality like never before."!
+            </p>
+            <ul className="ml-3  mt-4 list-inside list-disc space-y-2 font-light ">
+              <li className="">Sleek and modern design</li>
+              <li className=""> functionality for ease of use</li>
+              <li className="">Durable for long-lasting performance</li>
+              <li className="">Versatile features to suit your needs"</li>
+            </ul>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>Additional Information</AccordionTrigger>
           <AccordionContent>
-            Yes. It comes with default styles that matches the other
-            components&apos; aesthetic.
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+              <table class=" w-[100%] text-left text-sm text-gray-500 dark:text-gray-400 ">
+                <tbody>
+                  <tr class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
+                    <th
+                      scope="row"
+                      class="whitespace-nowrap px-6 py-4 text-base font-bold text-gray-900 dark:text-white"
+                    >
+                      Name
+                    </th>
+                    <td class="px-6 py-4">
+                      {selectedProduct[0].itemNameEnglish}
+                    </td>
+                  </tr>
+                  <tr class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
+                    <th
+                      scope="row"
+                      class="whitespace-nowrap px-6 py-4 text-base font-bold text-gray-900 dark:text-white"
+                    >
+                      ስም
+                    </th>
+                    <td class="px-6 py-4">
+                      {selectedProduct[0].itemNameAmharic}
+                    </td>
+                  </tr>
+                  <tr class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
+                    <th
+                      scope="row"
+                      class="whitespace-nowrap px-6 py-4 text-base font-bold text-gray-900 dark:text-white"
+                    >
+                      Rating
+                    </th>
+                    <td class="px-6 py-4">{selectedProduct[0].review}</td>
+                  </tr>
+                  <tr class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
+                    <th
+                      scope="row"
+                      class="whitespace-nowrap px-6 py-4 text-base font-bold text-gray-900 dark:text-white"
+                    >
+                      Category
+                    </th>
+                    <td class="px-6 py-4">{selectedProduct[0].category}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
           <AccordionTrigger>Shipping & Return</AccordionTrigger>
           <AccordionContent>
-            Yes. It's animated by default, but you can disable it if you prefer.
+            <h1 className="mt-5 text-[18px] font-semibold ">Returns policy</h1>
+            <ul className="ml-3  mt-4 list-outside list-disc  space-y-2 text-pretty font-light ">
+              <li className="font- relative font-sans text-[15px] before:absolute before:left-[-12px] before:top-[6px] before:h-[7px] before:w-[7px] before:rounded-full before:bg-gray-700  ">
+                Dispatch: Within 24 Hours
+              </li>
+              <li className="font- relative font-sans text-[15px] before:absolute before:left-[-12px] before:top-[6px] before:h-[7px] before:w-[7px] before:rounded-full  before:bg-gray-700 ">
+                Free shipping across all products on a minimum purchase of $50.
+              </li>
+              <li className="font- relative font-sans text-[15px] before:absolute before:left-[-12px] before:top-[6px] before:h-[7px] before:w-[7px]  before:rounded-full  before:bg-gray-700">
+                International delivery time - 7-10 business days
+              </li>
+              <li className="font- relative font-sans text-[15px] before:absolute before:left-[-12px] before:top-[6px] before:h-[7px] before:w-[7px] before:rounded-full  before:bg-gray-700 ">
+                Cash on delivery might be available{" "}
+              </li>
+              <li className="font- relative font-sans text-[15px] before:absolute before:left-[-12px] before:top-[6px] before:h-[7px] before:w-[7px] before:rounded-full before:bg-gray-700  ">
+                Easy 30 days returns and exchanges{" "}
+              </li>
+            </ul>
+            <h1 className="mt-5 text-[18px] font-semibold ">Returns policy</h1>
+            <p className="mt-3 text-justify">
+              You may return most new, unopened items within 30 days of delivery
+              for a full refund. We'll also pay the return shipping costs if the
+              return is a result of our error (you received an incorrect or
+              defective item, etc.).
+            </p>
+            <p className="mt-3 text-justify">
+              You should expect to receive your refund within four weeks of
+              giving your package to the return shipper, however, in many cases
+              you will receive a refund more quickly. This time period includes
+              the transit time for us to receive your return from the shipper (5
+              to 10 business days), the time it takes us to process your return
+              once we receive it (3 to 5 business days), and the time it takes
+              your bank to process our refund request (5 to 10 business days).
+            </p>
+            <p className="mt-3 text-justify">
+              If you need to return an item, simply login to your account, view
+              the order using the "Complete Orders" link under the My Account
+              menu and click the Return Item(s) button. We'll notify you via
+              e-mail of your refund once we've received and processed the
+              returned item.
+            </p>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-3">
+        <AccordionItem value="item-4">
           <AccordionTrigger>Product Reviews</AccordionTrigger>
           <AccordionContent>
-            Yes. It's animated by default, but you can disable it if you prefer.
+            <div
+              onClick={() => {
+                toast.error("review is under construction");
+              }}
+              className="flex h-[200px] flex-col items-center justify-center gap-y-4 "
+            >
+              <p>No review yet</p>
+              <button
+                type="button"
+                class="mb-2 me-2 rounded-lg border border-gray-200 bg-black px-5 py-2.5 text-sm font-medium text-white hover:scale-95   focus:outline-none focus:ring-4 focus:ring-gray-100    "
+              >
+                WRITE A REVIEW
+              </button>
+            </div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
