@@ -30,6 +30,7 @@ const App = () => {
               style: {
                 background: "#363636",
                 color: "#fff",
+                marginTop: "50px",
               },
 
               // Default options for specific types

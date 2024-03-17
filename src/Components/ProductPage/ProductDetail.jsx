@@ -5,18 +5,20 @@ import { TbMathGreater } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
-import { FiShoppingBag } from "react-icons/fi";
 import { CartContext } from "@/contexts/CartContext";
 import { WishListContext } from "@/contexts/WishListContext";
+import SimilarProduct from "./SimilarProduct";
 
 const ProductDetail = () => {
   const [isWished, setIsWished] = useState(false);
-  const { productId } = useParams();
-  const inputElement = useRef(null);
-  const { addToCart, addItemWithAmount } = useContext(CartContext);
+  const [cartAmount, setCartAmount] = useState(1);
+
+  const { addItemWithAmount } = useContext(CartContext);
   const { handleWishlist } = useContext(WishListContext);
   const { productData } = useContext(ProductContext);
-  const [cartAmount, setCartAmount] = useState(1);
+
+  const { productId } = useParams();
+  const inputElement = useRef(null);
   //   //////////////////////////////////////////////////////////////////
 
   const selectedProduct = productData.filter((item) => {
@@ -61,8 +63,20 @@ const ProductDetail = () => {
             </div>
 
             <div className="mt-4 flex items-center justify-between ">
-              <p className="text-[18px] font-semibold">${product.price}</p>
-              <h1 className="font-bold text-green-500"> In Stock</h1>
+              <div className="flex items-center gap-x-4">
+                <p className="text-[18px] font-semibold">${product.price}</p>
+                <div
+                  className={`cursor-pointer rounded-full border border-gray-400  p-2 ${isWished ? "bg-[#44b8fe]" : ""}`}
+                  onClick={() => {
+                    handleWishlist(product);
+                    setIsWished((prev) => !prev);
+                  }}
+                >
+                  <FaRegHeart size={25} color={`${isWished ? "white" : ""}`} />
+                </div>
+              </div>
+
+              <h1 className="font-bold text-[#44b8fe]"> In Stock</h1>
             </div>
             <p className="mt-8 text-[15px] text-gray-500 ">
               Discover convenience and comfort in every use, making it a
@@ -72,7 +86,7 @@ const ProductDetail = () => {
               – embrace the perfect addition to your life
             </p>
 
-            <div className="mt-16 flex items-center gap-x-4">
+            <div className="mt-16 flex items-center  gap-x-16 px-8 max-lg:px-0">
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -90,27 +104,21 @@ const ProductDetail = () => {
                   }}
                   name="cartAmount"
                   min={1}
-                  placeholder="enter quantity"
-                  className=" w-[140px] rounded-full border border-gray-400 py-2 text-center font-bold  outline-none"
+                  placeholder="1"
+                  className=" w-[100px] rounded-full border border-gray-400 py-2 text-center font-bold  outline-none"
                 />
               </form>
-              <div
-                className="cursor-pointer rounded-full border border-gray-400 p-2"
+
+              <button
+                className="w-[150px] cursor-pointer rounded-xl border-none  bg-[#357297] p-2 text-white"
                 onClick={() => {
-                  addToCart(product);
+                  // const cartAmount = e.target.elements.cartAmount.value;
+                  addItemWithAmount(product, parseInt(cartAmount));
+                  //   console.log(cartAmount);
                 }}
               >
-                <FiShoppingBag size={25} />
-              </div>
-              <div
-                className={`cursor-pointer rounded-full border border-gray-400  p-2 ${isWished ? "bg-red-600" : ""}`}
-                onClick={() => {
-                  handleWishlist(product);
-                  setIsWished((prev) => !prev);
-                }}
-              >
-                <FaRegHeart size={25} color={`${isWished ? "white" : ""}`} />
-              </div>
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
@@ -119,7 +127,15 @@ const ProductDetail = () => {
       </div>
     </div>
   ));
-  return <div className="mb-48">{mappedSelectedProduct}</div>;
+  return (
+    <div className="mb-48">
+      {mappedSelectedProduct};
+      <SimilarProduct
+        selectedProduct={selectedProduct}
+        productData={productData}
+      />
+    </div>
+  );
 };
 
 export default ProductDetail;
