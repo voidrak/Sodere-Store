@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { IoEyeOutline } from "react-icons/io5";
 import { FiShoppingBag } from "react-icons/fi";
-import { FaRegHeart } from "react-icons/fa";
+import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 import SkeletonCard from "./SkeletonCard";
 import { CartContext } from "@/contexts/CartContext";
@@ -11,6 +11,7 @@ const ProductCard = ({ product, onLoad }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const { addToCart } = useContext(CartContext);
   const { handleWishlist } = useContext(WishListContext);
+  const [cartIsWished, setCartIsWished] = useState(false);
 
   const handleOnLoad = () => {
     setIsLoad((prev) => prev + 1);
@@ -56,9 +57,15 @@ const ProductCard = ({ product, onLoad }) => {
                 className="text   flex items-center gap-x-1 rounded-e-sm  border border-none bg-[#c15a5a] p-2 text-[12px] text-white outline-none  lg:p-3"
                 onClick={() => {
                   handleWishlist(product);
+                  setCartIsWished((prev) => !prev);
                 }}
               >
-                <FaRegHeart color="white" size={15} className="" />
+                {!cartIsWished ? (
+                  <FaRegHeart color="white" size={16} className="" />
+                ) : (
+                  <FaHeart size={16} color="#44b8fe" />
+                )}
+
                 <p>Wish List</p>
               </button>
               <NavLink to={`/${product.id}`}>

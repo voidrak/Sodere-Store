@@ -41,6 +41,10 @@ export const CartContextProvider = ({ children }) => {
     });
   };
 
+  const emptyCart = () => {
+    setCartItemsList([]);
+  };
+
   const addItemWithAmount = (product, amount) => {
     const ExistingItemIndex = cartItemsList.findIndex(
       (item) => item.id === product.id,
@@ -102,6 +106,7 @@ export const CartContextProvider = ({ children }) => {
         decreaseItemAmount,
         subtotal,
         addItemWithAmount,
+        emptyCart,
       }}
     >
       {children}

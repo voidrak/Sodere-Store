@@ -8,7 +8,7 @@ import {
 } from "../ui/accordion";
 
 const ProductDesc = ({ selectedProduct }) => {
-  const [activeTab, setActiveTab] = useState("description");
+  const [activeTab, setActiveTab] = useState("additional");
   const [ActiveTabElement, setActiveTabElement] = useState(null);
 
   const handleActive = (tab) => {
@@ -307,10 +307,10 @@ const ProductDesc = ({ selectedProduct }) => {
         </Accordion>
       </div>
 
-      <div className="mx-auto w-full border-b border-gray-200 px-2 text-center text-sm font-medium text-gray-500      dark:border-gray-700  dark:text-gray-400">
-        <ul className="-mb-px flex flex-nowrap justify-between">
+      <div className="mx-auto w-full border-b border-gray-200 px-2 text-center text-sm font-medium text-gray-500 dark:border-gray-700  dark:text-gray-400">
+        <ul className="-mb-px flex flex-nowrap justify-between border-b border-gray-200 ">
           <li
-            className={` me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  dark:hover:text-gray-300 ${activeTab === "description" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}
+            className={` me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  hover:text-black ${activeTab === "description" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}
             onClick={() => {
               handleActive("description");
             }}
@@ -318,7 +318,7 @@ const ProductDesc = ({ selectedProduct }) => {
             Description
           </li>
           <li
-            className={` me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  dark:hover:text-gray-300 ${activeTab === "additional" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}
+            className={` me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  hover:text-black ${activeTab === "additional" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}
             onClick={() => {
               handleActive("additional");
             }}
@@ -326,7 +326,7 @@ const ProductDesc = ({ selectedProduct }) => {
             Additional Information
           </li>
           <li
-            className={`me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  dark:hover:text-gray-300 ${activeTab === "shipping" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}
+            className={`me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  hover:text-black ${activeTab === "shipping" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}
             onClick={() => {
               handleActive("shipping");
             }}
@@ -334,7 +334,7 @@ const ProductDesc = ({ selectedProduct }) => {
             Shipping & Return
           </li>
           <li
-            className={`me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  dark:hover:text-gray-300 ${activeTab === "product" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}
+            className={`me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  hover:text-black ${activeTab === "product" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}
             onClick={() => {
               handleActive("product");
             }}

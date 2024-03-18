@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { IoCloseSharp, IoCartOutline } from "react-icons/io5";
 import { IoIosCloseCircleOutline, IoMdAdd, IoMdRemove } from "react-icons/io";
 import OutsideClick from "@/hooks/outSideClick";
-
+import { RiDeleteBin6Line } from "react-icons/ri";
 const CartSection = ({ isCart, setIsCart }) => {
   const {
     cartItemsList,
@@ -11,6 +11,7 @@ const CartSection = ({ isCart, setIsCart }) => {
     increaseItemAmount,
     decreaseItemAmount,
     subtotal,
+    emptyCart,
   } = useContext(CartContext);
 
   const [shippingCost, setShippingCost] = useState(0);
@@ -87,13 +88,22 @@ const CartSection = ({ isCart, setIsCart }) => {
           <h1 className="py-6 text-[23px] font-semibold">Shopping Cart</h1>
           <IoCloseSharp size={25} className="cursor-pointer hover:scale-110" />
         </div>
-        <h1
-          className={`mb-8 mt-4 text-center text-[25px] ${mappedCartList.length < 1 ? "hidden" : ""}`}
+        <div
+          className={`flex items-center justify-evenly  ${mappedCartList.length < 1 ? "hidden" : ""}`}
         >
-          {cartItemsList && cartItemsList.length} Item
-          {`${cartItemsList && cartItemsList.length > 1 ? "s" : ""}`} in The
-          Cart
-        </h1>
+          <h1 className={`mb-8 mt-4 text-center text-[25px]`}>
+            {cartItemsList && cartItemsList.length} Item
+            {`${cartItemsList && cartItemsList.length > 1 ? "s" : ""}`} in The
+            Cart
+          </h1>
+          <RiDeleteBin6Line
+            size={30}
+            className="translate-y-[-3px] hover:scale-110"
+            onClick={() => {
+              emptyCart();
+            }}
+          />
+        </div>
       </div>
       <div className="max-h-[65vh]   w-[100%] overflow-y-scroll pb-4   ">
         {mappedCartList && mappedCartList.length < 1 ? (
