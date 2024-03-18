@@ -26,8 +26,6 @@ const ProductDetail = () => {
     return item.id === productId;
   });
 
-  console.log(productId);
-
   const mappedSelectedProduct = selectedProduct.map((product) => (
     <div key={product.id}>
       {/* ///////////////////////// */}
