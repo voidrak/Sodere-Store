@@ -4,7 +4,7 @@ import { MdOutlineStar } from "react-icons/md";
 import { Link } from "react-router-dom";
 const HomeCollection = () => {
   return (
-    <div className="mb-[10rem] mt-[4rem]">
+    <div className="mt-[4rem]">
       <div className="text-center">
         <p className=" font-semibold  underline underline-offset-2">
           20% OFF ON SWAN KITCHEN APPLIANCES

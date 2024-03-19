@@ -3,6 +3,7 @@ import HomeLanding from "../Components/HomePage/HomeLanding";
 import HomeCategory from "@/Components/HomePage/HomeCategory";
 import NewArrivals from "@/Components/HomePage/NewArrivals";
 import HomeCollection from "@/Components/HomePage/HomeCollection";
+import FeaturedProduct from "@/Components/HomePage/FeaturedProduct";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <HomeCategory />
       <NewArrivals />
       <HomeCollection />
+      <FeaturedProduct />
     </div>
   );
 };

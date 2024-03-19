@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { IoEyeOutline } from "react-icons/io5";
 import { FiShoppingBag } from "react-icons/fi";
-import { FaRegHeart, FaHeart } from "react-icons/fa";
+import { FaRegHeart, FaHeart, FaStar } from "react-icons/fa";
 
 import SkeletonCard from "./SkeletonCard";
 import { CartContext } from "@/contexts/CartContext";
@@ -85,7 +85,13 @@ const ProductCard = ({ product, onLoad }) => {
                 {product.itemNameAmharic}
               </h1>
             </div>
-            <p className="mb-2">${product.price}</p>
+            <div className=" my-2 flex w-full justify-evenly font-extrabold">
+              <p className="">${product.price}</p>
+              <p className="flex items-center  gap-x-2 text-[#2178ac]">
+                <FaStar />
+                {product.review}
+              </p>
+            </div>
           </div>
         </div>
       ) : (
