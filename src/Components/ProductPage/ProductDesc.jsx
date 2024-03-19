@@ -40,7 +40,7 @@ const ProductDesc = ({ selectedProduct }) => {
       case "additional":
         {
           tabElement = (
-            <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <div className="relative translate-x-[-2rem] overflow-x-auto shadow-md sm:rounded-lg">
               <table className=" w-[100%] text-left text-sm text-gray-500 dark:text-gray-400 ">
                 <tbody>
                   <tr className="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
@@ -307,7 +307,7 @@ const ProductDesc = ({ selectedProduct }) => {
         </Accordion>
       </div>
 
-      <div className="mx-auto w-full border-b border-gray-200 px-2 text-center text-sm font-medium text-gray-500 dark:border-gray-700  dark:text-gray-400">
+      <div className="mx-auto hidden w-full border-b border-gray-200 px-2 px-8 text-center text-sm font-medium text-gray-500 dark:border-gray-700 dark:text-gray-400  md:block">
         <ul className="-mb-px flex flex-nowrap justify-between border-b border-gray-200 ">
           <li
             className={` me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  hover:text-black ${activeTab === "description" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}
@@ -342,7 +342,7 @@ const ProductDesc = ({ selectedProduct }) => {
             Product Reviews
           </li>
         </ul>
-        <div className="ml-8 mt-4 py-8 text-left">{ActiveTabElement}</div>
+        <div className="ml-8 mt-4   py-8 text-left">{ActiveTabElement}</div>
       </div>
     </div>
   );

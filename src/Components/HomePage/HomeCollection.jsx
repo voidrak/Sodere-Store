@@ -61,7 +61,7 @@ const HomeCollection = () => {
                 <p className="font-semibold"> $168.65</p>
               </div>
               <Link to="/eR1kGT">
-                <button className="mt-1 rounded-sm bg-black px-2 py-2 font-semibold text-white">
+                <button className="mt-1 rounded-sm bg-[#2178ac] px-2 py-2 font-semibold text-white">
                   SHOP NOW
                 </button>
               </Link>
