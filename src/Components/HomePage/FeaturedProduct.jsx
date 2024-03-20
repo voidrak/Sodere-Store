@@ -53,7 +53,7 @@ const FeaturedProduct = () => {
           responsive={responsive}
           autoPlay={true}
           infinite={true}
-          autoPlaySpeed={3000}
+          autoPlaySpeed={2500}
         >
           {mappedFeatured}
         </Carousel>
