@@ -1,7 +1,12 @@
+import SearchPageSection from "@/Components/SearchPage/SearchPageSection";
 import React from "react";
 
 const SearchPage = () => {
-  return <div>SearchPage</div>;
+  return (
+    <div>
+      <SearchPageSection />
+    </div>
+  );
 };
 
 export default SearchPage;

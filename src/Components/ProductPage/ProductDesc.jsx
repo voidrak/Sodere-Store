@@ -307,7 +307,7 @@ const ProductDesc = ({ selectedProduct }) => {
         </Accordion>
       </div>
 
-      <div className="mx-auto hidden w-full border-b border-gray-200 px-2 px-8 text-center text-sm font-medium text-gray-500 dark:border-gray-700 dark:text-gray-400  md:block">
+      <div className="mx-auto hidden w-full border-b border-gray-200   px-8 text-center text-sm font-medium text-gray-500 dark:border-gray-700 dark:text-gray-400  md:block">
         <ul className="-mb-px flex flex-nowrap justify-between border-b border-gray-200 ">
           <li
             className={` me-2 inline-block cursor-pointer text-nowrap rounded-t-lg border-b-2 px-4 py-2 font-bold  hover:text-black ${activeTab === "description" && "border-blue-600  text-blue-600 dark:border-blue-500 dark:text-blue-500"}`}

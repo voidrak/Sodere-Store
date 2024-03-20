@@ -5,6 +5,8 @@ import ProductCard from "../ProductCard";
 const WishlistProducts = () => {
   const { wishlist, setWishlist, addToWishList, removeWishlistItem } =
     useContext(WishListContext);
+  const [loadedProducts, setLoadedProducts] = useState(0);
+
   const handleProductLoad = () => {
     setLoadedProducts((prevCount) => prevCount + 1);
   };

@@ -43,10 +43,6 @@ const FeaturedProduct = () => {
     />
   ));
 
-  useEffect(() => {
-    console.log(mappedFeatured);
-  }, [productData]);
-
   return (
     <div className=" mb-[10rem] mt-[5rem]">
       <h1 className="my-8 text-center text-[28px]  font-bold text-[#2178ac] min-[450px]:text-[30px] sm:text-[35px] lg:text-[38px] xl:text-[40px] 2xl:text-[45px] ">
