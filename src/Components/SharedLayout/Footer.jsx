@@ -100,12 +100,22 @@ const Footer = () => {
               />
               <IoIosArrowUp className="hidden  group-hover:block md:group-hover:hidden" />
             </h1>
-            <ul className=" hidden group-hover:block  md:block ">
-              <li className=" p-1 text-[17px] text-gray-600 ">Smart home</li>
-              <li className=" p-1 text-[17px] text-gray-600 ">Living room</li>
-              <li className=" p-1 text-[17px] text-gray-600 ">Bedroom</li>
-              <li className=" p-1 text-[17px] text-gray-600 ">Outdoor</li>
-              <li className=" p-1 text-[17px] text-gray-600 ">Lighting</li>
+            <ul className=" hidden cursor-pointer group-hover:block  md:block ">
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Smart home
+              </li>
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Living room
+              </li>
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Bedroom
+              </li>
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Outdoor
+              </li>
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Lighting
+              </li>
             </ul>
           </div>
           <div className="group border-b-2 border-gray-300  pb-3  md:border-none ">
@@ -117,12 +127,23 @@ const Footer = () => {
               />
               <IoIosArrowUp className=" hidden group-hover:block md:group-hover:hidden" />
             </h1>
-            <ul className=" hidden group-hover:block md:block ">
-              <li className=" p-1 text-[17px] text-gray-600 ">About us</li>
-              <li className=" p-1 text-[17px] text-gray-600 ">Our services</li>
-              <li className=" p-1 text-[17px] text-gray-600 ">Latest news</li>
-              <li className=" p-1 text-[17px] text-gray-600 ">Best sellers</li>
-              <li className=" p-1 text-[17px] text-gray-600 ">Contact us</li>
+            <ul className=" hidden cursor-pointer group-hover:block md:block ">
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                About us
+              </li>
+
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Location
+              </li>
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Contact us
+              </li>
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Report abuse
+              </li>
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Download SodereStore App
+              </li>
             </ul>
           </div>
           <div className="group border-b-2 border-gray-300  pb-3  md:border-none ">
@@ -134,19 +155,21 @@ const Footer = () => {
               />
               <IoIosArrowUp className="hidden  group-hover:block md:group-hover:hidden" />
             </h1>
-            <ul className=" hidden group-hover:block md:block ">
-              <li className=" p-1 text-[17px] text-gray-600 ">Order history</li>
-              <li className=" p-1 text-[17px] text-gray-600 ">
-                Customer support
+            <ul className=" hidden cursor-pointer group-hover:block md:block ">
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Privacy Policy
               </li>
-              <li className=" p-1 text-[17px] text-gray-600 ">
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Why Choose Us?
+              </li>
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                 Terms & conditions
               </li>
-              <li className=" p-1 text-[17px] text-gray-600 ">
-                Returns & exchanges
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Return Policy
               </li>
-              <li className=" p-1 text-[17px] text-gray-600 ">
-                Shipping & delivery
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Shipping & Payment Info
               </li>
             </ul>
           </div>
@@ -172,7 +195,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="py-4">
+      <div className="pt-4t pb-8">
         <h1 className="text-center">
           {" "}
           &copy; 2024 Sodere is proudly powered by{" "}

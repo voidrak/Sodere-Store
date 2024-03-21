@@ -28,6 +28,7 @@ const App = () => {
               toastOptions={{
                 // Define default options
                 className: "",
+
                 duration: 5000,
                 style: {
                   background: "#363636",
