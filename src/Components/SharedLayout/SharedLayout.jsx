@@ -4,6 +4,7 @@ import Header from "./Header";
 import Navbar from "./Navbar";
 import SearchSection from "./SearchSection";
 import CartSection from "./CartSection";
+import Footer from "./Footer";
 
 const SharedLayout = () => {
   const [isNavbar, setIsNavbar] = useState(false);
@@ -21,6 +22,7 @@ const SharedLayout = () => {
       <SearchSection isSearch={isSearch} setIsSearch={setIsSearch} />
       <CartSection isCart={isCart} setIsCart={setIsCart} />
       <Outlet />
+      <Footer />
     </div>
   );
 };

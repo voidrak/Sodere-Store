@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 const HomeWatch = () => {
   return (
-    <div className=" mx-auto my-[5rem] grid w-[90%] min-[425px]:w-[85%] sm:w-[75%] min-[992px]:w-[90%] ">
-      <div className=" mx-auto grid  min-[992px]:w-[100%] min-[992px]:grid-cols-2">
-        <div className="group relative m-auto min-[992px]:w-[90%] min-[992px]:translate-x-[3rem] min-[1700px]:translate-x-[5rem]">
+    <div className=" mx-auto my-[5rem] grid w-[90%]  min-[425px]:w-[85%] sm:w-[75%] min-[992px]:w-[90%] ">
+      <div className=" mx-auto grid gap-x-8 min-[992px]:w-[100%] min-[992px]:grid-cols-2">
+        <div className="group relative m-auto  min-[992px]:w-[90%] min-[992px]:translate-x-[3rem] min-[1700px]:translate-x-[5rem]">
           <img src="./home_watch.webp" alt="" className="mx-auto" />
 
           <Link to="/R7gcj1">
