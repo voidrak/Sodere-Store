@@ -14,7 +14,7 @@ import { CiMail } from "react-icons/ci";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className=" w-full bg-[#ecf4fa]  ">
+    <div className="  w-full bg-[#ecf4fa]  ">
       <div className=" lg:grid-cols- mx-auto  grid  max-w-[392px]   gap-y-8 py-24 min-[618px]:max-w-[690px] min-[618px]:grid-cols-2 lg:max-w-[80%] xl:max-w-[1390px] xl:grid-cols-4 ">
         <div className=" grid grid-cols-3 items-center   gap-x-3 pr-2">
           <FaShippingFast
@@ -207,7 +207,7 @@ const Footer = () => {
             </div>
             <div className=" mr-auto mt-6 max-w-[350px]  ">
               <img
-                src="public/payment-getway.avif"
+                src="/payment-getway.avif"
                 alt="payment-gateway"
                 className="w-full"
               />

@@ -76,7 +76,7 @@ const CartSection = ({ isCart, setIsCart }) => {
   return (
     <div
       ref={cartRef}
-      className={`fixed right-0 top-0 z-[999]  h-[100vh] max-h-[100vh]  w-[101%] max-w-[470px] translate-x-1   rounded-b-sm border-b border-gray-600  bg-white transition-all duration-300 ease-in-out  ${!isCart ? "mr-[-100vw] " : ""}`}
+      className={`fixed right-0 top-0 z-[999]  h-[100vh] max-h-[100vh]  w-[101%] max-w-[470px] translate-x-1   rounded-b-sm border-b border-gray-600  bg-white transition-all duration-300 ease-in-out  ${!isCart ? "hidden " : ""}`}
     >
       <div className="">
         <div
