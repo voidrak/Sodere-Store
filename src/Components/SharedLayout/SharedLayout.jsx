@@ -22,7 +22,7 @@ const SharedLayout = () => {
       <Navbar isNavbar={isNavbar} setIsNavbar={setIsNavbar} />
       <SearchSection isSearch={isSearch} setIsSearch={setIsSearch} />
       <CartSection isCart={isCart} setIsCart={setIsCart} />
-      {/* <ToTopBtn /> */}
+      <ToTopBtn />
       <Outlet />
       <Footer />
     </div>

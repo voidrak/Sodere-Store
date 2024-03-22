@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaHome, FaArrowRight } from "react-icons/fa";
 import { TbMathGreater } from "react-icons/tb";
 import { IoPlayCircle } from "react-icons/io5";
+import { FaMedal } from "react-icons/fa6";
+import { IoMdCloseCircle } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const AboutUsPage = () => {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   return (
     <div className="pb-24 ">
-      <div className="bg-[url('/category-bg.jpeg')] py-10 text-center">
+      <div className="bg-[url('/category-bg.jpeg')] py-14 text-center">
         <h1 className="text-[34px] font-bold md:text-[44px] lg:text-[49px] min-[1200px]:text-[55px]">
           About us
         </h1>
@@ -44,21 +47,87 @@ const AboutUsPage = () => {
             </button>
           </Link>
         </div>
-        <div className="mx-auto mt-8  w-[90%] sm:w-[80%]  md:w-[70%] lg:block ">
+        <div className="mx-auto mt-8  w-[90%] sm:w-[80%]  md:w-[65%] lg:block ">
           <img src="About_Illustration.svg" alt="" />
         </div>
       </div>
-      <div className="  relative mx-auto max-w-[1580px]  rounded-xl   ">
+      <div className=" relative  mx-auto max-w-[1580px] cursor-pointer  rounded-xl   ">
         <img
           src="/about_thumbnail.png"
           alt="video thumbnail"
-          className="md:p-4"
+          className={`md:p-4 ${isVideoPlaying ? "hidden" : ""}`}
         />
         <IoPlayCircle
-          className="  absolute  left-[50%] top-[30%] animate-bounce md:top-[40%] xl:top-[45%] "
-          size={50}
+          className={` absolute  left-[50%]  top-[30%] size-[50px] animate-bounce md:top-[40%] md:size-[65px] lg:size-[80px] xl:top-[45%] ${isVideoPlaying ? "hidden" : ""} `}
           color="#026ec1"
+          onClick={() => {
+            setIsVideoPlaying(true);
+          }}
         />
+        <div className="  left-0 top-0 mx-auto  max-h-[587px] w-[90%] max-w-[1044px] rounded-lg xl:max-h-[675px]   xl:max-w-[1200px]">
+          <video
+            className={`  h-full w-full ${!isVideoPlaying ? "hidden" : ""}`}
+            controls
+            autoPlay
+            muted
+            loop
+          >
+            <source src=" /video/Sodere_Store.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <IoMdCloseCircle
+            color="#026ec1"
+            className={` absolute  right-[10%]  top-[10%] size-[30px]  sm:size-[40px] lg:size-[50px] min-[1440px]:right-[15%]   ${!isVideoPlaying ? "hidden" : ""} `}
+            onClick={() => {
+              setIsVideoPlaying(false);
+            }}
+          />
+        </div>
+      </div>
+
+      <div className="mt-16">
+        <div className="">
+          {/* <img src="public/online-shopping.png" alt="" /> */}
+        </div>
+        <div className="px-1">
+          <h1 className=" text-[29px] font-semibold leading-tight ">
+            Why choose Sodere furniture!
+          </h1>
+
+          <div className="">
+            <div className="grid grid-cols-[1fr,3fr] gap-x-4 ">
+              <div className="mx-auto">
+                <img src="/quality.png" alt="" className="size-[60px]  " />
+              </div>
+              <div className="">
+                <h2 className="">Quality Assurance</h2>
+                <p className="">
+                  shop with confidence knowing each item is quality-assured
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <div className="grid grid-cols-[1fr,3fr] gap-x-4 ">
+              <div className="mx-auto">
+                <img src="/wide-product.png" alt="" className="size-[60px]  " />
+              </div>
+              <div className="">
+                <h2 className="">Wide Range of Products</h2>
+                <p className="">Discover a vast selection of products</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-[1fr,3fr] gap-x-4 ">
+              <div className="mx-auto">
+                <img src="  /fast.png" alt="" className="size-[60px]  " />
+              </div>
+              <div className="">
+                <h2 className="">Fast and Reliable Shipping</h2>
+                <p className="">enjoy swift and dependable shipping</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
