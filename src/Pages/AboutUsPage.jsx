@@ -48,13 +48,17 @@ const AboutUsPage = () => {
           <img src="About_Illustration.svg" alt="" />
         </div>
       </div>
-      <div className="debug relative mx-auto max-w-[1580px]  rounded-xl   ">
+      <div className="  relative mx-auto max-w-[1580px]  rounded-xl   ">
         <img
           src="/about_thumbnail.png"
           alt="video thumbnail"
           className="md:p-4"
         />
-        <IoPlayCircle className="  absolute left-[50%] top-[40%] " size={100} />
+        <IoPlayCircle
+          className="  absolute  left-[50%] top-[30%] animate-bounce md:top-[40%] xl:top-[45%] "
+          size={50}
+          color="#026ec1"
+        />
       </div>
     </div>
   );

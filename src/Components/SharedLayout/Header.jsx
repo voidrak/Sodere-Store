@@ -31,7 +31,7 @@ const Header = ({ setIsNavbar, setIsSearch, setIsCart }) => {
 
   return (
     <>
-      <div className="mx-auto  flex w-[100%] max-w-[1640px] items-center justify-between   px-2  py-3 md:justify-start md:px-4 md:py-4 min-[1440px]:py-6">
+      <div className="mx-auto flex w-[100%] max-w-[1640px] items-center justify-between   px-2  py-3 md:justify-start md:px-4 md:py-4 min-[1440px]:py-6">
         <div className="flex  items-center gap-x-2 md:hidden">
           <CgMenuLeft
             size={30}
