@@ -11,6 +11,7 @@ import { IoWallet } from "react-icons/io5";
 import { GrSecure } from "react-icons/gr";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { CiMail } from "react-icons/ci";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className=" w-full bg-[#ecf4fa]  ">
@@ -59,9 +60,9 @@ const Footer = () => {
       <div className="bg-yelow-300 mx-auto  grid max-w-[540px] border-y border-gray-300 px-3 md:max-w-[830px] lg:max-w-[1400px] ">
         <div className="mx-auto my-8 flex w-[95%] flex-col items-center gap-y-4">
           <img
-            src="public/sodere-logo.png"
+            src="/sodere-logo.png"
             alt="sodere logo"
-            className="w-[150px]"
+            className="w-[150px] sm:w-[200px] "
           />
           <p className="text-center text-[17px] text-gray-500 ">
             Bringing Quality Home to You, Every Time You Shop with Us
@@ -128,22 +129,31 @@ const Footer = () => {
               <IoIosArrowUp className=" hidden group-hover:block md:group-hover:hidden" />
             </h1>
             <ul className=" hidden cursor-pointer group-hover:block md:block ">
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                About us
-              </li>
-
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                Location
-              </li>
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                Contact us
-              </li>
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                Report abuse
-              </li>
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                Download SodereStore App
-              </li>
+              <Link to="about">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  About us
+                </li>
+              </Link>
+              <Link to="">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  Location
+                </li>
+              </Link>{" "}
+              <Link to="">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  Contact us
+                </li>
+              </Link>{" "}
+              <Link to="">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  Report abuse
+                </li>
+              </Link>{" "}
+              <Link to="">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  Download SodereStore App
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="group border-b-2 border-gray-300  pb-3  md:border-none ">
@@ -156,21 +166,31 @@ const Footer = () => {
               <IoIosArrowUp className="hidden  group-hover:block md:group-hover:hidden" />
             </h1>
             <ul className=" hidden cursor-pointer group-hover:block md:block ">
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                Privacy Policy
-              </li>
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                Why Choose Us?
-              </li>
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                Terms & conditions
-              </li>
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                Return Policy
-              </li>
-              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                Shipping & Payment Info
-              </li>
+              <Link to="">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  Privacy Policy
+                </li>
+              </Link>
+              <Link to="">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  Why Choose Us?
+                </li>
+              </Link>
+              <Link to="">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  Terms & conditions
+                </li>
+              </Link>
+              <Link to="">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  Return Policy
+                </li>
+              </Link>
+              <Link to="">
+                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                  Shipping & Payment Info
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="mt-8  pb-16  lg:mt-0">

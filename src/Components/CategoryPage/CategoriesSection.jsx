@@ -21,39 +21,37 @@ const CategoriesSection = () => {
 
   return (
     <div className="">
-      <div className="">
-        <div className="bg-[url('/category-bg.jpeg')] py-10 text-center">
-          <h1 className="text-[34px] font-bold md:text-[44px] lg:text-[49px] min-[1200px]:text-[55px]">
-            {currentCategory}
-          </h1>
-          <div className="flex items-center justify-center gap-x-2 ">
-            <Link to="/" className="flex items-center  gap-x-2">
-              <FaHome />
-              <p className="">Home</p>
-            </Link>
-            <TbMathGreater size={13} />
-            <p className="font-bold">{currentCategory}</p>
-          </div>
+      <div className="bg-[url('/category-bg.jpeg')] py-10 text-center">
+        <h1 className="text-[34px] font-bold md:text-[44px] lg:text-[49px] min-[1200px]:text-[55px]">
+          {currentCategory}
+        </h1>
+        <div className="flex items-center justify-center gap-x-2 ">
+          <Link to="/" className="flex items-center  gap-x-2">
+            <FaHome />
+            <p className="">Home</p>
+          </Link>
+          <TbMathGreater size={13} />
+          <p className="font-bold">{currentCategory}</p>
         </div>
-        <CategoryFilter
-          SetSortOptionValue={SetSortOptionValue}
-          sortOptionValue={sortOptionValue}
-        />
-        <CategoryProductList
-          postPerPage={postPerPage}
-          currentPage={currentPage}
-          categoryMainList={categoryMainList}
-          setCategoryMainList={setCategoryMainList}
-          sortOptionValue={sortOptionValue}
-        />
-        <Pagination
-          setCurrentPage={setCurrentPage}
-          currentPage={currentPage}
-          postPerPage={postPerPage}
-          setPostPerPage={setPostPerPage}
-          totalPost={categoryMainList.length}
-        />
       </div>
+      <CategoryFilter
+        SetSortOptionValue={SetSortOptionValue}
+        sortOptionValue={sortOptionValue}
+      />
+      <CategoryProductList
+        postPerPage={postPerPage}
+        currentPage={currentPage}
+        categoryMainList={categoryMainList}
+        setCategoryMainList={setCategoryMainList}
+        sortOptionValue={sortOptionValue}
+      />
+      <Pagination
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+        postPerPage={postPerPage}
+        setPostPerPage={setPostPerPage}
+        totalPost={categoryMainList.length}
+      />
     </div>
   );
 };

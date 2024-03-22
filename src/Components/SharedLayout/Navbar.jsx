@@ -94,7 +94,7 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
           </div>
           <ul className={`mt-2 pl-2 ${!isPages ? "hidden" : ""} `}>
             <li className="py-2">
-              <Link to="/">
+              <Link to="/about">
                 <p className="">About Us</p>
               </Link>
             </li>

@@ -14,6 +14,7 @@ import { CartContextProvider } from "./contexts/CartContext";
 import toast, { Toaster } from "react-hot-toast";
 import { WishListContextProvider } from "./contexts/WishListContext";
 import { SearchContextProvider } from "./contexts/SearchContext";
+import AboutUsPage from "./Pages/AboutUsPage";
 
 const App = () => {
   const notify = () => toast("Here is your toast.");
@@ -68,6 +69,7 @@ const App = () => {
                   <Route path="search" element={<SearchPage />} />
                   <Route path="categories" element={<CategoriesPage />} />
                   <Route path="wishlist" element={<WishListPage />} />
+                  <Route path="about" element={<AboutUsPage />} />
                   <Route path="*" element={<ErrorPage />} />
                 </Route>
               </Routes>
