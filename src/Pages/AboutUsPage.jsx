@@ -85,47 +85,66 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <div className="mt-16">
-        <div className="">
-          {/* <img src="public/online-shopping.png" alt="" /> */}
+      <div className="mx-auto mt-16  items-center lg:flex xl:max-w-[1170px]">
+        <div className="mx-auto my-8 hidden gap-x-4 lg:block ">
+          <img
+            src="/E-Commerce_Illustrations.jpg"
+            alt=""
+            className="mx-auto w-full "
+          />
         </div>
-        <div className="px-1">
-          <h1 className=" text-[29px] font-semibold leading-tight ">
+        <div className="mx-auto max-w-[630px] lg:max-w-full">
+          <h1 className="  px-8 text-center text-[29px] font-bold leading-tight sm:text-[33px] md:text-[37px] ">
             Why choose Sodere furniture!
           </h1>
-
-          <div className="">
-            <div className="grid grid-cols-[1fr,3fr] gap-x-4 ">
+          <div className="mt-8">
+            {/* ////////////////////////// */}
+            <div className="mt-4 grid grid-cols-[1fr,3fr] gap-x-4 ">
               <div className="mx-auto">
                 <img src="/quality.png" alt="" className="size-[60px]  " />
               </div>
-              <div className="">
-                <h2 className="">Quality Assurance</h2>
-                <p className="">
+              <div className="s  space-y-2 px-2  ">
+                <h2 className="text-[17px] font-bold min-[576px]:text-[18px] ">
+                  Quality Assurance
+                </h2>
+                <p className=" text-gray-500 ">
                   shop with confidence knowing each item is quality-assured
                 </p>
               </div>
             </div>
-          </div>
-          <div className="">
-            <div className="grid grid-cols-[1fr,3fr] gap-x-4 ">
+            {/* ////////////////////////// */}
+
+            {/* ////////////////////////// */}
+
+            <div className="mt-4 grid grid-cols-[1fr,3fr] gap-x-4 ">
               <div className="mx-auto">
                 <img src="/wide-product.png" alt="" className="size-[60px]  " />
               </div>
-              <div className="">
-                <h2 className="">Wide Range of Products</h2>
-                <p className="">Discover a vast selection of products</p>
+              <div className="  space-y-2 px-2  ">
+                <h2 className="text-[17px] font-bold min-[576px]:text-[18px] ">
+                  Wide Range of Products
+                </h2>
+                <p className=" text-gray-500 ">
+                  Discover a vast selection of products
+                </p>
               </div>
             </div>
-            <div className="grid grid-cols-[1fr,3fr] gap-x-4 ">
+            {/* ////////////////////////// */}
+
+            <div className="mt-4 grid grid-cols-[1fr,3fr] gap-x-4 ">
               <div className="mx-auto">
                 <img src="  /fast.png" alt="" className="size-[60px]  " />
               </div>
-              <div className="">
-                <h2 className="">Fast and Reliable Shipping</h2>
-                <p className="">enjoy swift and dependable shipping</p>
+              <div className="  space-y-2 px-2  ">
+                <h2 className="text-[17px] font-bold min-[576px]:text-[18px] ">
+                  Fast and Reliable Shipping
+                </h2>
+                <p className=" text-gray-500 ">
+                  enjoy swift and dependable shipping
+                </p>
               </div>
             </div>
+            {/* ////////////////////////// */}
           </div>
         </div>
       </div>
