@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaHome, FaArrowRight } from "react-icons/fa";
 import { TbMathGreater } from "react-icons/tb";
 import { IoPlayCircle } from "react-icons/io5";
@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 
 const AboutUsPage = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="pb-24 ">
       <div className="bg-[url('/category-bg.jpeg')] py-14 text-center">
