@@ -93,17 +93,32 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
             </div>
           </div>
           <ul className={`mt-2 pl-2 ${!isPages ? "hidden" : ""} `}>
-            <li className="py-2">
+            <li
+              className="py-2"
+              onClick={() => {
+                setIsNavbar(false);
+              }}
+            >
               <Link to="/about">
                 <p className="">About Us</p>
               </Link>
             </li>
-            <li className="py-2">
+            <li
+              className="py-2"
+              onClick={() => {
+                setIsNavbar(false);
+              }}
+            >
               <Link to="/">
                 <p className="">Contact Us</p>
               </Link>
             </li>
-            <li className="py-2">
+            <li
+              className="py-2"
+              onClick={() => {
+                setIsNavbar(false);
+              }}
+            >
               <Link to="/">
                 <p className=""> Privacy Policy</p>
               </Link>
