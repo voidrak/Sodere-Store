@@ -76,11 +76,8 @@ const Header = ({ setIsNavbar, setIsSearch, setIsCart }) => {
           >
             <Link>Shop</Link>
           </li>
-          <li
-            className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] "
-            to="/"
-          >
-            <Link>Contact Us</Link>
+          <li className="duration-900 relative font-bold text-gray-700 after:block  after:h-[2px] after:w-[0%]  after:bg-black after:transition-all after:ease-in-out hover:after:w-[90%] min-[1440px]:text-[1.4rem] ">
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
         <div className="flex  items-center gap-x-3 md:ml-auto">
