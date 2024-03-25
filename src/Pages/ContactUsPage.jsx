@@ -2,6 +2,12 @@ import React, { useEffect } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaTelegramPlane,
+  FaInstagram,
+} from "react-icons/fa";
 const ContactUsPage = () => {
   // useEffect(() => {
   //   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -76,7 +82,7 @@ const ContactUsPage = () => {
         </div>
       </div>
       <div className=" mt-16   ">
-        <h1 className=" sm:-y-6 xl:-y-10 text-center text-[28px] font-bold min-[425px]:text-[34px] md:text-[44px] lg:text-[49px] min-[1200px]:text-[55px]">
+        <h1 className=" sm:-y-6 xl:-y-10 text-center text-[28px] font-bold text-[#2178ac] min-[425px]:text-[34px] md:text-[44px] lg:text-[49px] min-[1200px]:text-[55px]">
           Location
         </h1>
         <div className="mx-auto   grid  max-w-[550px] items-center  gap-x-10 gap-y-16 px-4 sm:max-w-[640px] lg:max-w-[1170px]  lg:grid-cols-3 ">
@@ -116,6 +122,30 @@ const ContactUsPage = () => {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-16 flex flex-col items-center justify-center gap-x-8 gap-y-8 p-12 sm:flex-row ">
+        <h1 className="text-center text-[24px] font-semibold text-[#2178ac] ">
+          Connect with social media
+        </h1>
+        <div className="mx-10 hidden h-[1px] w-[200px] translate-y-1 bg-gray-300 lg:block"></div>
+        <div className="flex justify-center gap-x-10  ">
+          <a href="https://www.facebook.com/SodereEthiopia/" className="">
+            <FaFacebookF size={22} />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCLBOQWY0d5MQvRlAMCcrLQg"
+            className=""
+          >
+            <FaYoutube size={22} />
+          </a>
+          <a href="https://t.me/soderetube" className="">
+            <FaTelegramPlane size={22} />
+          </a>
+          <a href="https://www.instagram.com/sodereethiopia" className="">
+            <FaInstagram size={22} />
+          </a>
         </div>
       </div>
     </div>

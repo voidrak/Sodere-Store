@@ -2,10 +2,10 @@ import React from "react";
 import {
   FaShippingFast,
   FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedinIn,
   FaClock,
+  FaYoutube,
+  FaTelegramPlane,
+  FaInstagram,
 } from "react-icons/fa";
 import { IoWallet } from "react-icons/io5";
 import { GrSecure } from "react-icons/gr";
@@ -69,24 +69,26 @@ const Footer = () => {
           </p>
           <ul className="flex gap-x-6">
             <li>
-              <a href="">
-                <FaFacebookF size={20} />
+              <a href="https://www.facebook.com/SodereEthiopia/" className="">
+                <FaFacebookF size={22} />
               </a>
             </li>
             <li>
-              <a href="">
-                {" "}
-                <FaInstagram size={20} />
+              <a
+                href="https://www.youtube.com/channel/UCLBOQWY0d5MQvRlAMCcrLQg"
+                className=""
+              >
+                <FaYoutube size={22} />
               </a>
             </li>
             <li>
-              <a href="">
-                <FaTwitter size={20} />
+              <a href="https://t.me/soderetube" className="">
+                <FaTelegramPlane size={22} />
               </a>
             </li>
             <li>
-              <a href="">
-                <FaLinkedinIn size={20} />
+              <a href="https://www.instagram.com/sodereethiopia" className="">
+                <FaInstagram size={22} />
               </a>
             </li>
           </ul>
