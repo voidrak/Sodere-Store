@@ -109,7 +109,7 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
                 setIsNavbar(false);
               }}
             >
-              <Link to="/">
+              <Link to="/contact">
                 <p className="">Contact Us</p>
               </Link>
             </li>

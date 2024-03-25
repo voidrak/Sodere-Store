@@ -180,7 +180,7 @@ const Footer = () => {
                   Why Choose Us?
                 </li>
               </Link>
-              <Link to="">
+              <Link to="terms">
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Terms & conditions
                 </li>
@@ -219,7 +219,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="pt-4t pb-8">
+      <div className="p-8">
         <h1 className="text-center">
           {" "}
           &copy; 2024 Sodere is proudly powered by{" "}

@@ -8,10 +8,8 @@ import {
   FaTelegramPlane,
   FaInstagram,
 } from "react-icons/fa";
+import ScrollToTop from "@/Components/ScrollToTop";
 const ContactUsPage = () => {
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }, []);
   return (
     <div className="mx-auto min-h-[100svh]  pb-8 xl:pb-16">
       <div className="xl:gap-x-18  flex items-center justify-center gap-x-4   bg-[url('/category-bg.jpeg')] text-center sm:gap-x-20 ">
@@ -88,9 +86,9 @@ const ContactUsPage = () => {
         <div className="mx-auto   grid  max-w-[550px] items-center  gap-x-10 gap-y-16 px-4 sm:max-w-[640px] lg:max-w-[1170px]  lg:grid-cols-3 ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.82055951899!2d-118.49659652351468!3d34.02281667316809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4c90c6e871f%3A0x5d22a701b028ebd6!2s825%20Wilshire%20Blvd%20%23527%2C%20Santa%20Monica%2C%20CA%2090401%2C%20USA!5e0!3m2!1sen!2set!4v1711373062945!5m2!1sen!2set"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className="  -1 mt-8 aspect-[4/3] w-full  md:col-span-2 "
           ></iframe>
 
@@ -148,6 +146,7 @@ const ContactUsPage = () => {
           </a>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 };

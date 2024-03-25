@@ -15,6 +15,8 @@ import toast, { Toaster } from "react-hot-toast";
 import { WishListContextProvider } from "./contexts/WishListContext";
 import { SearchContextProvider } from "./contexts/SearchContext";
 import AboutUsPage from "./Pages/AboutUsPage";
+import ScrollToTop from "./Components/ScrollToTop";
+import TermsConditions from "./Pages/TermsConditions";
 
 const App = () => {
   const notify = () => toast("Here is your toast.");
@@ -70,6 +72,7 @@ const App = () => {
                   <Route path="categories" element={<CategoriesPage />} />
                   <Route path="wishlist" element={<WishListPage />} />
                   <Route path="about" element={<AboutUsPage />} />
+                  <Route path="terms" element={<TermsConditions />} />
                   <Route path="*" element={<ErrorPage />} />
                 </Route>
               </Routes>
