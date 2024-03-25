@@ -170,7 +170,7 @@ const Footer = () => {
               <IoIosArrowUp className="hidden  group-hover:block md:group-hover:hidden" />
             </h1>
             <ul className=" hidden cursor-pointer group-hover:block md:block ">
-              <Link to="">
+              <Link to="privacy">
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Privacy Policy
                 </li>

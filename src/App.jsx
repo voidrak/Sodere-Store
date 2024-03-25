@@ -17,6 +17,7 @@ import { SearchContextProvider } from "./contexts/SearchContext";
 import AboutUsPage from "./Pages/AboutUsPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import TermsConditions from "./Pages/TermsConditions";
+import PrivacyPage from "./Pages/PrivacyPage";
 
 const App = () => {
   const notify = () => toast("Here is your toast.");
@@ -73,6 +74,7 @@ const App = () => {
                   <Route path="wishlist" element={<WishListPage />} />
                   <Route path="about" element={<AboutUsPage />} />
                   <Route path="terms" element={<TermsConditions />} />
+                  <Route path="privacy" element={<PrivacyPage />} />
                   <Route path="*" element={<ErrorPage />} />
                 </Route>
               </Routes>
