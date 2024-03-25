@@ -59,11 +59,13 @@ const Footer = () => {
       </div>
       <div className="bg-yelow-300 mx-auto  grid max-w-[540px] border-y border-gray-300 px-3 md:max-w-[830px] lg:max-w-[1400px] ">
         <div className="mx-auto my-8 flex w-[95%] flex-col items-center gap-y-4">
-          <img
-            src="/sodere-logo.png"
-            alt="sodere logo"
-            className="w-[150px] sm:w-[200px] "
-          />
+          <Link to="/">
+            <img
+              src="/sodere-logo.png"
+              alt="sodere logo"
+              className="w-[150px] sm:w-[200px] "
+            />
+          </Link>
           <p className="text-center text-[17px] text-gray-500 ">
             Bringing Quality Home to You, Every Time You Shop with Us
           </p>
