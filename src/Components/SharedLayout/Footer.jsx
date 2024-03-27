@@ -153,11 +153,15 @@ const Footer = () => {
                   Report abuse
                 </li>
               </Link>{" "}
-              <Link to="">
+              <a
+                href="https://play.google.com/store/apps/details?id=tv.vhx.sodere&hl=en&gl=US"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Download SodereStore App
                 </li>
-              </Link>
+              </a>
             </ul>
           </div>
           <div className="group border-b-2 border-gray-300  pb-3  md:border-none ">
@@ -190,7 +194,7 @@ const Footer = () => {
                   Return Policy
                 </li>
               </Link>
-              <Link to="">
+              <Link to="shipping-payment">
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Shipping & Payment Info
                 </li>

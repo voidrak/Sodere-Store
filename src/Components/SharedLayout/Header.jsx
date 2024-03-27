@@ -90,12 +90,14 @@ const Header = ({ setIsNavbar, setIsSearch, setIsCart }) => {
               }}
             />
           </div>
-          <div className="    relative after:absolute after:bottom-[-18px]  after:left-[-15px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['account'] hover:after:lg:block">
-            <IoPersonOutline
-              size={22}
-              className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
-            />
-          </div>
+          <Link to="/profile">
+            <div className="    relative after:absolute after:bottom-[-18px]  after:left-[-15px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['account'] hover:after:lg:block">
+              <IoPersonOutline
+                size={22}
+                className=" hover:scale-110 lg:size-[25px] min-[1440px]:size-[30px]"
+              />
+            </div>
+          </Link>
           <Link to="/wishlist">
             <div className="  relative after:absolute after:bottom-[-18px] after:left-[-10px] after:hidden after:h-4 after:w-4 after:font-semibold  after:content-['wishlist'] hover:after:lg:block ">
               <FaRegHeart

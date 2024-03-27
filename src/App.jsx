@@ -18,6 +18,8 @@ import AboutUsPage from "./Pages/AboutUsPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import TermsConditions from "./Pages/TermsConditions";
 import PrivacyPage from "./Pages/PrivacyPage";
+import ShippingInfo from "./Pages/ShippingInfo";
+import LoginPage from "./Pages/LoginPage";
 
 const App = () => {
   const notify = () => toast("Here is your toast.");
@@ -72,9 +74,11 @@ const App = () => {
                   <Route path="search" element={<SearchPage />} />
                   <Route path="categories" element={<CategoriesPage />} />
                   <Route path="wishlist" element={<WishListPage />} />
+                  <Route path="profile" element={<LoginPage />} />
                   <Route path="about" element={<AboutUsPage />} />
                   <Route path="terms" element={<TermsConditions />} />
                   <Route path="privacy" element={<PrivacyPage />} />
+                  <Route path="shipping-payment" element={<ShippingInfo />} />
                   <Route path="*" element={<ErrorPage />} />
                 </Route>
               </Routes>
