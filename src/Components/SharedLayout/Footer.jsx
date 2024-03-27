@@ -148,11 +148,11 @@ const Footer = () => {
                   Contact us
                 </li>
               </Link>
-              <Link to="">
+              <a href="mailto:nahomabrahamofficial@gmail.com">
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Report abuse
                 </li>
-              </Link>
+              </a>
               <a
                 href="https://play.google.com/store/apps/details?id=tv.vhx.sodere&hl=en&gl=US"
                 target="_blank"

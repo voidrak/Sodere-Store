@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        MOSKOMAPPA: ["MOSKOMAPPA"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

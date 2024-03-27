@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MOSKOMAPPA";
+  src: url(src/assets/font/MOSKOMAPPA.otf);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
