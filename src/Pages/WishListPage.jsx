@@ -3,7 +3,7 @@ import React from "react";
 import ScrollToTop from "@/Components/ScrollToTop";
 const WishListPage = () => {
   return (
-    <div>
+    <div className="mb-16">
       <WishList />
       <ScrollToTop />
     </div>

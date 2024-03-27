@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="bg-re00 mx-auto grid px-3 pb-8 md:grid-cols-2 lg:grid-cols-4 lg:px-8 ">
           <div className="group border-b-2 border-gray-300  pb-3  md:border-none ">
             <h1 className="flex items-center justify-between py-4 text-[17px] font-bold  ">
-              Collections{" "}
+              Collections
               <IoIosArrowDown
                 size={18}
                 className="translate-y-[1px]  group-hover:hidden  md:hidden "
@@ -125,7 +125,7 @@ const Footer = () => {
           </div>
           <div className="group border-b-2 border-gray-300  pb-3  md:border-none ">
             <h1 className="flex items-center justify-between py-4 text-[17px] font-bold  ">
-              Information{" "}
+              Information
               <IoIosArrowDown
                 size={18}
                 className="translate-y-[1px]  group-hover:hidden  md:hidden "
@@ -138,21 +138,21 @@ const Footer = () => {
                   About us
                 </li>
               </Link>
-              <Link to="">
+              <Link to="contact">
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Location
                 </li>
-              </Link>{" "}
+              </Link>
               <Link to="contact">
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Contact us
                 </li>
-              </Link>{" "}
+              </Link>
               <Link to="">
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Report abuse
                 </li>
-              </Link>{" "}
+              </Link>
               <a
                 href="https://play.google.com/store/apps/details?id=tv.vhx.sodere&hl=en&gl=US"
                 target="_blank"
@@ -166,7 +166,7 @@ const Footer = () => {
           </div>
           <div className="group border-b-2 border-gray-300  pb-3  md:border-none ">
             <h1 className="flex items-center justify-between py-4 text-[17px] font-bold  ">
-              Services{" "}
+              Services
               <IoIosArrowDown
                 size={18}
                 className="translate-y-[1px]  group-hover:hidden  md:hidden "
@@ -179,7 +179,7 @@ const Footer = () => {
                   Privacy Policy
                 </li>
               </Link>
-              <Link to="">
+              <Link to="about">
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Why Choose Us?
                 </li>
@@ -189,11 +189,11 @@ const Footer = () => {
                   Terms & conditions
                 </li>
               </Link>
-              <Link to="">
-                <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
-                  Return Policy
-                </li>
-              </Link>
+
+              <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
+                Return Policy
+              </li>
+
               <Link to="shipping-payment">
                 <li className=" p-1 text-[17px] text-gray-500 hover:text-gray-900 ">
                   Shipping & Payment Info
@@ -225,17 +225,17 @@ const Footer = () => {
       </div>
       <div className="p-8">
         <h1 className="text-center">
-          {" "}
-          &copy; 2024 Sodere is proudly powered by{" "}
+          &copy; 2024 Sodere is proudly powered by
           <span className="font-semibold text-[#3aa4f5]">
             <a
               href="http://github.com/voidrak"
               target="_blank"
               rel="noopener noreferrer"
             >
+              {"  "}
               RAK
             </a>
-          </span>{" "}
+          </span>
         </h1>
       </div>
     </div>

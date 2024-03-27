@@ -47,8 +47,13 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
             <h1 className="font-semibold">HOME</h1>
           </Link>
         </li>
-        <li className=" flex items-center border-b-2 border-gray-100 px-4 py-[20px]">
-          <Link to="/">
+        <li
+          className=" flex items-center border-b-2 border-gray-100 px-4 py-[20px]"
+          onClick={() => {
+            setIsNavbar(false);
+          }}
+        >
+          <Link to="/wishlist">
             <h1 className="font-semibold">WISHLIST</h1>
           </Link>
         </li>
@@ -119,8 +124,18 @@ const Navbar = ({ setIsNavbar, isNavbar }) => {
                 setIsNavbar(false);
               }}
             >
-              <Link to="/">
+              <Link to="/privacy">
                 <p className=""> Privacy Policy</p>
+              </Link>
+            </li>
+            <li
+              className="py-2"
+              onClick={() => {
+                setIsNavbar(false);
+              }}
+            >
+              <Link to="/terms">
+                <p className=""> Terms & Conditions</p>
               </Link>
             </li>
           </ul>
