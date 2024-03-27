@@ -45,30 +45,54 @@ const HomeLanding = () => {
       </div>
       <div className="absolute left-0 top-[30%] ml-10 hidden xl:block ">
         <ul className=" flex flex-col gap-y-6">
-          <li className="flex flex-col items-center gap-y-3">
-            <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">
-              Facebook
-            </p>{" "}
-            <FaFacebook />
-          </li>
-          <li className="flex flex-col items-center gap-y-3">
-            <p className=" rotate-180 text-[16px] font-[700] [writing-mode:vertical-lr] ">
-              Linkedin
-            </p>
-            <FaLinkedin />
-          </li>
-          <li className="flex flex-col items-center gap-y-3">
-            <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">
-              Twitter
-            </p>{" "}
-            <FaSquareXTwitter />
-          </li>
-          <li className="flex flex-col items-center gap-y-3">
-            <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">
-              Instagram
-            </p>{" "}
-            <FaInstagramSquare />
-          </li>
+          <a
+            href="https://www.facebook.com/SodereEthiopia/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="flex flex-col items-center gap-y-3">
+              <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">
+                Facebook
+              </p>{" "}
+              <FaFacebook />
+            </li>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nahom-abraham-460656286/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="flex flex-col items-center gap-y-3">
+              <p className=" rotate-180 text-[16px] font-[700] [writing-mode:vertical-lr] ">
+                Linkedin
+              </p>
+              <FaLinkedin />
+            </li>
+          </a>
+          <a
+            href="https://twitter.com/rakkpoper"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="flex flex-col items-center gap-y-3">
+              <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">
+                Twitter
+              </p>{" "}
+              <FaSquareXTwitter />
+            </li>
+          </a>
+          <a
+            href="https://www.instagram.com/sodereethiopia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="flex flex-col items-center gap-y-3">
+              <p className=" rotate-180 text-[16px] font-bold [writing-mode:vertical-lr] ">
+                Instagram
+              </p>{" "}
+              <FaInstagramSquare />
+            </li>
+          </a>
         </ul>
       </div>
     </div>
