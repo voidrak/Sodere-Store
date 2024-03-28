@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Sodere-Store</h1>
 
-<p align="center"><img src="![sodere logo](public/sodere-logo.png)" alt="project-image"></p>
+<p align="center"><img src="/sodere-logo.png" alt="logo"></p>
 
 <p id="description">Sodere Store an e-commerce platform offering a diverse range of products both locally in Ethiopia and internationally has undergone a complete makeover. Recognizing the need for a modern and clean UI I took on the challenge to redesign and rebuild the website from scratch. Using React.js and Tailwind CSS I've created a sleek and contemporary interface that not only looks great but also offers a seamless user experience.</p>
 
