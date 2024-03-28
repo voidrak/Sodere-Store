@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Sodere-Store</h1>
 
-<p align="center"><img src=" https://sodere-store.vercel.app/sodere-logo.png" alt="project-image"></p>
+<p align="center"><img src="![sodere logo](public/sodere-logo.png)" alt="project-image"></p>
 
 <p id="description">Sodere Store an e-commerce platform offering a diverse range of products both locally in Ethiopia and internationally has undergone a complete makeover. Recognizing the need for a modern and clean UI I took on the challenge to redesign and rebuild the website from scratch. Using React.js and Tailwind CSS I've created a sleek and contemporary interface that not only looks great but also offers a seamless user experience.</p>
 
@@ -8,18 +8,16 @@
 
 [https://sodere-store.vercel.app/](https://sodere-store.vercel.app/)
 
-  
-  
 <h2>🧐 Features</h2>
 
 Here are some of the project's best features:
 
-*   Captivating Product Catalog
-*   Intuitive Product Search
-*   Customizable Product Filtering and Sorting
-*   Convenient Shopping Cart
-*   Personalized Wishlist
-*   User-Friendly User Profile
+- Captivating Product Catalog
+- Intuitive Product Search
+- Customizable Product Filtering and Sorting
+- Convenient Shopping Cart
+- Personalized Wishlist
+- User-Friendly User Profile
 
 <h2>🛠️ Installation Steps:</h2>
 <h3>To install and set up EthioFix using Vite, please follow these steps:</h3>
@@ -51,10 +49,8 @@ cd Sodere-Store
 
 <p>6. Open your web browser and visit http://localhost:3000 to access Sodere-Store. You should now be able to see and interact with the web app.</p>
 
-  
-  
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
 
-*   React
+- React
