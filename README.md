@@ -4,9 +4,12 @@
 
 <p id="description">Sodere Store an e-commerce platform offering a diverse range of products both locally in Ethiopia and internationally has undergone a complete makeover. Recognizing the need for a modern and clean UI I took on the challenge to redesign and rebuild the website from scratch. Using React.js and Tailwind CSS I've created a sleek and contemporary interface that not only looks great but also offers a seamless user experience.</p>
 
+
 <h2>🚀 Demo</h2>
 
 [https://sodere-store.vercel.app/](https://sodere-store.vercel.app/)
+
+check the original website here [https://soderestore.com](https://soderestore.com/)
 
 <h2>🧐 Features</h2>
 
