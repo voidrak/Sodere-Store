@@ -74,7 +74,12 @@ const SearchSection = ({ setIsSearch, isSearch }) => {
         />
         <CiSearch className="absolute right-[25px] top-[30px]" size={20} />
       </div>
-      <div className="mt-16 flex   flex-col  items-center   min-[375px]:max-w-[90%] min-[481px]:max-w-[471px] sm:min-w-[540px] md:min-w-[80%]   ">
+      <div
+        onClick={() => {
+          setIsSearch(false);
+        }}
+        className="mt-16 flex   flex-col  items-center   min-[375px]:max-w-[90%] min-[481px]:max-w-[471px] sm:min-w-[540px] md:min-w-[80%]   "
+      >
         {mappedSearch && mappedSearch.length > 1 ? (
           <>
             <div className="    grid  grid-cols-2 last:hidden  md:grid-cols-3 lg:grid-cols-4 min-[1200px]:grid-cols-5 2xl:grid-cols-6">
