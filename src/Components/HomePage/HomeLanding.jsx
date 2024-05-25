@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import LandingImage1 from "/home_page_image_1.png";
-import LandingImage2 from "/home_page_image_2.png";
+import LandingImage1 from "/home_page_image_1.webp";
+import LandingImage2 from "/home_page_image_2.webp";
 import { FaArrowRight, FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { ProductContext } from "../../contexts/ProductContext";

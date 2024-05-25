@@ -2206,7 +2206,7 @@ const ProductData = [
     category: ["Home & Kitchen"],
     popular: false,
     review: 4.7,
-    imgSrc: "Product_Image/I2BdHG.png",
+    imgSrc: "Product_Image/I2BdHG.webp",
     featuredProduct: false,
     newArrival: false,
     cartAmount: 0,
